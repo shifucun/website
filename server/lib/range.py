@@ -16,6 +16,8 @@ from collections import defaultdict
 import math
 import re
 
+import logging
+
 NUM_RANGE = 9
 
 STAT_VAR_RANGE = {
@@ -86,6 +88,7 @@ def concat_aggregate_range(ranges):
     # Sort the range by start then by end.
     ranges = set(ranges)
     sorted_ranges = sorted(ranges, key=lambda x: (x[0], x[1]))
+    logging.info(sorted_ranges)
 
     # Start value to range.
     range_start_map = defaultdict(list)
