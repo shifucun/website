@@ -18,53 +18,55 @@ import unittest
 import lib.range as lib_range
 
 
+def to_ranges(list_of_pairs):
+    return [lib_range.Range(p[0], p[1]) for p in list_of_pairs]
+
+
 class TestConcatAggregate(unittest.TestCase):
 
     def test_us_age(self):
-        input = [(0, 4), (5, 9), (10, 14), (15, 19),
-                 (20, 24), (25, 29), (30, 34), (35, 39), (40, 44), (45, 49),
-                 (50, 54), (55, 59), (60, 64), (65, 69), (70, 74), (75, 79),
-                 (80, math.inf), (5, 17), (18, 24), (25, 34),
-                 (35, 44), (45, 54), (55, 59), (60, 61), (62, 64), (65, 74),
-                 (65, math.inf), (75, math.inf)]
-        expected = [[(0, 4), (5, 9)], [(10, 14), (15, 19)], [(20, 24),
-                                                             (25, 29)],
-                    [(30, 34), (35, 39)], [(40, 44), (45, 49)],
-                    [(50, 54), (55, 59)], [(60, 61), (62, 64), (65, 69)],
-                    [(70, 74), (75, 79)], [(80, math.inf)]]
-        assert lib_range.concat_aggregate_range(input) == expected
+        ranges = to_ranges([(0, 4), (5, 9), (10, 14), (15, 19), (20, 24),
+                            (25, 29), (30, 34), (35, 39), (40, 44), (45, 49),
+                            (50, 54), (55, 59), (60, 64), (65, 69), (70, 74),
+                            (75, 79), (80, math.inf), (5, 17), (18, 24),
+                            (25, 34), (35, 44), (45, 54), (55, 59), (60, 61),
+                            (62, 64), (65, 74), (65, math.inf), (75, math.inf)])
+        expected = []
+        range_list = lib_range.build_range_list(ranges)
+        result = lib_range.aggregate_range(range_list[-1])
+        assert result == expected
 
-    def test_milpitas_age(self):
-        input = [(5, 17), (18, 24), (25, 34), (35, 44), (45, 54), (55, 59),
-                 (60, 61), (62, 64), (65, 74), (75, math.inf)]
-        expected = [[(5, 17)], [(18, 24)], [(25, 34)], [(35, 44)], [(45, 54)],
-                    [(55, 59), (60, 61), (62, 64)], [(65, 74)],
-                    [(75, math.inf)]]
-        assert lib_range.concat_aggregate_range(input) == expected
+    # def test_milpitas_age(self):
+    #     input = [(5, 17), (18, 24), (25, 34), (35, 44), (45, 54), (55, 59),
+    #              (60, 61), (62, 64), (65, 74), (75, math.inf)]
+    #     expected = [[(5, 17)], [(18, 24)], [(25, 34)], [(35, 44)], [(45, 54)],
+    #                 [(55, 59), (60, 61), (62, 64)], [(65, 74)],
+    #                 [(75, math.inf)]]
+    #     assert lib_range.concat_aggregate_range(input) == expected
 
 
-class TestBuildRangeGroup(unittest.TestCase):
+# class TestBuildRangeGroup(unittest.TestCase):
 
-    def test_milpitas_age(self):
-        input = [
-            'Count_Person_5To17Years', 'Count_Person_18To24Years',
-            'Count_Person_25To34Years', 'Count_Person_35To44Years',
-            'Count_Person_45To54Years', 'Count_Person_55To59Years',
-            'Count_Person_60To61Years', 'Count_Person_62To64Years',
-            'Count_Person_65To74Years', 'Count_Person_60To64Years',
-            'Count_Person_75OrMoreYears'
-        ]
-        expected = {
-            'Count_Person_5To17Years': ['Count_Person_5To17Years'],
-            'Count_Person_18To24Years': ['Count_Person_18To24Years'],
-            'Count_Person_25To34Years': ['Count_Person_25To34Years'],
-            'Count_Person_35To44Years': ['Count_Person_35To44Years'],
-            'Count_Person_45To54Years': ['Count_Person_45To54Years'],
-            'Count_Person_55To64Years': [
-                'Count_Person_55To59Years', 'Count_Person_60To61Years',
-                'Count_Person_62To64Years'
-            ],
-            'Count_Person_65To74Years': ['Count_Person_65To74Years'],
-            'Count_Person_75OrMoreYears': ['Count_Person_75OrMoreYears']
-        }
-        assert lib_range.build_stat_var_range_group(input, 'age') == expected
+#     def test_milpitas_age(self):
+#         input = [
+#             'Count_Person_5To17Years', 'Count_Person_18To24Years',
+#             'Count_Person_25To34Years', 'Count_Person_35To44Years',
+#             'Count_Person_45To54Years', 'Count_Person_55To59Years',
+#             'Count_Person_60To61Years', 'Count_Person_62To64Years',
+#             'Count_Person_65To74Years', 'Count_Person_60To64Years',
+#             'Count_Person_75OrMoreYears'
+#         ]
+#         expected = {
+#             'Count_Person_5To17Years': ['Count_Person_5To17Years'],
+#             'Count_Person_18To24Years': ['Count_Person_18To24Years'],
+#             'Count_Person_25To34Years': ['Count_Person_25To34Years'],
+#             'Count_Person_35To44Years': ['Count_Person_35To44Years'],
+#             'Count_Person_45To54Years': ['Count_Person_45To54Years'],
+#             'Count_Person_55To64Years': [
+#                 'Count_Person_55To59Years', 'Count_Person_60To61Years',
+#                 'Count_Person_62To64Years'
+#             ],
+#             'Count_Person_65To74Years': ['Count_Person_65To74Years'],
+#             'Count_Person_75OrMoreYears': ['Count_Person_75OrMoreYears']
+#         }
+#         assert lib_range.build_stat_var_range_group(input, 'age') == expected

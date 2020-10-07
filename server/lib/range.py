@@ -18,6 +18,9 @@ import re
 
 import logging
 
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s %(levelname)s %(lineno)d : %(message)s')
+
 NUM_RANGE = 9
 
 STAT_VAR_RANGE = {
@@ -25,123 +28,157 @@ STAT_VAR_RANGE = {
 }
 
 
-def stat_var_to_range(stat_var, regex):
+class Range(object):
+    """Represents a range object with low and high."""
+
+    def __init__(self, low, high):
+        self.low = low
+        self.high = high
+        self.children = [self]
+
+    def __hash__(self):
+        return hash('{}^{}'.format(self.low, self.high))
+
+    def __eq__(self, other):
+        return self.low == other.low and self.high == other.high
+
+    def __repr__(self):
+        return '({}, {})'.format(self.low, self.high)
+
+    def add_child(self, child):
+        """Add a child and grow the range.
+
+        The child range must be connected with the current range.
+        """
+        if child.low != self.high + 1:
+            return False
+        self.high = child.high
+        self.children.append(child)
+        return True
+
+    def span(self):
+        return self.high - self.low
+
+    def to_stat_var(self, format_str):
+        """Convert a range to stat var string."""
+        if self.low == 0:
+            part = 'Upto' + str(self.high)
+        elif self.high == math.inf:
+            part = str(self.low) + 'OrMore'
+        else:
+            part = '{}To{}'.format(self.low, self.high)
+        return format_str.format(part)
+
+
+def from_string(s):
+    """Construct a range from string"""
+    if len(s.split('To')) == 2:
+        return Range(int(r.split('To')[0]), int(r.split('To')[1]))
+    if s.startswith('Upto'):
+        return Range(0, int(r.replace('Upto', '')))
+    if s.endswith('OrMore'):
+        return Range(int(r.replace('OrMore', '')), math.inf)
+    return Range(int(r), int(r))
+
+
+def from_stat_var(stat_var, regex):
     """Convert a stat var to a range tuple with low and high value."""
     p = regex.search(stat_var)
     if p:
-        return string_to_range(p.group(1))
+        return from_string(p.group(1))
     raise ValueError("Invalid stat_var %s", stat_var)
 
 
-def range_to_stat_var(r, format_str):
-    """Convert a range to stat var str."""
-    if r[0] == 0:
-        part = 'Upto' + str(r[1])
-    elif r[1] == math.inf:
-        part = str(r[0]) + 'OrMore'
-    else:
-        part = '{}To{}'.format(r[0], r[1])
-    return format_str.format(part)
-
-
-def string_to_range(r):
-    """Function to get the low of the range."""
-    if len(r.split('To')) == 2:
-        low = int(r.split('To')[0])
-        high = int(r.split('To')[1])
-    elif r.startswith('Upto'):
-        low = 0
-        high = int(r.replace('Upto', ''))
-    elif r.endswith('OrMore'):
-        low = int(r.replace('OrMore', ''))
-        high = math.inf
-    else:
-        low = int(r)
-        high = low
-    return (low, high)
-
-
-def expand(range_lists, range_start_map):
+def expand(range_lists, next_range_map):
     result = []
     complete = True
     for l in range_lists:
         last_item = l[-1]
-        next_start = last_item[-1] + 1
-        if next_start in range_start_map:
+        if last_item in next_range_map:
             complete = False
-            for next_item in range_start_map[next_start]:
+            for next_item in next_range_map[last_item]:
                 result.append(l + [next_item])
         else:
             result.append(l)
     return result, complete
 
 
-def concat_aggregate_range(ranges):
-    """Return an ordered and aggregated range from the input.
+def build_range_list(ranges):
+    """Build list of continous range list from input ranges.
 
     Args:
-      ranges: a list of range in the form of a two value tuple, ex:
-        [(0, 5), (6, 10), (21, 40), (11, 20), (21, math.inf)]
+        ranges: a list of range in the form of a two value tuple, ex:
+            [(0, 5), (6, 10), (21, 40), (11, 20), (21, math.inf)]
     Returns:
-      A list of list of range.
+        A list of list of ranges.
     """
-    # Sort the range by start then by end.
-    ranges = set(ranges)
-    sorted_ranges = sorted(ranges, key=lambda x: (x[0], x[1]))
-    logging.info(sorted_ranges)
+    ranges = sorted(ranges, key=lambda r: (r.low, r.high))
 
-    # Start value to range.
-    range_start_map = defaultdict(list)
-    for r in sorted_ranges:
-        range_start_map[r[0]].append(r)
+    # A map from the low value to a list of ranges.
+    low_to_range = defaultdict(list)
+    for r in ranges:
+        low_to_range[r.low].append(r)
 
     # Find the connected ranges.
-    range_link = defaultdict(list)
-    for r in sorted_ranges:
-        if r[1] + 1 in range_start_map:
-            range_link[r].append(range_start_map[r[1] + 1])
+    next_range_map = defaultdict(list)
+    for r in ranges:
+        if r.high + 1 in low_to_range:
+            next_range_map[r] = low_to_range[r.high + 1]
 
     # Build linked range groups.
-    range_lists = [[sorted_ranges[0]]]
+    range_lists = [[ranges[0]]]
     while True:
-        range_lists, complete = expand(range_lists, range_start_map)
+        range_lists, complete = expand(range_lists, next_range_map)
         if complete:
             break
     range_lists.sort(key=lambda x: len(x))
+    return range_lists
 
-    # Pick the list with the most range.
-    select_list = range_lists[-1]
 
+def aggregate_range(range_list):
     # Aggregate range if needed
-    span = select_list[-1][0] - select_list[0][0]
+    span = range_list[-1].low - range_list[0].low
     average_span = span / NUM_RANGE
-    result = [[select_list[0]]]
-    current_span = select_list[0][1] - select_list[0][0]
-    for item in select_list[1:]:
-        item_span = item[1] - item[0]
+    result = [range_list[0]]
+    for r in range_list[1:]:
+        current_span = result[-1].span()
+        item_span = r.span()
         if (item_span < average_span and current_span < average_span and
-                current_span + item_span < 1.5 * average_span):
-            result[-1].append(item)
-            current_span += (item_span + 1)
+                item_span + current_span < 1.5 * average_span):
+            result[-1].add_child(r)
         else:
-            result.append([item])
-            current_span = item_span
+            result.append(r)
+    for r in result:
+        logging.info("%s, %s", r, r.children)
     return result
 
 
-def build_stat_var_range_group(stat_vars, range_type):
-    """Build a continous and better ranged quantity range stat var."""
-    regex, fmt = STAT_VAR_RANGE[range_type]
-    ranges = [stat_var_to_range(stat_var, regex) for stat_var in stat_vars]
-    range_groups = concat_aggregate_range(ranges)
-    result = {}
-    for group in range_groups:
-        if len(group) == 1:
-            sv = range_to_stat_var(group[0], fmt)
-            result[sv] = [sv]
-        else:
-            low = group[0][0]
-            high = group[-1][1]
-            key = range_to_stat_var((low, high), fmt)
-            result[key] = [range_to_stat_var(item, fmt) for item in group]
-    return result
+# def find_common_aggregated_stat_var(stat_vars_list, range_type):
+#     """Build a continous and better ranged quantity range stat var.
+
+#     Argument:
+#         stat_vars_list: A list of list of stat vars. Each inner list represents
+#         a cohort of stat vars of quantity range to be concatenated and
+#         aggregated. The final result should be a common aggregation for all
+#         the cohort.
+#     Returns:
+#         A map from computed stat var to input stat var list.
+
+#     """
+#     regex, fmt = STAT_VAR_RANGE[range_type]
+#     for stat_vars in stat_vars_list:
+#         range_list = [
+#             stat_var_to_range(stat_var, regex) for stat_var in stat_vars
+#         ]
+#     range_groups = concat_aggregate_range(ranges)
+#     result = {}
+#     for group in range_groups:
+#         if len(group) == 1:
+#             sv = range_to_stat_var(group[0], fmt)
+#             result[sv] = [sv]
+#         else:
+#             low = group[0][0]
+#             high = group[-1][1]
+#             key = range_to_stat_var((low, high), fmt)
+#             result[key] = [range_to_stat_var(item, fmt) for item in group]
+#     return result
