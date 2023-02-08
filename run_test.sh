@@ -145,6 +145,24 @@ function run_webdriver_test {
   python3 -m pytest -n 10 --reruns 3 server/webdriver_tests/tests/
 }
 
+function run_screenshot_test {
+  setup_python
+  if [ ! -d server/dist  ]
+  then
+    echo "no dist folder, please run ./run_test.sh -b to build js first."
+    exit 1
+  fi
+  export FLASK_ENV=webdriver
+  if [  -d test_screenshots  ]
+  then
+    echo "Delete the test_screenshots folder"
+    rm -rf test_screenshots
+  fi
+  mkdir test_screenshots
+  python3 -m pytest server/webdriver_tests/screenshot/screenshot_test.py
+  cd ..
+}
+
 # Run integration test for NL interface
 function run_integration_test {
   setup_python

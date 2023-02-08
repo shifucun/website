@@ -1,0 +1,50 @@
+# Copyright 2023 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+steps:
+  # Build the static files
+  - id: package_js
+    name: gcr.io/datcom-ci/node:2022-07-18
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        rm -rf static/node_modules
+        cp -r /resources/node_modules -d static/
+        ./run_test.sh -b
+
+  # Run screenshot tests
+  - id: flask_webdriver_test
+    name: gcr.io/datcom-ci/webdriver-chrome:2022-08-10
+    entrypoint: /bin/sh
+    waitFor:
+      - package_js
+    args:
+      - -c
+      - |
+        ./run_test.sh -s
+
+  # Copy over the screenshots to gcs
+  - name: gcr.io/cloud-builders/gsutil
+    entrypoint: /bin/sh
+    args:
+      - -c
+      - |
+        gsutil cp server/test_screenshots/*.png gs://datcom-website-screenshot/$SHORT_SHA/
+        rm -rf server/test_screenshots
+
+timeout: 1800s
+
+options:
+  machineType: "N1_HIGHCPU_8"
