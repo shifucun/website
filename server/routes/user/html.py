@@ -1,4 +1,4 @@
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
 import json
 from typing import Dict
+from flask import jsonify
 
 from cachecontrol import CacheControl
 from flask import abort
@@ -52,7 +54,7 @@ def callback():
   flow = current_app.config['OAUTH_FLOW']
   GOOGLE_CLIENT_ID = current_app.config['GOOGLE_CLIENT_ID']
   flow.fetch_token(authorization_response=request.url)
-  if not session['state'] == request.args['state']:
+  if session.get('state') != request.args.get('state'):
     abort(500)  # State does not match!
 
   credentials = flow.credentials
@@ -94,7 +96,8 @@ def index():
 @bp.route('/imports')
 @login_is_required
 def imports() -> Dict[str, Dict]:
-  return user_api.get_imports(libutil.hash_id(session['oauth_user_id']))
+  sql_data_path = os.environ.get('SQL_DATA_PATH')
+  return jsonify(user_api.get_imports(sql_data_path))
 
 
 # TODO(shifucun): modularize to a separate file when /import/* path grows.

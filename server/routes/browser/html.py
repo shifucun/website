@@ -15,11 +15,9 @@
 """
 
 import logging
-import os
 
 from flask import Blueprint
 from flask import current_app
-from flask import g
 from flask import render_template
 
 import server.lib.render as lib_render

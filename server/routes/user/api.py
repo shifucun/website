@@ -19,6 +19,7 @@ from enum import Enum
 import time
 from typing import Dict, List
 
+import os
 import flask
 from flask import current_app
 from google.cloud import firestore
@@ -49,8 +50,8 @@ class GcsFile:
 @dataclass
 class Import:
   """Data type for import entry"""
-  status: int  # This is from ImportStatus Enum
-  gcs_files: List[GcsFile]  # The full GCS path of the import files.
+  name: str  # This is from ImportStatus Enum
+  files: List[str]  # The full GCS path of the import files.
 
 
 @dataclass
@@ -97,10 +98,14 @@ def add_import(user_id: str, import_name: str, gcs_files: List[GcsFile]):
   import_ref.set(asdict(import_info))
 
 
-def get_imports(user_id: str) -> Dict[str, Dict]:
-  """Get all imports from a user"""
-  user = get_user(user_id)
-  imports: Dict[str, Dict] = {}
-  for im in user.reference.collection(IMPORT_COLLECTION).stream():
-    imports[im.id] = im.to_dict()
-  return imports
+def get_imports(sql_data_path: str) -> List[str]:
+  """Get all imports for custom DC"""
+  # Now there is only one import under the root folder
+  # TODO: support multiple imports which are sub-folders in the root folder.
+  if sql_data_path:
+    files = [
+        f for f in os.listdir(sql_data_path)
+        if os.path.isfile(os.path.join(sql_data_path, f)) and f.endswith('.csv')
+    ]
+    return [Import(name="/", files=files)]
+  return []

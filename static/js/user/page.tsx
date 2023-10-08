@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Google LLC
+ * Copyright 2023 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,18 +22,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 
-const statusText = {
-  1: "uploaded",
-};
-
-export interface GcsFile {
-  bucket: string;
-  object: string;
-}
-
 export interface Import {
-  status: number;
-  gcsFiles: GcsFile[];
+  name: string;
+  files: string[];
 }
 
 export interface PagePropType {
@@ -49,7 +40,7 @@ export function Page(props: PagePropType): JSX.Element {
   const [modalOpen, setModalOpen] = useState(false);
   const [importName, setImportName] = useState(String);
   const [dataFiles, setDataFiles] = useState<File[]>([]);
-  const [imports, setImports] = useState<Record<string, Import>>({});
+  const [imports, setImports] = useState<Import[]>([]);
 
   function onUpload(): void {
     const formData = new FormData();
@@ -91,20 +82,26 @@ export function Page(props: PagePropType): JSX.Element {
       )}
       <div id="imports">
         <div>
-          <h3>All Imports</h3>
-          {Object.keys(imports).map((id) => {
-            const im = imports[id];
+          <h2>All Imports</h2>
+          {imports.map((im) => {
             return (
-              <div key={id}>
-                <div>
-                  {id}: {statusText[im.status]}
+              <div key={im.name}>
+                <h3>{im.name}</h3>
+                <div className="imports-section">
+                  <ul>
+                    {im.files.map((f) => {
+                      return <li key={f}>{f}</li>;
+                    })}
+                  </ul>
+                  <Button
+                    class="add-more-files"
+                    size="sm"
+                    color="light"
+                    onClick={() => setModalOpen(true)}
+                  >
+                    Add more files
+                  </Button>
                 </div>
-                <ul>
-                  {im.gcsFiles.map((f) => {
-                    const parts = f.object.split("/");
-                    return <li key={f.object}>{parts[parts.length - 1]}</li>;
-                  })}
-                </ul>
               </div>
             );
           })}
@@ -137,12 +134,6 @@ export function Page(props: PagePropType): JSX.Element {
             <input
               type="file"
               accept=".csv"
-              onChange={(event) => onAddFile(event.target.files)}
-            />
-            <span>Add TMCF: </span>
-            <input
-              type="file"
-              accept=".tmcf"
               onChange={(event) => onAddFile(event.target.files)}
             />
           </ModalBody>
