@@ -67,3 +67,25 @@ kubectl -n website -ojson get backendconfig | grep '"iap":' -C 5
 
 IAP takes effect in a few minutes. To verify, access the web page in an in-cognito browser page, a Google auth windown would appear with the configured consent screen
 from the step above.
+
+## Allow Programtic Access
+
+To allow webdriver tests to access website protected by IAP, follow the steps in
+[IAP Programmatic
+Authentication](https://cloud.google.com/iap/docs/authentication-howto#authenticating_from_a_service_account).
+In summary with the following steps:
+
+Create a SETTING_FILE:
+
+```txt
+access_settings:
+  oauth_settings:
+    programmatic_clients: ["<CLIENT_ID>"]
+```
+
+Share Oauth Client
+
+```bash
+export PROJECT_ID=<YOUR_PROJECT_ID>
+gcloud iap settings set SETTING_FILE --project=$PROJECT_ID --resource-type=iap_web
+```

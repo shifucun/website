@@ -34,7 +34,7 @@ parser.add_argument("-d",
 
 logging.getLogger().setLevel(logging.WARNING)
 
-NUM_WORKER = 5
+NUM_WORKER = 1
 
 drivers = []
 for i in range(NUM_WORKER):
