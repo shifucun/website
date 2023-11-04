@@ -66,3 +66,4 @@ timeout: 14400s
 
 options:
   machineType: "E2_HIGHCPU_32"
+  logging: CLOUD_LOGGING_ONLY
