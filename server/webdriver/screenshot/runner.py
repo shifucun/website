@@ -17,7 +17,6 @@ import logging
 import os
 import time
 from google.oauth2 import id_token
-import requests
 from google.auth.transport.requests import Request
 from google.cloud import secretmanager
 from selenium.common.exceptions import TimeoutException
@@ -25,7 +24,6 @@ from selenium.common.exceptions import UnexpectedAlertPresentException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
 from server.webdriver import shared
 
 # TODO(shifucun): add test for narrow width for mobile testing
@@ -76,9 +74,6 @@ def use_iap_token(driver, domain):
       # Other optional cookie attributes like 'expiry', 'httpOnly', etc.
   }
 
-  # Add the OpenID token cookie
-  driver.add_cookie(openid_token_cookie)
-
 
 # Google Sign In for IAP protected page
 def login(driver):
@@ -119,8 +114,8 @@ def run(driver, page_base_url, page_config):
   url = page_base_url + page_config['url']
   driver.get(url)
 
-  if page_base_url in _INSTANCE_WITH_IAP:
-    use_iap_token(driver, page_base_url)
+  # if page_base_url in _INSTANCE_WITH_IAP:
+  #   use_iap_token(driver, page_base_url)
 
   # 'async' indicates whether this page fetches data or renders components
   # asyncronously. The web driver wait depends on it.
