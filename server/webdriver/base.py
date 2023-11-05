@@ -16,9 +16,10 @@ import multiprocessing
 import os
 import sys
 from browsermobproxy import Server
-from google.auth.transport.requests import Request
+from google.auth.transport import requests
 from google.oauth2 import id_token
 
+import google.auth
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -46,8 +47,10 @@ def create_driver(preferences=None):
   chrome_options.add_argument('--hide-scrollbars')
 
   # Start the BrowserMob Proxy server
+  creds, project = google.auth.default()
+  auth_req = requests.Request()
   open_id_connect_token = id_token.fetch_id_token(
-      Request(),
+      auth_req,
       "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
   )
   server = Server('browsermob-proxy')
