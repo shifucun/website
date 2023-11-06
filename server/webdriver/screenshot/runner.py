@@ -59,7 +59,7 @@ def prepare(page_config_dir):
 
 
 def use_iap_token(driver, domain):
-  logging.info("here!!")
+  logging.error("here!!")
   # Obtain an OpenID Connect (OIDC) token from metadata server or using service
   # account.
   driver.get(domain)
@@ -67,7 +67,7 @@ def use_iap_token(driver, domain):
       Request(),
       "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
   )
-  logging.info(open_id_connect_token)
+  logging.error(open_id_connect_token)
   script = f"window.localStorage.setItem('id_token', '{open_id_connect_token}');"
   driver.execute_script(script)
 
@@ -119,11 +119,7 @@ def run(driver, page_base_url, page_config):
   # asyncronously. The web driver wait depends on it.
   if page_config['async']:
     shared.wait_for_loading(driver)
-    try:
-      WebDriverWait(driver, WAIT_TIMEOUT).until(shared.charts_rendered)
-    except (TimeoutException, UnexpectedAlertPresentException) as e:
-      logging.error("Exception for url: %s\n%s", url, e)
-      raise e
+    WebDriverWait(driver, WAIT_TIMEOUT).until(shared.charts_rendered)
   else:
     element_present = EC.presence_of_element_located((By.TAG_NAME, 'main'))
     WebDriverWait(driver, WAIT_TIMEOUT).until(element_present)
