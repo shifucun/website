@@ -66,6 +66,7 @@ def use_iap_token(driver, domain):
       Request(),
       "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
   )
+  logging.info(open_id_connect_token)
   script = f"window.localStorage.setItem('id_token', '{open_id_connect_token}');"
   driver.execute_script(script)
 
