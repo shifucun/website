@@ -108,8 +108,8 @@ def run(driver, page_base_url, page_config):
                          height=page_config['height'],
                          windowHandle='current')
 
-  if page_base_url in _INSTANCE_WITH_IAP:
-    use_iap_token(driver, page_base_url)
+  # if page_base_url in _INSTANCE_WITH_IAP:
+  use_iap_token(driver, page_base_url)
 
   url = page_base_url + page_config['url']
   driver.get(url)
