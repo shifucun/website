@@ -61,18 +61,13 @@ def prepare(page_config_dir):
 def use_iap_token(driver, domain):
   # Obtain an OpenID Connect (OIDC) token from metadata server or using service
   # account.
+  driver.get(domain)
   open_id_connect_token = id_token.fetch_id_token(
       Request(),
       "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
   )
-  openid_token_cookie = {
-      'name': 'openid_token',  # Name of the cookie
-      'value': open_id_connect_token,  # Your OpenID token
-      'domain': "autopush.datacommons.org",  # Domain of the cookie
-      'path': '/',  # Path of the cookie
-      'secure': True,  # Whether the cookie requires a secure connection
-      # Other optional cookie attributes like 'expiry', 'httpOnly', etc.
-  }
+  script = f"window.localStorage.setItem('id_token', '{open_id_connect_token}');"
+  driver.execute_script(script)
 
 
 # Google Sign In for IAP protected page
@@ -111,11 +106,12 @@ def run(driver, page_base_url, page_config):
   driver.set_window_size(width=WIDTH,
                          height=page_config['height'],
                          windowHandle='current')
+
+  if page_base_url in _INSTANCE_WITH_IAP:
+    use_iap_token(driver, page_base_url)
+
   url = page_base_url + page_config['url']
   driver.get(url)
-
-  # if page_base_url in _INSTANCE_WITH_IAP:
-  #   use_iap_token(driver, page_base_url)
 
   # 'async' indicates whether this page fetches data or renders components
   # asyncronously. The web driver wait depends on it.

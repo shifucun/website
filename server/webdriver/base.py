@@ -15,9 +15,6 @@
 import multiprocessing
 import os
 import sys
-from browsermobproxy import Server
-from google.auth.transport import requests
-from google.oauth2 import id_token
 
 import google.auth
 from selenium import webdriver
@@ -52,25 +49,12 @@ def create_driver(preferences=None):
   chrome_options.add_argument('--disable-dev-shm-usage')
   chrome_options.add_argument('--hide-scrollbars')
 
-  # Start the BrowserMob Proxy server
-  creds, project = google.auth.default()
-  auth_req = requests.Request()
-  open_id_connect_token = id_token.fetch_id_token(
-      auth_req,
-      "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
-  )
-  server = Server(browsermob_proxy_path)
-  server.start()
-  proxy = server.create_proxy()
-  chrome_options.add_argument('--proxy-server={}'.format(proxy.proxy))
-  proxy.headers({'Authorization': 'Bearer {}'.format(open_id_connect_token)})
-
   if preferences:
     chrome_options.add_experimental_option("prefs", preferences)
   driver = webdriver.Chrome(options=chrome_options)
   # Set a reliable window size for all tests (can be overwritten though)
   driver.set_window_size(DEFAULT_WIDTH, DEFAULT_HEIGHT)
-  return driver, server
+  return driver
 
 
 # Base test class to setup the server.
@@ -81,7 +65,7 @@ class WebdriverBaseTest(NLWebServerTestCase):
     """Runs at the beginning of every individual test."""
     # Maximum time, in seconds, before throwing a TimeoutException.
     self.TIMEOUT_SEC = shared.TIMEOUT
-    self.driver, self.server = create_driver(preferences)
+    self.driver = create_driver(preferences)
     # The URL of the Data Commons server.
     self.url_ = self.get_server_url()
 
@@ -90,4 +74,3 @@ class WebdriverBaseTest(NLWebServerTestCase):
     # Quit the ChromeDriver instance.
     # NOTE: Every individual test starts a new ChromeDriver instance.
     self.driver.quit()
-    self.server.stop()
