@@ -29,6 +29,12 @@ from shared.lib.test_server import NLWebServerTestCase
 DEFAULT_HEIGHT = 1200
 DEFAULT_WIDTH = 1200
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+parent_dir = os.path.dirname(os.path.dirname(current_dir))
+
+browsermob_proxy_path = os.path.join(parent_dir, 'browsermob-proxy')
+
 # Explicitly set multiprocessing start method to 'fork' so tests work with
 # python3.8+ on MacOS.
 # https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods
@@ -53,7 +59,7 @@ def create_driver(preferences=None):
       auth_req,
       "182452152245-0rgvlhrhhlnhgsk9ftbqb53066a9s6dm.apps.googleusercontent.com"
   )
-  server = Server('browsermob-proxy')
+  server = Server(browsermob_proxy_path)
   server.start()
   proxy = server.create_proxy()
   chrome_options.add_argument('--proxy-server={}'.format(proxy.proxy))
