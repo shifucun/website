@@ -59,6 +59,7 @@ def prepare(page_config_dir):
 
 
 def use_iap_token(driver, domain):
+  logging.info("here!!")
   # Obtain an OpenID Connect (OIDC) token from metadata server or using service
   # account.
   driver.get(domain)
