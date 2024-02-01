@@ -1,0 +1,189 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all Person + 4 cprop spec ##
+
+## In each spec, the cprops are ordered alphabetically.
+## Then, the specs are ordered by the first cprop, second cprop, etc..
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "income"
+  cprop: "race"
+  cprop: "workExperience"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+  vertical: "Employment"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "incomeStatus"
+  cprop: "race"
+  cprop: "workExperience"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+  vertical: "Employment"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "maritalStatus"
+  cprop: "spouseAbsentReason"
+  cprop: "spousePresent"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "placeOfResidenceClassification"
+  cprop: "socialCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "placeOfResidenceClassification"
+  cprop: "socialCategory"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "placeOfResidenceClassification"
+  cprop: "workCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "placeOfResidenceClassification"
+  cprop: "workCategory"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "socialCategory"
+  cprop: "workCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "socialCategory"
+  cprop: "workCategory"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "placeOfResidenceClassification"
+  cprop: "socialCategory"
+  cprop: "workCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}

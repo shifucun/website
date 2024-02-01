@@ -1,0 +1,157 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all HousingUnit spec ##
+
+## HousingUnit DPVs ##
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "cashRentStatus"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  dpv: {
+    prop: "occupancyTenure"
+    val: "RenterOccupied"
+  }
+  obs_props: { mprop: "count" }
+  obs_props: { mprop: "grossRent" }
+  vertical: "Housing"
+}
+
+spec {
+  pop_type: "HousingUnit"
+  cprop: "facilities"
+  dpv {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "grossRent"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  dpv: {
+    prop: "occupancyTenure"
+    val: "RenterOccupied"
+  }
+  dpv: {
+    prop: "cashRentStatus"
+    val: "WithCashRent"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Housing"
+}
+
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "homeValue"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  dpv: {
+    prop: "occupancyTenure"
+    val: "OwnerOccupied"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Housing"
+}
+
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "householderRace"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Housing"
+}
+
+spec {
+  pop_type: "HousingUnit"
+  cprop: "mortgageStatus"
+  dpv {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  dpv {
+    prop: "occupancyTenure"
+    val: "OwnerOccupied"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  obs_props {
+    mprop: "cost"
+  }
+}
+
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "occupancyTenure"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  obs_props {
+    mprop: "householdSize"
+  }
+  vertical: "Housing"
+}
+
+spec: {
+  pop_type: "HousingUnit"
+  cprop: "householderRace"
+  cprop: "occupancyTenure"
+  dpv: {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Housing"
+}
+
+spec {
+  pop_type: "HousingUnit"
+  cprop: "mortgageStatus"
+  cprop: "propertyTax"
+  dpv {
+    prop: "occupancyStatus"
+    val: "OccupiedHousingUnit"
+  }
+  dpv {
+    prop: "occupancyTenure"
+    val: "OwnerOccupied"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}

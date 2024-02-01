@@ -1,0 +1,70 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all USCEstablishment spec ##
+
+spec {
+  pop_type: "USCEstablishment"
+  cprop: "naics"
+  dpv {
+    prop: "payrollStatus"
+    val: "WithPayroll"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "USCEstablishment"
+  cprop: "businessOperationType"
+  cprop: "naics"
+  dpv {
+    prop: "payrollStatus"
+    val: "WithPayroll"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  obs_props {
+    mprop: "receipts"
+  }
+  obs_props {
+    mprop: "receiptsBillingsOrSales"
+  }
+  obs_props {
+    mprop: "receiptsOrRevenue"
+  }
+  obs_props {
+    mprop: "revenue"
+  }
+  obs_props {
+    mprop: "sales"
+  }
+  obs_props {
+    mprop: "shipmentsOrReceipts"
+  }
+}
+
+spec {
+  pop_type: "USCEstablishment"
+  cprop: "naics"
+  cprop: "taxStatus"
+  dpv {
+    prop: "payrollStatus"
+    val: "WithPayroll"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  obs_props {
+    mprop: "receiptsOrRevenue"
+  }
+}

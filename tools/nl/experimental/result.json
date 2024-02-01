@@ -1,0 +1,5639 @@
+[
+  {
+    "concept": "WithoutFoodStampsInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["without food stamps"]
+  },
+  {
+    "concept": "AbovePovertyLevelInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["above poverty level"]
+  },
+  {
+    "concept": "Producer",
+    "type": "property_value",
+    "descriptions": ["producer"]
+  },
+  {
+    "concept": "BlackOrAfricanAmericanAlone",
+    "type": "property_value",
+    "descriptions": ["black", "african american"]
+  },
+  { "concept": "Male", "type": "property_value", "descriptions": ["male"] },
+  { "concept": "Female", "type": "property_value", "descriptions": ["female"] },
+  {
+    "concept": "BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "multi racial black",
+      "mixed race black",
+      "multi racial african american",
+      "multi racial african american"
+    ]
+  },
+  {
+    "concept": "AggravatedAssault",
+    "type": "property_value",
+    "descriptions": ["aggravated assault"]
+  },
+  {
+    "concept": "AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "multi racial american indian",
+      "mixed race american indian",
+      "multi racial alaska native",
+      "multi racial alaska native"
+    ]
+  },
+  {
+    "concept": "AmericanIndianOrAlaskaNativeAlone",
+    "type": "property_value",
+    "descriptions": ["american indian", "alaska native"]
+  },
+  {
+    "concept": "WithFoodStampsInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["with food stamps"]
+  },
+  {
+    "concept": "WithDisability",
+    "type": "property_value",
+    "descriptions": ["with disability"]
+  },
+  {
+    "concept": "drug/dea/1100",
+    "type": "property_value",
+    "descriptions": ["amphetamine"]
+  },
+  {
+    "concept": "drug/dea/9050",
+    "type": "property_value",
+    "descriptions": ["codeine"]
+  },
+  {
+    "concept": "GrossDomesticProduction",
+    "type": "property_value",
+    "descriptions": ["gdp", "gross domestic production"]
+  },
+  {
+    "concept": "NAICS/72",
+    "type": "property_value",
+    "descriptions": ["Accommodation And Food Services"]
+  },
+  {
+    "concept": "NAICS/56",
+    "type": "property_value",
+    "descriptions": ["Administrative Support and Waste Management Services"]
+  },
+  {
+    "concept": "NAICS/11",
+    "type": "property_value",
+    "descriptions": ["Agriculture", "Forestry", "Fishing", "Hunting"]
+  },
+  {
+    "concept": "NAICS/71",
+    "type": "property_value",
+    "descriptions": ["Arts", "Entertainment", "Recreation"]
+  },
+  {
+    "concept": "NAICS/23",
+    "type": "property_value",
+    "descriptions": ["Construction"]
+  },
+  {
+    "concept": "NAICS/61",
+    "type": "property_value",
+    "descriptions": ["Educational Services"]
+  },
+  {
+    "concept": "NAICS/52",
+    "type": "property_value",
+    "descriptions": ["Finance And Insurance"]
+  },
+  {
+    "concept": "NAICS/62",
+    "type": "property_value",
+    "descriptions": ["Health Care And Social Assistance"]
+  },
+  {
+    "concept": "NAICS/51",
+    "type": "property_value",
+    "descriptions": ["Information service", "telecommunication", "broadcasting"]
+  },
+  {
+    "concept": "NAICS/55",
+    "type": "property_value",
+    "descriptions": ["Management of Companies And Enterprises"]
+  },
+  {
+    "concept": "NAICS/31-33",
+    "type": "property_value",
+    "descriptions": ["Manufacturing"]
+  },
+  {
+    "concept": "NAICS/21",
+    "type": "property_value",
+    "descriptions": ["Mining", "quarrying", "oil and gas extraction"]
+  },
+  {
+    "concept": "NAICS/81",
+    "type": "property_value",
+    "descriptions": ["non Public Administration service"]
+  },
+  {
+    "concept": "NAICS/54",
+    "type": "property_value",
+    "descriptions": ["Professional, Scientific, And Technical Services"]
+  },
+  {
+    "concept": "NAICS/53",
+    "type": "property_value",
+    "descriptions": ["Real Estate And Rental And Leasing"]
+  },
+  {
+    "concept": "NAICS/44-45",
+    "type": "property_value",
+    "descriptions": ["retail trade"]
+  },
+  {
+    "concept": "NAICS/48-49",
+    "type": "property_value",
+    "descriptions": ["Transportation And Warehousing"]
+  },
+  {
+    "concept": "NAICS/22",
+    "type": "property_value",
+    "descriptions": ["Utilities"]
+  },
+  {
+    "concept": "NAICS/42",
+    "type": "property_value",
+    "descriptions": ["Wholesale trade"]
+  },
+  {
+    "concept": "GrossValueAdded",
+    "type": "property_value",
+    "descriptions": ["gross value added"]
+  },
+  {
+    "concept": "ISICv3.1/A-B",
+    "type": "property_value",
+    "descriptions": ["Agriculture, hunting, forestry, fishing"]
+  },
+  {
+    "concept": "ISICv3.1/F",
+    "type": "property_value",
+    "descriptions": ["Construction"]
+  },
+  {
+    "concept": "ISICv3.1/D",
+    "type": "property_value",
+    "descriptions": ["Manufacturing"]
+  },
+  {
+    "concept": "ISICv3.1/C-E",
+    "type": "property_value",
+    "descriptions": ["Mining, Manufacturing, Utilities"]
+  },
+  {
+    "concept": "ISICv3.1/I",
+    "type": "property_value",
+    "descriptions": ["Transport, storage and communications"]
+  },
+  {
+    "concept": "ISICv3.1/G-H",
+    "type": "property_value",
+    "descriptions": ["Wholesale, retail trade, restaurants and hotels"]
+  },
+  {
+    "concept": "drug/dea/9193",
+    "type": "property_value",
+    "descriptions": ["hydrocodone"]
+  },
+  {
+    "concept": "drug/dea/9300",
+    "type": "property_value",
+    "descriptions": ["morphine"]
+  },
+  {
+    "concept": "drug/dea/9143",
+    "type": "property_value",
+    "descriptions": ["oxycodone"]
+  },
+  {
+    "concept": "EPA_SCC/1",
+    "type": "property_value",
+    "descriptions": ["External Combustion"]
+  },
+  {
+    "concept": "Acetaldehyde",
+    "type": "property_value",
+    "descriptions": ["acetaldehyde"]
+  },
+  {
+    "concept": "EPA_SCC/23",
+    "type": "property_value",
+    "descriptions": ["non point source Industrial Processes emission"]
+  },
+  {
+    "concept": "EPA_SCC/3",
+    "type": "property_value",
+    "descriptions": ["point source Industrial Processes emission"]
+  },
+  {
+    "concept": "EPA_SCC/2",
+    "type": "property_value",
+    "descriptions": ["Internal Combustion Engines"]
+  },
+  {
+    "concept": "EPA_SCC/28",
+    "type": "property_value",
+    "descriptions": ["Miscellaneous Area Sources"]
+  },
+  {
+    "concept": "EPA_SCC/22",
+    "type": "property_value",
+    "descriptions": ["Mobile Sources"]
+  },
+  {
+    "concept": "EPA_SCC/27",
+    "type": "property_value",
+    "descriptions": ["Natural Sources"]
+  },
+  {
+    "concept": "EPA_SCC/4",
+    "type": "property_value",
+    "descriptions": [
+      "Chemical Evaporation",
+      "Petroleum and Solvent Evaporation"
+    ]
+  },
+  {
+    "concept": "EPA_SCC/24",
+    "type": "property_value",
+    "descriptions": ["Solvent Utilization"]
+  },
+  {
+    "concept": "EPA_SCC/21",
+    "type": "property_value",
+    "descriptions": ["Stationary Source Fuel Combustion"]
+  },
+  {
+    "concept": "EPA_SCC/5",
+    "type": "property_value",
+    "descriptions": ["Waste Disposal"]
+  },
+  {
+    "concept": "EPA_SCC/26",
+    "type": "property_value",
+    "descriptions": ["Waste Disposal, Treatment, and Recovery"]
+  },
+  {
+    "concept": "Ammonia",
+    "type": "property_value",
+    "descriptions": ["ammonia"]
+  },
+  {
+    "concept": "EPA_SCC/25",
+    "type": "property_value",
+    "descriptions": ["Storage and Transport"]
+  },
+  {
+    "concept": "Arsenic",
+    "type": "property_value",
+    "descriptions": ["arsenic"]
+  },
+  {
+    "concept": "Asbestos",
+    "type": "property_value",
+    "descriptions": ["asbestos"]
+  },
+  {
+    "concept": "Benzene",
+    "type": "property_value",
+    "descriptions": ["benzene"]
+  },
+  {
+    "concept": "Cadmium",
+    "type": "property_value",
+    "descriptions": ["cadmium"]
+  },
+  {
+    "concept": "CarbonDioxide",
+    "type": "property_value",
+    "descriptions": ["carbon dioxide"]
+  },
+  {
+    "concept": "CarbonMonoxide",
+    "type": "property_value",
+    "descriptions": ["carbon monoxide"]
+  },
+  {
+    "concept": "Chlorane",
+    "type": "property_value",
+    "descriptions": ["chlorane"]
+  },
+  {
+    "concept": "Chlorine",
+    "type": "property_value",
+    "descriptions": ["chlorine"]
+  },
+  {
+    "concept": "Chloroform",
+    "type": "property_value",
+    "descriptions": ["chloroform"]
+  },
+  {
+    "concept": "Chromium_6",
+    "type": "property_value",
+    "descriptions": ["Chromium"]
+  },
+  { "concept": "Cobalt", "type": "property_value", "descriptions": ["cobalt"] },
+  {
+    "concept": "Cyanide",
+    "type": "property_value",
+    "descriptions": ["cyanide"]
+  },
+  {
+    "concept": "Fluorane",
+    "type": "property_value",
+    "descriptions": ["fluorane"]
+  },
+  {
+    "concept": "Formaldehyde",
+    "type": "property_value",
+    "descriptions": ["formaldehyde"]
+  },
+  { "concept": "Hexane", "type": "property_value", "descriptions": ["hexane"] },
+  { "concept": "Lead", "type": "property_value", "descriptions": ["lead"] },
+  {
+    "concept": "EPA_SCC/6",
+    "type": "property_value",
+    "descriptions": ["MACT Source Categories"]
+  },
+  {
+    "concept": "Manganese",
+    "type": "property_value",
+    "descriptions": ["manganese"]
+  },
+  {
+    "concept": "Mercury",
+    "type": "property_value",
+    "descriptions": ["mercury"]
+  },
+  {
+    "concept": "Methane",
+    "type": "property_value",
+    "descriptions": ["methane"]
+  },
+  {
+    "concept": "Methanol",
+    "type": "property_value",
+    "descriptions": ["methanol"]
+  },
+  {
+    "concept": "Naphthalene",
+    "type": "property_value",
+    "descriptions": ["naphthalene"]
+  },
+  { "concept": "Nickel", "type": "property_value", "descriptions": ["nickel"] },
+  {
+    "concept": "NitrousOxide",
+    "type": "property_value",
+    "descriptions": ["nitrous oxide"]
+  },
+  {
+    "concept": "OxidesOfNitrogen",
+    "type": "property_value",
+    "descriptions": ["oxides of nitrogen"]
+  },
+  {
+    "concept": "Oxo_Oxochromiooxy_Chromium",
+    "type": "property_value",
+    "descriptions": ["Oxo Chromium"]
+  },
+  { "concept": "PM10", "type": "property_value", "descriptions": ["PM 10"] },
+  { "concept": "PM2.5", "type": "property_value", "descriptions": ["PM 2.5"] },
+  { "concept": "Phenol", "type": "property_value", "descriptions": ["phenol"] },
+  {
+    "concept": "Phosphorus",
+    "type": "property_value",
+    "descriptions": ["phosphorus"]
+  },
+  { "concept": "Pyrene", "type": "property_value", "descriptions": ["pyrene"] },
+  {
+    "concept": "Selenium",
+    "type": "property_value",
+    "descriptions": ["selenium"]
+  },
+  {
+    "concept": "Sulfane",
+    "type": "property_value",
+    "descriptions": ["sulfane"]
+  },
+  {
+    "concept": "SulfurDioxide",
+    "type": "property_value",
+    "descriptions": ["sulfur dioxide"]
+  },
+  {
+    "concept": "Toluene",
+    "type": "property_value",
+    "descriptions": ["toluene"]
+  },
+  {
+    "concept": "VolatileOrganicCompound",
+    "type": "property_value",
+    "descriptions": ["volatile organic compound"]
+  },
+  {
+    "concept": "Agriculture",
+    "type": "property_value",
+    "descriptions": ["agriculture"]
+  },
+  {
+    "concept": "GreenhouseGas",
+    "type": "property_value",
+    "descriptions": ["greenhouse gas"]
+  },
+  {
+    "concept": "AluminumProduction",
+    "type": "property_value",
+    "descriptions": ["aluminum production"]
+  },
+  {
+    "concept": "AmmoniaManufacturing",
+    "type": "property_value",
+    "descriptions": ["ammonia manufacturing"]
+  },
+  {
+    "concept": "NonBiogenicEmissionSource",
+    "type": "property_value",
+    "descriptions": ["non biogenic emission source"]
+  },
+  {
+    "concept": "BiogenicEmissionSource",
+    "type": "property_value",
+    "descriptions": ["biogenic emission source"]
+  },
+  {
+    "concept": "BiologicalTreatmentOfSolidWasteAndBiogenic",
+    "type": "property_value",
+    "descriptions": ["biological treatment of solid waste and biogenic"]
+  },
+  {
+    "concept": "CementProduction",
+    "type": "property_value",
+    "descriptions": ["cement production"]
+  },
+  {
+    "concept": "ChemicalAndAlliedProductManufacturing",
+    "type": "property_value",
+    "descriptions": ["chemical and allied product manufacturing"]
+  },
+  {
+    "concept": "ChemicalPetrochemicalIndustry",
+    "type": "property_value",
+    "descriptions": ["chemical petrochemical industry"]
+  },
+  {
+    "concept": "CoalMining",
+    "type": "property_value",
+    "descriptions": ["coal mining"]
+  },
+  {
+    "concept": "CopperMining",
+    "type": "property_value",
+    "descriptions": ["copper mining"]
+  },
+  {
+    "concept": "CroplandFire",
+    "type": "property_value",
+    "descriptions": ["cropland fire"]
+  },
+  {
+    "concept": "EPA_FuelCombustionOther",
+    "type": "property_value",
+    "descriptions": ["fuel combustion other"]
+  },
+  {
+    "concept": "EPA_MiscellaneousEmissionSource",
+    "type": "property_value",
+    "descriptions": ["miscellaneous emission source"]
+  },
+  {
+    "concept": "EPA_OtherIndustrialProcesses",
+    "type": "property_value",
+    "descriptions": ["other industrial processes"]
+  },
+  {
+    "concept": "ElectricityGenerationFromThermalPowerPlant",
+    "type": "property_value",
+    "descriptions": ["electricity generation from thermal power plant"]
+  },
+  {
+    "concept": "ElectricityGeneration",
+    "type": "property_value",
+    "descriptions": ["electricity generation"]
+  },
+  {
+    "concept": "ElectronicsManufacture",
+    "type": "property_value",
+    "descriptions": ["electronics manufacture"]
+  },
+  {
+    "concept": "EntericFermentation",
+    "type": "property_value",
+    "descriptions": ["enteric fermentation"]
+  },
+  {
+    "concept": "FluorinatedGHGProduction",
+    "type": "property_value",
+    "descriptions": ["fluorinated ghg production"]
+  },
+  {
+    "concept": "ForestClearing",
+    "type": "property_value",
+    "descriptions": ["forest clearing"]
+  },
+  {
+    "concept": "ForestFire",
+    "type": "property_value",
+    "descriptions": ["forest fire"]
+  },
+  {
+    "concept": "ForestryAndLandUse",
+    "type": "property_value",
+    "descriptions": ["forestry and land use"]
+  },
+  {
+    "concept": "FossilFuelOperations",
+    "type": "property_value",
+    "descriptions": ["fossil fuel operations"]
+  },
+  {
+    "concept": "FuelCombustionElectricUtility",
+    "type": "property_value",
+    "descriptions": ["fuel combustion electric utility"]
+  },
+  {
+    "concept": "FuelCombustionIndustrial",
+    "type": "property_value",
+    "descriptions": ["fuel combustion industrial"]
+  },
+  {
+    "concept": "FuelCombustionForAviation",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for aviation"]
+  },
+  {
+    "concept": "FuelCombustionForCooking",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for cooking"]
+  },
+  {
+    "concept": "FuelCombustionForDomesticAviation",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for domestic aviation"]
+  },
+  {
+    "concept": "FuelCombustionForInternationalAviation",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for international aviation"]
+  },
+  {
+    "concept": "FuelCombustionForRailways",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for railways"]
+  },
+  {
+    "concept": "FuelCombustionForRefrigerationAirConditioning",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for refrigeration air conditioning"]
+  },
+  {
+    "concept": "FuelCombustionForResidentialCommercialOnsiteHeating",
+    "type": "property_value",
+    "descriptions": [
+      "fuel combustion for residential commercial onsite heating"
+    ]
+  },
+  {
+    "concept": "FuelCombustionForRoadVehicles",
+    "type": "property_value",
+    "descriptions": ["fuel combustion for road vehicles"]
+  },
+  {
+    "concept": "FuelCombustionInBuildings",
+    "type": "property_value",
+    "descriptions": ["fuel combustion in buildings"]
+  },
+  {
+    "concept": "GlassProduction",
+    "type": "property_value",
+    "descriptions": ["glass production"]
+  },
+  {
+    "concept": "HydrogenProduction",
+    "type": "property_value",
+    "descriptions": ["hydrogen production"]
+  },
+  {
+    "concept": "IndustrialAndOtherProcesses",
+    "type": "property_value",
+    "descriptions": ["industrial and other processes"]
+  },
+  {
+    "concept": "IndustrialWasteLandfills",
+    "type": "property_value",
+    "descriptions": ["industrial waste landfills"]
+  },
+  {
+    "concept": "IndustrialWastewaterTreatment",
+    "type": "property_value",
+    "descriptions": ["industrial wastewater treatment"]
+  },
+  {
+    "concept": "IronAndSteelProduction",
+    "type": "property_value",
+    "descriptions": ["iron and steel production"]
+  },
+  {
+    "concept": "IronMining",
+    "type": "property_value",
+    "descriptions": ["iron mining"]
+  },
+  {
+    "concept": "LimeProduction",
+    "type": "property_value",
+    "descriptions": ["lime production"]
+  },
+  {
+    "concept": "ManagedSoils",
+    "type": "property_value",
+    "descriptions": ["managed soils"]
+  },
+  {
+    "concept": "Manufacturing",
+    "type": "property_value",
+    "descriptions": ["manufacturing"]
+  },
+  {
+    "concept": "ManureManagement",
+    "type": "property_value",
+    "descriptions": ["manure management"]
+  },
+  {
+    "concept": "MaritimeShipping",
+    "type": "property_value",
+    "descriptions": ["maritime shipping"]
+  },
+  {
+    "concept": "MaritimeTransport",
+    "type": "property_value",
+    "descriptions": ["maritime transport"]
+  },
+  {
+    "concept": "MetalsProcessing",
+    "type": "property_value",
+    "descriptions": ["metals processing"]
+  },
+  {
+    "concept": "MineralExtraction",
+    "type": "property_value",
+    "descriptions": ["mineral extraction"]
+  },
+  {
+    "concept": "MiscellaneousUseOfCarbonates",
+    "type": "property_value",
+    "descriptions": ["miscellaneous use of carbonates"]
+  },
+  {
+    "concept": "MunicipalLandfills",
+    "type": "property_value",
+    "descriptions": ["municipal landfills"]
+  },
+  {
+    "concept": "NaturalResource",
+    "type": "property_value",
+    "descriptions": ["natural resource"]
+  },
+  {
+    "concept": "NetForestEmissions",
+    "type": "property_value",
+    "descriptions": ["net forest emissions"]
+  },
+  {
+    "concept": "NetGrasslandEmissions",
+    "type": "property_value",
+    "descriptions": ["net grassland emissions"]
+  },
+  {
+    "concept": "NetWetlandEmissions",
+    "type": "property_value",
+    "descriptions": ["net wetland emissions"]
+  },
+  {
+    "concept": "NitricAcidProduction",
+    "type": "property_value",
+    "descriptions": ["nitric acid production"]
+  },
+  {
+    "concept": "EPA_OtherFullyFluorinatedCompound",
+    "type": "property_value",
+    "descriptions": ["other fully fluorinated compound"]
+  },
+  {
+    "concept": "Hydrofluorocarbon",
+    "type": "property_value",
+    "descriptions": ["hydrofluorocarbon"]
+  },
+  {
+    "concept": "Hydrofluoroether",
+    "type": "property_value",
+    "descriptions": ["hydrofluoroether"]
+  },
+  {
+    "concept": "NitrogenTrifluoride",
+    "type": "property_value",
+    "descriptions": ["nitrogen trifluoride"]
+  },
+  {
+    "concept": "Perfluorocarbon",
+    "type": "property_value",
+    "descriptions": ["perfluorocarbon"]
+  },
+  {
+    "concept": "SulfurHexafluoride",
+    "type": "property_value",
+    "descriptions": ["sulfur hexafluoride"]
+  },
+  {
+    "concept": "VeryShortLivedCompounds",
+    "type": "property_value",
+    "descriptions": ["very short lived compounds"]
+  },
+  {
+    "concept": "NonRoadEnginesAndVehicles",
+    "type": "property_value",
+    "descriptions": ["non road engines and vehicles"]
+  },
+  {
+    "concept": "OilAndGasProduction",
+    "type": "property_value",
+    "descriptions": ["oil and gas production"]
+  },
+  {
+    "concept": "OilAndGasRefining",
+    "type": "property_value",
+    "descriptions": ["oil and gas refining"]
+  },
+  {
+    "concept": "OilAndGas",
+    "type": "property_value",
+    "descriptions": ["oil and gas"]
+  },
+  {
+    "concept": "OpenBurningWaste",
+    "type": "property_value",
+    "descriptions": ["open burning waste"]
+  },
+  {
+    "concept": "ClimateTrace_OtherAgriculturalSoilEmissions",
+    "type": "property_value",
+    "descriptions": ["other agricultural soil emissions"]
+  },
+  {
+    "concept": "ClimateTrace_OtherEnergyUse",
+    "type": "property_value",
+    "descriptions": ["other energy use"]
+  },
+  {
+    "concept": "ClimateTrace_OtherFossilFuelOperations",
+    "type": "property_value",
+    "descriptions": ["other fossil fuel operations"]
+  },
+  {
+    "concept": "ClimateTrace_OtherManufacturing",
+    "type": "property_value",
+    "descriptions": ["other manufacturing"]
+  },
+  {
+    "concept": "ClimateTrace_OtherOnsiteFuelUsage",
+    "type": "property_value",
+    "descriptions": ["other onsite fuel usage"]
+  },
+  {
+    "concept": "ClimateTrace_OtherTransportation",
+    "type": "property_value",
+    "descriptions": ["other transportation"]
+  },
+  {
+    "concept": "PetrochemicalProduction",
+    "type": "property_value",
+    "descriptions": ["petrochemical production"]
+  },
+  {
+    "concept": "PetroleumAndNaturalGasSystems_Processing",
+    "type": "property_value",
+    "descriptions": ["petroleum and natural gas systems processing"]
+  },
+  {
+    "concept": "PetroleumAndNaturalGasSystems_TransmissionOrCompression",
+    "type": "property_value",
+    "descriptions": [
+      "petroleum and natural gas systems transmission or compression"
+    ]
+  },
+  {
+    "concept": "PetroleumAndNaturalGasSystems_UndergroundStorage",
+    "type": "property_value",
+    "descriptions": ["petroleum and natural gas systems underground storage"]
+  },
+  {
+    "concept": "PetroleumAndRelatedIndustries",
+    "type": "property_value",
+    "descriptions": ["petroleum and related industries"]
+  },
+  {
+    "concept": "PetroleumRefining",
+    "type": "property_value",
+    "descriptions": ["petroleum refining"]
+  },
+  { "concept": "Power", "type": "property_value", "descriptions": ["power"] },
+  {
+    "concept": "PrescribedFire",
+    "type": "property_value",
+    "descriptions": ["prescribed fire"]
+  },
+  {
+    "concept": "PulpAndPaperManufacturing",
+    "type": "property_value",
+    "descriptions": ["pulp and paper manufacturing"]
+  },
+  {
+    "concept": "RiceCultivation",
+    "type": "property_value",
+    "descriptions": ["rice cultivation"]
+  },
+  {
+    "concept": "RockQuarry",
+    "type": "property_value",
+    "descriptions": ["rock quarry"]
+  },
+  {
+    "concept": "SandQuarry",
+    "type": "property_value",
+    "descriptions": ["sand quarry"]
+  },
+  {
+    "concept": "SavannaFire",
+    "type": "property_value",
+    "descriptions": ["savanna fire"]
+  },
+  {
+    "concept": "ShrublandFire",
+    "type": "property_value",
+    "descriptions": ["shrubland fire"]
+  },
+  {
+    "concept": "SolidFuelTransformation",
+    "type": "property_value",
+    "descriptions": ["solid fuel transformation"]
+  },
+  {
+    "concept": "SolidWasteDisposal",
+    "type": "property_value",
+    "descriptions": ["solid waste disposal"]
+  },
+  {
+    "concept": "SolventUtilization",
+    "type": "property_value",
+    "descriptions": ["solvent utilization"]
+  },
+  {
+    "concept": "StationaryCombustion",
+    "type": "property_value",
+    "descriptions": ["stationary combustion"]
+  },
+  {
+    "concept": "StationaryFuelCombustion",
+    "type": "property_value",
+    "descriptions": ["stationary fuel combustion"]
+  },
+  {
+    "concept": "SteelManufacturing",
+    "type": "property_value",
+    "descriptions": ["steel manufacturing"]
+  },
+  {
+    "concept": "StorageAndTransport",
+    "type": "property_value",
+    "descriptions": ["storage and transport"]
+  },
+  {
+    "concept": "SyntheticFertilizerApplication",
+    "type": "property_value",
+    "descriptions": ["synthetic fertilizer application"]
+  },
+  {
+    "concept": "Transportation",
+    "type": "property_value",
+    "descriptions": ["transportation"]
+  },
+  {
+    "concept": "UndergroundCoalMines",
+    "type": "property_value",
+    "descriptions": ["underground coal mines"]
+  },
+  {
+    "concept": "WasteDisposalAndRecycling",
+    "type": "property_value",
+    "descriptions": ["waste disposal and recycling"]
+  },
+  {
+    "concept": "WasteManagement",
+    "type": "property_value",
+    "descriptions": ["waste management"]
+  },
+  {
+    "concept": "WastewaterTreatmentAndDischarge",
+    "type": "property_value",
+    "descriptions": ["wastewater treatment and discharge"]
+  },
+  {
+    "concept": "Wildfire",
+    "type": "property_value",
+    "descriptions": ["wild fire"]
+  },
+  {
+    "concept": "OnRoadVehicles",
+    "type": "property_value",
+    "descriptions": ["on road vehicles"]
+  },
+  {
+    "concept": "AutoProducer",
+    "type": "property_value",
+    "descriptions": ["auto producer"]
+  },
+  {
+    "concept": "ElectricityPowerPlants",
+    "type": "property_value",
+    "descriptions": ["electricity power plants"]
+  },
+  {
+    "concept": "CombustibleFuel",
+    "type": "property_value",
+    "descriptions": ["combustible fuel"]
+  },
+  {
+    "concept": "AutoProducerElectricityPowerPlants",
+    "type": "property_value",
+    "descriptions": ["auto producer electricity power plants"]
+  },
+  {
+    "concept": "MainActivityProducerElectricityPowerPlants",
+    "type": "property_value",
+    "descriptions": ["main activity producer electricity power plants"]
+  },
+  {
+    "concept": "EIA_Water",
+    "type": "property_value",
+    "descriptions": ["water"]
+  },
+  {
+    "concept": "SolarPhotovoltaic",
+    "type": "property_value",
+    "descriptions": ["solar photovoltaic"]
+  },
+  {
+    "concept": "MainActivityProducer",
+    "type": "property_value",
+    "descriptions": ["main activity producer"]
+  },
+  { "concept": "Solar", "type": "property_value", "descriptions": ["solar"] },
+  { "concept": "Wind", "type": "property_value", "descriptions": ["wind"] },
+  {
+    "concept": "CrudeOil",
+    "type": "property_value",
+    "descriptions": ["crude oil"]
+  },
+  {
+    "concept": "Refinery",
+    "type": "property_value",
+    "descriptions": ["refinery"]
+  },
+  {
+    "concept": "CoalMines",
+    "type": "property_value",
+    "descriptions": ["coal mines"]
+  },
+  {
+    "concept": "EnergyIndustryOwnUse",
+    "type": "property_value",
+    "descriptions": ["energy industry own use"]
+  },
+  {
+    "concept": "CommerceAndPublicServices",
+    "type": "property_value",
+    "descriptions": ["commerce and public services"]
+  },
+  {
+    "concept": "ConstructionIndustry",
+    "type": "property_value",
+    "descriptions": ["construction industry"]
+  },
+  {
+    "concept": "EnergyIndustry",
+    "type": "property_value",
+    "descriptions": ["energy industry"]
+  },
+  {
+    "concept": "FoodAndTobaccoIndustry",
+    "type": "property_value",
+    "descriptions": ["food and tobacco industry"]
+  },
+  {
+    "concept": "Households",
+    "type": "property_value",
+    "descriptions": ["households"]
+  },
+  {
+    "concept": "Industry",
+    "type": "property_value",
+    "descriptions": ["industry"]
+  },
+  {
+    "concept": "IronSteel",
+    "type": "property_value",
+    "descriptions": ["iron steel"]
+  },
+  {
+    "concept": "MachineryIndustry",
+    "type": "property_value",
+    "descriptions": ["machinery industry"]
+  },
+  {
+    "concept": "MiningAndQuarryingIndustry",
+    "type": "property_value",
+    "descriptions": ["mining and quarrying industry"]
+  },
+  {
+    "concept": "NonFerrousMetalsIndustry",
+    "type": "property_value",
+    "descriptions": ["non ferrous metals industry"]
+  },
+  {
+    "concept": "NonMetallicMineralsIndustry",
+    "type": "property_value",
+    "descriptions": ["non metallic minerals industry"]
+  },
+  {
+    "concept": "OilGasExtraction",
+    "type": "property_value",
+    "descriptions": ["oil gas extraction"]
+  },
+  {
+    "concept": "OilRefineries",
+    "type": "property_value",
+    "descriptions": ["oil refineries"]
+  },
+  {
+    "concept": "PaperPulpPrintIndustry",
+    "type": "property_value",
+    "descriptions": ["paper pulp print industry"]
+  },
+  {
+    "concept": "RailTransport",
+    "type": "property_value",
+    "descriptions": ["rail transport"]
+  },
+  {
+    "concept": "TextileAndLeatherIndustry",
+    "type": "property_value",
+    "descriptions": ["textile and leather industry"]
+  },
+  {
+    "concept": "TransportEquipmentIndustry",
+    "type": "property_value",
+    "descriptions": ["transport equipment industry"]
+  },
+  {
+    "concept": "TransportIndustry",
+    "type": "property_value",
+    "descriptions": ["transport industry"]
+  },
+  {
+    "concept": "UN_OtherIndustry",
+    "type": "property_value",
+    "descriptions": ["other industry"]
+  },
+  {
+    "concept": "UN_OtherManufacturingIndustry",
+    "type": "property_value",
+    "descriptions": ["other manufacturing industry"]
+  },
+  {
+    "concept": "UN_OtherSector",
+    "type": "property_value",
+    "descriptions": ["other sector"]
+  },
+  {
+    "concept": "UN_OtherTransport",
+    "type": "property_value",
+    "descriptions": ["other transport"]
+  },
+  {
+    "concept": "UN_UnspecifiedSector",
+    "type": "property_value",
+    "descriptions": ["unspecified sector"]
+  },
+  {
+    "concept": "WoodAndWoodProductsIndustry",
+    "type": "property_value",
+    "descriptions": ["wood and wood products industry"]
+  },
+  { "concept": "Heat", "type": "property_value", "descriptions": ["heat"] },
+  {
+    "concept": "SolarThermal",
+    "type": "property_value",
+    "descriptions": ["solar thermal"]
+  },
+  {
+    "concept": "FuelTransformation",
+    "type": "property_value",
+    "descriptions": ["fuel transformation"]
+  },
+  {
+    "concept": "DieselOil",
+    "type": "property_value",
+    "descriptions": ["diesel oil"]
+  },
+  {
+    "concept": "EIA_Kerosene",
+    "type": "property_value",
+    "descriptions": ["kerosene"]
+  },
+  {
+    "concept": "FuelOil",
+    "type": "property_value",
+    "descriptions": ["fuel oil"]
+  },
+  {
+    "concept": "Fuelwood",
+    "type": "property_value",
+    "descriptions": ["fuel wood"]
+  },
+  {
+    "concept": "LiquefiedPetroleumGas",
+    "type": "property_value",
+    "descriptions": ["liquefied petroleum gas"]
+  },
+  {
+    "concept": "MotorGasoline",
+    "type": "property_value",
+    "descriptions": ["motor gasoline"]
+  },
+  {
+    "concept": "NaturalGas",
+    "type": "property_value",
+    "descriptions": ["natural gas"]
+  },
+  {
+    "concept": "AutoProducerCombinedHeatPowerPlants",
+    "type": "property_value",
+    "descriptions": ["auto producer combined heat power plants"]
+  },
+  {
+    "concept": "HardCoal",
+    "type": "property_value",
+    "descriptions": ["hard coal"]
+  },
+  {
+    "concept": "AviationGasoline",
+    "type": "property_value",
+    "descriptions": ["aviation gasoline"]
+  },
+  {
+    "concept": "Bagasse",
+    "type": "property_value",
+    "descriptions": ["bagasse"]
+  },
+  {
+    "concept": "BioDiesel",
+    "type": "property_value",
+    "descriptions": ["bio diesel"]
+  },
+  {
+    "concept": "BioGas",
+    "type": "property_value",
+    "descriptions": ["bio gas"]
+  },
+  {
+    "concept": "BioGasoline",
+    "type": "property_value",
+    "descriptions": ["bio gasoline"]
+  },
+  {
+    "concept": "BlastFurnaceGas",
+    "type": "property_value",
+    "descriptions": ["blast furnace gas"]
+  },
+  {
+    "concept": "BlastFurnaces",
+    "type": "property_value",
+    "descriptions": ["blast furnaces"]
+  },
+  {
+    "concept": "CokeOvenCoke",
+    "type": "property_value",
+    "descriptions": ["coke oven coke"]
+  },
+  {
+    "concept": "BrownCoal",
+    "type": "property_value",
+    "descriptions": ["brown coal"]
+  },
+  {
+    "concept": "Charcoal",
+    "type": "property_value",
+    "descriptions": ["charcoal"]
+  },
+  {
+    "concept": "CharcoalPlants",
+    "type": "property_value",
+    "descriptions": ["charcoal plants"]
+  },
+  {
+    "concept": "CokeOvens",
+    "type": "property_value",
+    "descriptions": ["coke ovens"]
+  },
+  {
+    "concept": "DomesticAviationTransport",
+    "type": "property_value",
+    "descriptions": ["domestic aviation transport"]
+  },
+  {
+    "concept": "KeroseneJetFuel",
+    "type": "property_value",
+    "descriptions": ["kerosene jet fuel"]
+  },
+  {
+    "concept": "DomesticNavigationTransport",
+    "type": "property_value",
+    "descriptions": ["domestic navigation transport"]
+  },
+  {
+    "concept": "EIA_AnthraciteCoal",
+    "type": "property_value",
+    "descriptions": ["anthracite coal"]
+  },
+  {
+    "concept": "EIA_BituminousCoal",
+    "type": "property_value",
+    "descriptions": ["bituminous coal"]
+  },
+  {
+    "concept": "NonEnergyUse",
+    "type": "property_value",
+    "descriptions": ["non energy use"]
+  },
+  {
+    "concept": "UN_OtherBituminousCoal",
+    "type": "property_value",
+    "descriptions": ["other bituminous coal"]
+  },
+  {
+    "concept": "RefineryGas",
+    "type": "property_value",
+    "descriptions": ["refinery gas"]
+  },
+  {
+    "concept": "FuelTransformationIndustry",
+    "type": "property_value",
+    "descriptions": ["fuel transformation industry"]
+  },
+  {
+    "concept": "NaturalGasLiquids",
+    "type": "property_value",
+    "descriptions": ["natural gas liquids"]
+  },
+  {
+    "concept": "RefineryFeedstocks",
+    "type": "property_value",
+    "descriptions": ["refinery feedstocks"]
+  },
+  {
+    "concept": "VegetalWaste",
+    "type": "property_value",
+    "descriptions": ["vegetal waste"]
+  },
+  {
+    "concept": "InternationalAviationBunkers",
+    "type": "property_value",
+    "descriptions": ["international aviation bunkers"]
+  },
+  {
+    "concept": "InternationalMarineBunkers",
+    "type": "property_value",
+    "descriptions": ["international marine bunkers"]
+  },
+  {
+    "concept": "Lubricants",
+    "type": "property_value",
+    "descriptions": ["lubricants"]
+  },
+  {
+    "concept": "MainActivityProducerCombinedHeatPowerPlants",
+    "type": "property_value",
+    "descriptions": ["main activity producer combined heat power plants"]
+  },
+  {
+    "concept": "PetroleumCoke",
+    "type": "property_value",
+    "descriptions": ["petroleum coke"]
+  },
+  {
+    "concept": "UN_OtherOilProducts",
+    "type": "property_value",
+    "descriptions": ["other oil products"]
+  },
+  {
+    "concept": "Naphtha",
+    "type": "property_value",
+    "descriptions": ["naphtha"]
+  },
+  {
+    "concept": "ParaffinWaxes",
+    "type": "property_value",
+    "descriptions": ["paraffin waxes"]
+  },
+  {
+    "concept": "RoadTransport",
+    "type": "property_value",
+    "descriptions": ["road transport"]
+  },
+  {
+    "concept": "WhiteSpirit",
+    "type": "property_value",
+    "descriptions": ["white spirit"]
+  },
+  {
+    "concept": "Nuclear",
+    "type": "property_value",
+    "descriptions": ["nuclear"]
+  },
+  {
+    "concept": "AvalancheEvent",
+    "type": "property_value",
+    "descriptions": ["avalanche event"]
+  },
+  {
+    "concept": "ColdWaveEvent",
+    "type": "property_value",
+    "descriptions": ["cold wave event"]
+  },
+  {
+    "concept": "HurricaneEvent",
+    "type": "property_value",
+    "descriptions": ["hurricane event"]
+  },
+  {
+    "concept": "LandslideEvent",
+    "type": "property_value",
+    "descriptions": ["landslide event"]
+  },
+  {
+    "concept": "RiverineFloodingEvent",
+    "type": "property_value",
+    "descriptions": ["riverine flooding event"]
+  },
+  {
+    "concept": "TsunamiEvent",
+    "type": "property_value",
+    "descriptions": ["tsunami event"]
+  },
+  {
+    "concept": "VolcanicActivityEvent",
+    "type": "property_value",
+    "descriptions": ["volcanic activity event"]
+  },
+  {
+    "concept": "ThermalElectricity",
+    "type": "property_value",
+    "descriptions": ["thermal electricity"]
+  },
+  {
+    "concept": "ConventionalHydroelectric",
+    "type": "property_value",
+    "descriptions": ["conventional hydroelectric"]
+  },
+  {
+    "concept": "NonRenewableWaste",
+    "type": "property_value",
+    "descriptions": ["non renewable waste"]
+  },
+  {
+    "concept": "OilProducts",
+    "type": "property_value",
+    "descriptions": ["oil products"]
+  },
+  {
+    "concept": "SolidBioFuel",
+    "type": "property_value",
+    "descriptions": ["solid bio fuel"]
+  },
+  {
+    "concept": "HeatCombustibleFuels",
+    "type": "property_value",
+    "descriptions": ["heat combustible fuels"]
+  },
+  {
+    "concept": "AdditivesOxygenates",
+    "type": "property_value",
+    "descriptions": ["additives oxygenates"]
+  },
+  {
+    "concept": "CokeOvenGas",
+    "type": "property_value",
+    "descriptions": ["coke oven gas"]
+  },
+  {
+    "concept": "CokingCoal",
+    "type": "property_value",
+    "descriptions": ["coking coal"]
+  },
+  {
+    "concept": "LigniteCoal",
+    "type": "property_value",
+    "descriptions": ["lignite coal"]
+  },
+  {
+    "concept": "PetroleumPlants",
+    "type": "property_value",
+    "descriptions": ["petroleum plants"]
+  },
+  {
+    "concept": "MunicipalWaste",
+    "type": "property_value",
+    "descriptions": ["municipal waste"]
+  },
+  {
+    "concept": "GasLostFlaredAndVented",
+    "type": "property_value",
+    "descriptions": ["gas lost flared and vented"]
+  },
+  {
+    "concept": "ElectricPower",
+    "type": "property_value",
+    "descriptions": ["electric power"]
+  },
+  {
+    "concept": "OtherIndustrial",
+    "type": "property_value",
+    "descriptions": ["other industrial"]
+  },
+  {
+    "concept": "EnergyAdditionalResources",
+    "type": "property_value",
+    "descriptions": ["energy additional resources"]
+  },
+  {
+    "concept": "EnergyKnownReserves",
+    "type": "property_value",
+    "descriptions": ["energy known reserves"]
+  },
+  {
+    "concept": "EnergyRecoverableReserves",
+    "type": "property_value",
+    "descriptions": ["energy recoverable reserves"]
+  },
+  {
+    "concept": "FallingWater",
+    "type": "property_value",
+    "descriptions": ["falling water"]
+  },
+  {
+    "concept": "HydraulicResources",
+    "type": "property_value",
+    "descriptions": ["hydraulic resources"]
+  },
+  {
+    "concept": "OilShaleAndTarSands",
+    "type": "property_value",
+    "descriptions": ["oil shale and tar sands"]
+  },
+  {
+    "concept": "Uranium",
+    "type": "property_value",
+    "descriptions": ["uranium"]
+  },
+  {
+    "concept": "EnergyReservesAssured",
+    "type": "property_value",
+    "descriptions": ["energy reserves assured"]
+  },
+  { "concept": "Forage", "type": "property_value", "descriptions": ["forage"] },
+  {
+    "concept": "OtherSpringWheatForGrain",
+    "type": "property_value",
+    "descriptions": ["other spring wheat for grain"]
+  },
+  {
+    "concept": "PrimaryProducer",
+    "type": "property_value",
+    "descriptions": ["primary producer"]
+  },
+  {
+    "concept": "AsianAlone",
+    "type": "property_value",
+    "descriptions": ["asian", "asian alone"]
+  },
+  {
+    "concept": "HispanicOrLatino",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino"]
+  },
+  {
+    "concept": "NativeHawaiianOrOtherPacificIslanderAlone",
+    "type": "property_value",
+    "descriptions": ["native hawaiian or other pacific islander alone"]
+  },
+  {
+    "concept": "TwoOrMoreRaces",
+    "type": "property_value",
+    "descriptions": ["two or more races"]
+  },
+  {
+    "concept": "WhiteAlone",
+    "type": "property_value",
+    "descriptions": ["white", "white alone"]
+  },
+  {
+    "concept": "SorghumForSilageOrGreenchop",
+    "type": "property_value",
+    "descriptions": ["sorghum for silage or greenchop"]
+  },
+  {
+    "concept": "DryEdibleBeans",
+    "type": "property_value",
+    "descriptions": ["dry edible beans"]
+  },
+  { "concept": "Cotton", "type": "property_value", "descriptions": ["cotton"] },
+  {
+    "concept": "DurumWheatForGrain",
+    "type": "property_value",
+    "descriptions": ["durum wheat for grain"]
+  },
+  {
+    "concept": "OatsForGrain",
+    "type": "property_value",
+    "descriptions": ["oats for grain"]
+  },
+  {
+    "concept": "PeanutsForNuts",
+    "type": "property_value",
+    "descriptions": ["peanuts for nuts"]
+  },
+  {
+    "concept": "PimaCotton",
+    "type": "property_value",
+    "descriptions": ["pima cotton"]
+  },
+  {
+    "concept": "Potatoes",
+    "type": "property_value",
+    "descriptions": ["potatoes"]
+  },
+  { "concept": "Rice", "type": "property_value", "descriptions": ["rice"] },
+  {
+    "concept": "SorghumForGrain",
+    "type": "property_value",
+    "descriptions": ["sorghum for grain"]
+  },
+  {
+    "concept": "SugarbeetsForSugar",
+    "type": "property_value",
+    "descriptions": ["sugarbeets for sugar"]
+  },
+  {
+    "concept": "SunflowerSeed",
+    "type": "property_value",
+    "descriptions": ["sunflower seed"]
+  },
+  {
+    "concept": "SweetPotatoes",
+    "type": "property_value",
+    "descriptions": ["sweet potatoes"]
+  },
+  {
+    "concept": "UplandCotton",
+    "type": "property_value",
+    "descriptions": ["upland cotton"]
+  },
+  {
+    "concept": "VegetablesHarvestedForSale",
+    "type": "property_value",
+    "descriptions": ["vegetables harvested for sale"]
+  },
+  {
+    "concept": "WheatForGrain",
+    "type": "property_value",
+    "descriptions": ["wheat for grain"]
+  },
+  {
+    "concept": "WinterWheatForGrain",
+    "type": "property_value",
+    "descriptions": ["winter wheat for grain"]
+  },
+  {
+    "concept": "Cropland",
+    "type": "property_value",
+    "descriptions": ["cropland"]
+  },
+  {
+    "concept": "HarvestedCropland",
+    "type": "property_value",
+    "descriptions": ["harvested cropland"]
+  },
+  {
+    "concept": "IrrigatedLand",
+    "type": "property_value",
+    "descriptions": ["irrigated land"]
+  },
+  { "concept": "Forest", "type": "property_value", "descriptions": ["forest"] },
+  { "concept": "Arson", "type": "property_value", "descriptions": ["arson"] },
+  {
+    "concept": "AsianAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "asian alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "AsianOrPacificIslander",
+    "type": "property_value",
+    "descriptions": ["asian or pacific islander"]
+  },
+  {
+    "concept": "SurfaceLevel",
+    "type": "property_value",
+    "descriptions": ["surface level"]
+  },
+  {
+    "concept": "WithEarnings",
+    "type": "property_value",
+    "descriptions": ["with earnings"]
+  },
+  {
+    "concept": "AdultCorrectionalFacilities",
+    "type": "property_value",
+    "descriptions": ["adult correctional facilities"]
+  },
+  {
+    "concept": "CollegeOrUniversityStudentHousing",
+    "type": "property_value",
+    "descriptions": ["college or university student housing"]
+  },
+  {
+    "concept": "GroupQuarters",
+    "type": "property_value",
+    "descriptions": ["group quarters"]
+  },
+  {
+    "concept": "InstitutionalizedGroupQuarters",
+    "type": "property_value",
+    "descriptions": ["institutionalized group quarters"]
+  },
+  {
+    "concept": "JuvenileFacilities",
+    "type": "property_value",
+    "descriptions": ["juvenile facilities"]
+  },
+  {
+    "concept": "MilitaryQuartersOrMilitaryShips",
+    "type": "property_value",
+    "descriptions": ["military quarters or military ships"]
+  },
+  {
+    "concept": "NoninstitutionalizedGroupQuarters",
+    "type": "property_value",
+    "descriptions": ["noninstitutionalized group quarters"]
+  },
+  {
+    "concept": "NursingFacilities",
+    "type": "property_value",
+    "descriptions": ["nursing facilities"]
+  },
+  {
+    "concept": "FamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["family household"]
+  },
+  {
+    "concept": "WithIncome",
+    "type": "property_value",
+    "descriptions": ["with income"]
+  },
+  {
+    "concept": "MarriedCoupleFamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["married couple family household"]
+  },
+  {
+    "concept": "NonfamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["nonfamily household"]
+  },
+  {
+    "concept": "LiveBirth",
+    "type": "property_value",
+    "descriptions": ["live birth"]
+  },
+  {
+    "concept": "9ThTo12ThGradeNoDiploma",
+    "type": "property_value",
+    "descriptions": ["9 to 12 grade no diploma"]
+  },
+  {
+    "concept": "AssociatesDegree",
+    "type": "property_value",
+    "descriptions": ["associates degree"]
+  },
+  {
+    "concept": "BachelorsDegree",
+    "type": "property_value",
+    "descriptions": ["bachelors degree"]
+  },
+  {
+    "concept": "CDC_EducationalAttainmentUnknownOrNotStated",
+    "type": "property_value",
+    "descriptions": [
+      "educational attainment unknown",
+      "educational attainment not stated"
+    ]
+  },
+  {
+    "concept": "DoctorateDegree&ProfessionalSchoolDegree",
+    "type": "property_value",
+    "descriptions": ["doctorate degree", "professional school degree"]
+  },
+  {
+    "concept": "HighSchoolGraduateGedOrAlternative",
+    "type": "property_value",
+    "descriptions": ["high school graduate"]
+  },
+  {
+    "concept": "LessThan9ThGrade",
+    "type": "property_value",
+    "descriptions": ["less than 9th grade"]
+  },
+  {
+    "concept": "MastersDegree",
+    "type": "property_value",
+    "descriptions": ["masters degree"]
+  },
+  {
+    "concept": "SomeCollegeNoDegree",
+    "type": "property_value",
+    "descriptions": ["some college no degree"]
+  },
+  {
+    "concept": "CDC_EthnicityUnknownOrNotStated",
+    "type": "property_value",
+    "descriptions": ["ethnicity unknown"]
+  },
+  {
+    "concept": "NotHispanicOrLatino",
+    "type": "property_value",
+    "descriptions": ["not hispanic or latino"]
+  },
+  {
+    "concept": "NowMarried",
+    "type": "property_value",
+    "descriptions": ["married"]
+  },
+  {
+    "concept": "Unmarried",
+    "type": "property_value",
+    "descriptions": ["unmarried"]
+  },
+  {
+    "concept": "CDC_NativityUnknownOrNotStated",
+    "type": "property_value",
+    "descriptions": ["nativity unknown"]
+  },
+  {
+    "concept": "USC_ForeignBorn",
+    "type": "property_value",
+    "descriptions": ["foreign born"]
+  },
+  {
+    "concept": "USC_Native",
+    "type": "property_value",
+    "descriptions": ["native"]
+  },
+  {
+    "concept": "AsianIndian",
+    "type": "property_value",
+    "descriptions": ["asian indian"]
+  },
+  {
+    "concept": "Chinese",
+    "type": "property_value",
+    "descriptions": ["chinese"]
+  },
+  {
+    "concept": "Filipino",
+    "type": "property_value",
+    "descriptions": ["filipino"]
+  },
+  {
+    "concept": "GuamanianOrChamorro",
+    "type": "property_value",
+    "descriptions": ["guamanian or chamorro"]
+  },
+  {
+    "concept": "Japanese",
+    "type": "property_value",
+    "descriptions": ["japanese"]
+  },
+  { "concept": "Korean", "type": "property_value", "descriptions": ["korean"] },
+  {
+    "concept": "NativeHawaiian",
+    "type": "property_value",
+    "descriptions": ["native hawaiian"]
+  },
+  {
+    "concept": "OtherAsian",
+    "type": "property_value",
+    "descriptions": ["other asian"]
+  },
+  {
+    "concept": "OtherPacificIslander",
+    "type": "property_value",
+    "descriptions": ["other pacific islander"]
+  },
+  { "concept": "Samoan", "type": "property_value", "descriptions": ["samoan"] },
+  {
+    "concept": "Vietnamese",
+    "type": "property_value",
+    "descriptions": ["vietnamese"]
+  },
+  {
+    "concept": "LandAndBuildings",
+    "type": "property_value",
+    "descriptions": ["land and buildings"]
+  },
+  {
+    "concept": "ElectricUtility",
+    "type": "property_value",
+    "descriptions": ["electric utility"]
+  },
+  {
+    "concept": "IndependentPowerProducers",
+    "type": "property_value",
+    "descriptions": ["independent power producers"]
+  },
+  {
+    "concept": "PetroleumLiquids",
+    "type": "property_value",
+    "descriptions": ["petroleum liquids"]
+  },
+  {
+    "concept": "Commercial",
+    "type": "property_value",
+    "descriptions": ["commercial"]
+  },
+  {
+    "concept": "Industrial",
+    "type": "property_value",
+    "descriptions": ["industrial"]
+  },
+  {
+    "concept": "OtherSector",
+    "type": "property_value",
+    "descriptions": ["other sector"]
+  },
+  {
+    "concept": "Residential",
+    "type": "property_value",
+    "descriptions": ["residential"]
+  },
+  {
+    "concept": "BarleyForGrain",
+    "type": "property_value",
+    "descriptions": ["barley for grain"]
+  },
+  {
+    "concept": "BeefCows",
+    "type": "property_value",
+    "descriptions": ["beef cows"]
+  },
+  {
+    "concept": "Broilers",
+    "type": "property_value",
+    "descriptions": ["broilers"]
+  },
+  {
+    "concept": "Burglary",
+    "type": "property_value",
+    "descriptions": ["burglary"]
+  },
+  {
+    "concept": "COVID_19",
+    "type": "property_value",
+    "descriptions": ["covid 19"]
+  },
+  {
+    "concept": "PatientInICU",
+    "type": "property_value",
+    "descriptions": ["patient in ICU"]
+  },
+  {
+    "concept": "VaccineAdministered",
+    "type": "property_value",
+    "descriptions": ["vaccine administered"]
+  },
+  {
+    "concept": "CattleAndCalves",
+    "type": "property_value",
+    "descriptions": ["cattle and calves"]
+  },
+  {
+    "concept": "SmokePM2.5",
+    "type": "property_value",
+    "descriptions": ["smoke pm 2.5"]
+  },
+  {
+    "concept": "CommercialCogen",
+    "type": "property_value",
+    "descriptions": ["commercial cogen"]
+  },
+  {
+    "concept": "ElectricUtilityCogen",
+    "type": "property_value",
+    "descriptions": ["electric utility cogen"]
+  },
+  {
+    "concept": "UsefulThermalOutputInCHPSystem",
+    "type": "property_value",
+    "descriptions": ["useful thermal output in chp system"]
+  },
+  {
+    "concept": "CornForGrain",
+    "type": "property_value",
+    "descriptions": ["corn for grain"]
+  },
+  { "concept": "AIDS", "type": "property_value", "descriptions": ["aids"] },
+  {
+    "concept": "HepatitisA__AcuteCondition",
+    "type": "property_value",
+    "descriptions": ["acute hepatitis a"]
+  },
+  {
+    "concept": "HepatitisB__AcuteCondition",
+    "type": "property_value",
+    "descriptions": ["acute hepatitis b"]
+  },
+  {
+    "concept": "HepatitisC__AcuteCondition",
+    "type": "property_value",
+    "descriptions": ["acute hepatitis c"]
+  },
+  {
+    "concept": "ConfirmedCase",
+    "type": "property_value",
+    "descriptions": ["confirmed case"]
+  },
+  {
+    "concept": "ProbableCase",
+    "type": "property_value",
+    "descriptions": ["probable case"]
+  },
+  {
+    "concept": "HumanGranulocyticAnaplasmosis",
+    "type": "property_value",
+    "descriptions": ["human granulocytic anaplasmosis"]
+  },
+  {
+    "concept": "Botulism",
+    "type": "property_value",
+    "descriptions": ["botulism"]
+  },
+  {
+    "concept": "Brucellosis",
+    "type": "property_value",
+    "descriptions": ["brucellosis"]
+  },
+  {
+    "concept": "Campylobacteriosis",
+    "type": "property_value",
+    "descriptions": ["campylobacteriosis"]
+  },
+  {
+    "concept": "Chickenpox",
+    "type": "property_value",
+    "descriptions": ["chickenpox"]
+  },
+  {
+    "concept": "Chikungunya",
+    "type": "property_value",
+    "descriptions": ["chikungunya"]
+  },
+  {
+    "concept": "Chlamydia",
+    "type": "property_value",
+    "descriptions": ["chlamydia"]
+  },
+  {
+    "concept": "BuildingStructureAndContents",
+    "type": "property_value",
+    "descriptions": ["building structure and contents"]
+  },
+  {
+    "concept": "Listeriosis",
+    "type": "property_value",
+    "descriptions": ["listeriosis"]
+  },
+  {
+    "concept": "VibriosisExcludingCholera",
+    "type": "property_value",
+    "descriptions": ["vibriosis excluding cholera"]
+  },
+  {
+    "concept": "CongenitalSyphilis",
+    "type": "property_value",
+    "descriptions": ["congenital syphilis"]
+  },
+  {
+    "concept": "Cryptosporidiosis",
+    "type": "property_value",
+    "descriptions": ["cryptosporidiosis"]
+  },
+  {
+    "concept": "ExtratropicalCyclone",
+    "type": "property_value",
+    "descriptions": ["extratropical cyclone"]
+  },
+  {
+    "concept": "SubtropicalStorm",
+    "type": "property_value",
+    "descriptions": ["subtropical storm"]
+  },
+  {
+    "concept": "TropicalDisturbance",
+    "type": "property_value",
+    "descriptions": ["tropical disturbance"]
+  },
+  {
+    "concept": "TropicalStorm",
+    "type": "property_value",
+    "descriptions": ["tropical storm"]
+  },
+  {
+    "concept": "Cyclosporiasis",
+    "type": "property_value",
+    "descriptions": ["cyclosporiasis"]
+  },
+  {
+    "concept": "DengueDisease",
+    "type": "property_value",
+    "descriptions": ["dengue disease"]
+  },
+  {
+    "concept": "HumanMonocyticEhrlichiosis",
+    "type": "property_value",
+    "descriptions": ["human monocytic ehrlichiosis"]
+  },
+  {
+    "concept": "ExemptFromFederalIncomeTax",
+    "type": "property_value",
+    "descriptions": ["exempt from federal income tax"]
+  },
+  {
+    "concept": "SubjectToFederalIncomeTax",
+    "type": "property_value",
+    "descriptions": ["subject to federal income tax"]
+  },
+  {
+    "concept": "NAICS/7132",
+    "type": "property_value",
+    "descriptions": ["Gambling industries"]
+  },
+  {
+    "concept": "NAICS/101",
+    "type": "property_value",
+    "descriptions": ["Goods producing"]
+  },
+  {
+    "concept": "NAICS/31",
+    "type": "property_value",
+    "descriptions": ["Manufacturing"]
+  },
+  {
+    "concept": "USC_MerchantWholesalers",
+    "type": "property_value",
+    "descriptions": ["merchant wholesalers"]
+  },
+  {
+    "concept": "NAICS/92",
+    "type": "property_value",
+    "descriptions": ["Public administration"]
+  },
+  {
+    "concept": "NAICS/44",
+    "type": "property_value",
+    "descriptions": ["Retail trade"]
+  },
+  {
+    "concept": "NAICS/102",
+    "type": "property_value",
+    "descriptions": ["Service providing"]
+  },
+  {
+    "concept": "NAICS/10",
+    "type": "property_value",
+    "descriptions": ["all industries"]
+  },
+  {
+    "concept": "NAICS/48",
+    "type": "property_value",
+    "descriptions": ["Transportation and warehousing"]
+  },
+  {
+    "concept": "NAICS/99",
+    "type": "property_value",
+    "descriptions": ["Unclassified"]
+  },
+  {
+    "concept": "ReportedIncome",
+    "type": "property_value",
+    "descriptions": ["reported income"]
+  },
+  {
+    "concept": "ReportedNetIncome",
+    "type": "property_value",
+    "descriptions": ["reported net income"]
+  },
+  {
+    "concept": "Giardiasis",
+    "type": "property_value",
+    "descriptions": ["giardiasis"]
+  },
+  {
+    "concept": "Gonorrhea",
+    "type": "property_value",
+    "descriptions": ["gonorrhea"]
+  },
+  {
+    "concept": "HIV_AIDS",
+    "type": "property_value",
+    "descriptions": ["hiv", "aids"]
+  },
+  {
+    "concept": "HaemophilusInfluenzae__InvasiveDisease",
+    "type": "property_value",
+    "descriptions": ["haemophilus influenzae invasive disease"]
+  },
+  {
+    "concept": "YearsUpto5",
+    "type": "property_value",
+    "descriptions": ["up to 5 years old"]
+  },
+  {
+    "concept": "NonSerotypeB",
+    "type": "property_value",
+    "descriptions": ["non serotype b"]
+  },
+  {
+    "concept": "UnknownSerotype",
+    "type": "property_value",
+    "descriptions": ["unknown serotype"]
+  },
+  {
+    "concept": "HemolyticUremicSyndrome__PostDiarrheal",
+    "type": "property_value",
+    "descriptions": ["hemolytic uremic syndrome post diarrheal"]
+  },
+  {
+    "concept": "AvailableVehicles0",
+    "type": "property_value",
+    "descriptions": ["no vehicles"]
+  },
+  {
+    "concept": "AvailableVehicles1",
+    "type": "property_value",
+    "descriptions": ["1 vehicles"]
+  },
+  {
+    "concept": "AvailableVehicles2",
+    "type": "property_value",
+    "descriptions": ["2 vehicles"]
+  },
+  {
+    "concept": "AvailableVehicles3",
+    "type": "property_value",
+    "descriptions": ["3 vehicles"]
+  },
+  {
+    "concept": "AvailableVehicles4Onwards",
+    "type": "property_value",
+    "descriptions": ["4 or more vehicles"]
+  },
+  {
+    "concept": "AsianAndPacificIslandLanguages",
+    "type": "property_value",
+    "descriptions": ["asian and pacific island languages"]
+  },
+  {
+    "concept": "BroadbandInternetSuchAsCableFiberOpticOrDsl",
+    "type": "property_value",
+    "descriptions": ["broadband internet", "cable fiber optic", "dsl"]
+  },
+  {
+    "concept": "BroadbandInternetSuchAsCableFiberOpticOrDslOnly",
+    "type": "property_value",
+    "descriptions": ["broadband internet such as cable fiber optic or dsl only"]
+  },
+  {
+    "concept": "BroadbandInternetOfAnyType",
+    "type": "property_value",
+    "descriptions": ["broadband internet of any type"]
+  },
+  {
+    "concept": "CellularData",
+    "type": "property_value",
+    "descriptions": ["cellular data"]
+  },
+  {
+    "concept": "CellularDataOnly",
+    "type": "property_value",
+    "descriptions": ["cellular data only"]
+  },
+  {
+    "concept": "DialUpInternetOnly",
+    "type": "property_value",
+    "descriptions": ["dial up internet only"]
+  },
+  {
+    "concept": "Worker3Onwards",
+    "type": "property_value",
+    "descriptions": ["3 or more workers"]
+  },
+  {
+    "concept": "BelowPovertyLevelInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["below poverty level", "poor"]
+  },
+  {
+    "concept": "Years65Onwards",
+    "type": "property_value",
+    "descriptions": ["more than 65 years old"]
+  },
+  {
+    "concept": "BachelorsDegreeOrHigher",
+    "type": "property_value",
+    "descriptions": ["bachelors degree or higher"]
+  },
+  {
+    "concept": "USC_FullTimeYearRoundWorker",
+    "type": "property_value",
+    "descriptions": ["full time worker"]
+  },
+  {
+    "concept": "HighSchoolGraduateIncludesEquivalency",
+    "type": "property_value",
+    "descriptions": ["high school graduate"]
+  },
+  {
+    "concept": "LessThanHighSchoolGraduate",
+    "type": "property_value",
+    "descriptions": ["less than high school graduate"]
+  },
+  {
+    "concept": "OwnerOccupied",
+    "type": "property_value",
+    "descriptions": ["owner occupied"]
+  },
+  {
+    "concept": "RenterOccupied",
+    "type": "property_value",
+    "descriptions": ["renter occupied"]
+  },
+  {
+    "concept": "SomeCollegeOrAssociatesDegree",
+    "type": "property_value",
+    "descriptions": ["some college or associates degree"]
+  },
+  {
+    "concept": "SomeOtherRaceAlone",
+    "type": "property_value",
+    "descriptions": ["some other race alone"]
+  },
+  {
+    "concept": "WhiteAloneNotHispanicOrLatino",
+    "type": "property_value",
+    "descriptions": ["white alone not hispanic or latino"]
+  },
+  {
+    "concept": "Worker0",
+    "type": "property_value",
+    "descriptions": ["no worker"]
+  },
+  {
+    "concept": "Worker1",
+    "type": "property_value",
+    "descriptions": ["1 worker"]
+  },
+  {
+    "concept": "Worker2",
+    "type": "property_value",
+    "descriptions": ["2 workers"]
+  },
+  { "concept": "africa", "type": "property_value", "descriptions": ["africa"] },
+  { "concept": "asia", "type": "property_value", "descriptions": ["asia"] },
+  {
+    "concept": "Caribbean",
+    "type": "property_value",
+    "descriptions": ["caribbean"]
+  },
+  {
+    "concept": "CentralAmericaExceptMexico",
+    "type": "property_value",
+    "descriptions": ["central america except mexico"]
+  },
+  {
+    "concept": "country/MEX",
+    "type": "property_value",
+    "descriptions": ["Mexico"]
+  },
+  {
+    "concept": "EasternAsia",
+    "type": "property_value",
+    "descriptions": ["eastern asia"]
+  },
+  { "concept": "europe", "type": "property_value", "descriptions": ["europe"] },
+  {
+    "concept": "LatinAmerica",
+    "type": "property_value",
+    "descriptions": ["latin america"]
+  },
+  {
+    "concept": "northamerica",
+    "type": "property_value",
+    "descriptions": ["northamerica"]
+  },
+  {
+    "concept": "NorthernWesternEurope",
+    "type": "property_value",
+    "descriptions": ["northern western europe"]
+  },
+  {
+    "concept": "oceania",
+    "type": "property_value",
+    "descriptions": ["oceania"]
+  },
+  {
+    "concept": "SouthCentralAsia",
+    "type": "property_value",
+    "descriptions": ["south central asia"]
+  },
+  {
+    "concept": "SouthEasternAsia",
+    "type": "property_value",
+    "descriptions": ["south eastern asia"]
+  },
+  {
+    "concept": "southamerica",
+    "type": "property_value",
+    "descriptions": ["south america"]
+  },
+  {
+    "concept": "SouthernEasternEurope",
+    "type": "property_value",
+    "descriptions": ["southern eastern europe"]
+  },
+  {
+    "concept": "WesternAsia",
+    "type": "property_value",
+    "descriptions": ["western asia"]
+  },
+  {
+    "concept": "NoInternetAccess",
+    "type": "property_value",
+    "descriptions": ["no internet access"]
+  },
+  {
+    "concept": "WithInternetSubscription",
+    "type": "property_value",
+    "descriptions": ["with internet subscription"]
+  },
+  {
+    "concept": "Houseless",
+    "type": "property_value",
+    "descriptions": ["houseless"]
+  },
+  { "concept": "Rural", "type": "property_value", "descriptions": ["rural"] },
+  { "concept": "Urban", "type": "property_value", "descriptions": ["urban"] },
+  {
+    "concept": "hasComputer",
+    "type": "property_value",
+    "descriptions": ["has computer"]
+  },
+  {
+    "concept": "noComputer",
+    "type": "property_value",
+    "descriptions": ["no computer"]
+  },
+  {
+    "concept": "LimitedEnglishSpeakingHousehold",
+    "type": "property_value",
+    "descriptions": ["limited english speaking household"]
+  },
+  {
+    "concept": "OtherIndoEuropeanLanguages",
+    "type": "property_value",
+    "descriptions": ["other indo european languages"]
+  },
+  {
+    "concept": "OtherLanguages",
+    "type": "property_value",
+    "descriptions": ["other languages"]
+  },
+  {
+    "concept": "Spanish",
+    "type": "property_value",
+    "descriptions": ["spanish"]
+  },
+  {
+    "concept": "MobileHomesAndAllOtherTypesOfUnits",
+    "type": "property_value",
+    "descriptions": ["mobile homes and all other types of units"]
+  },
+  {
+    "concept": "SingleUnit",
+    "type": "property_value",
+    "descriptions": ["single unit"]
+  },
+  {
+    "concept": "TwoOrMoreUnits",
+    "type": "property_value",
+    "descriptions": ["two or more units"]
+  },
+  {
+    "concept": "OtherFamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["other family household"]
+  },
+  {
+    "concept": "OtherInternetServiceOnly",
+    "type": "property_value",
+    "descriptions": ["other internet service only"]
+  },
+  {
+    "concept": "ScheduledCaste",
+    "type": "property_value",
+    "descriptions": ["scheduled caste"]
+  },
+  {
+    "concept": "ScheduledTribe",
+    "type": "property_value",
+    "descriptions": ["scheduled tribe"]
+  },
+  {
+    "concept": "SatelliteInternetService",
+    "type": "property_value",
+    "descriptions": ["satellite internet service"]
+  },
+  {
+    "concept": "SatelliteInternetServiceWithNoOtherTypeOfInternetSubscription",
+    "type": "property_value",
+    "descriptions": [
+      "satellite internet service with no other type of internet subscription"
+    ]
+  },
+  {
+    "concept": "SingleFatherFamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["single father family household"]
+  },
+  {
+    "concept": "SingleMotherFamilyHousehold",
+    "type": "property_value",
+    "descriptions": ["single mother family household"]
+  },
+  {
+    "concept": "WithCashAssistanceInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["with cash assistance"]
+  },
+  {
+    "concept": "NoWorkersInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["no workers"]
+  },
+  {
+    "concept": "OneWorkerInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["one worker"]
+  },
+  {
+    "concept": "TwoOrMoreWorkersInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["two or more workers"]
+  },
+  {
+    "concept": "WithPeopleOver60",
+    "type": "property_value",
+    "descriptions": ["with people over 60 years old"]
+  },
+  {
+    "concept": "WithoutPeopleOver60",
+    "type": "property_value",
+    "descriptions": ["without people over 60 years old"]
+  },
+  {
+    "concept": "WithRetirementIncomeInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["with retirement incomes"]
+  },
+  {
+    "concept": "WithSSIInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["Received Supplemental Security Income"]
+  },
+  {
+    "concept": "AmericanIndianAndAlaskaNativeAlone",
+    "type": "property_value",
+    "descriptions": ["american indian and alaska native alone"]
+  },
+  {
+    "concept": "OccupiedHousingUnit",
+    "type": "property_value",
+    "descriptions": ["occupied housing unit"]
+  },
+  {
+    "concept": "CompleteKitchenFacilities",
+    "type": "property_value",
+    "descriptions": ["complete kitchen facilities"]
+  },
+  {
+    "concept": "CompletePlumbingFacilities",
+    "type": "property_value",
+    "descriptions": ["complete plumbing facilities"]
+  },
+  {
+    "concept": "IncompleteKitchenFacilities",
+    "type": "property_value",
+    "descriptions": ["incomplete kitchen facilities"]
+  },
+  {
+    "concept": "IncompletePlumbingFacilities",
+    "type": "property_value",
+    "descriptions": ["incomplete plumbing facilities"]
+  },
+  {
+    "concept": "NativeHawaiianAndOtherPacificIslanderAlone",
+    "type": "property_value",
+    "descriptions": ["native hawaiian and other pacific islander alone"]
+  },
+  {
+    "concept": "NoCashRent",
+    "type": "property_value",
+    "descriptions": ["no cash rent"]
+  },
+  {
+    "concept": "WithCashRent",
+    "type": "property_value",
+    "descriptions": ["with cash rent"]
+  },
+  {
+    "concept": "WithMortgage",
+    "type": "property_value",
+    "descriptions": ["with mortgage"]
+  },
+  {
+    "concept": "WithoutMortgage",
+    "type": "property_value",
+    "descriptions": ["without mortgage"]
+  },
+  {
+    "concept": "InfantBotulism",
+    "type": "property_value",
+    "descriptions": ["infant botulism"]
+  },
+  {
+    "concept": "Influenza",
+    "type": "property_value",
+    "descriptions": ["influenza"]
+  },
+  {
+    "concept": "PediatricMortality",
+    "type": "property_value",
+    "descriptions": ["pediatric mortality"]
+  },
+  {
+    "concept": "StreptococcusPneumonia__InvasiveDisease",
+    "type": "property_value",
+    "descriptions": ["streptococcus pneumonia invasive disease"]
+  },
+  {
+    "concept": "StreptococcusPneumonia",
+    "type": "property_value",
+    "descriptions": ["streptococcus pneumonia"]
+  },
+  {
+    "concept": "LegionnairesDisease",
+    "type": "property_value",
+    "descriptions": ["legionnaires disease"]
+  },
+  {
+    "concept": "LymeDisease",
+    "type": "property_value",
+    "descriptions": ["lyme disease"]
+  },
+  {
+    "concept": "Malaria",
+    "type": "property_value",
+    "descriptions": ["malaria"]
+  },
+  {
+    "concept": "Measles",
+    "type": "property_value",
+    "descriptions": ["measles"]
+  },
+  {
+    "concept": "PatientDeceased",
+    "type": "property_value",
+    "descriptions": ["patient deceased"]
+  },
+  {
+    "concept": "AnimalContactTransmission",
+    "type": "property_value",
+    "descriptions": ["animal contact transmission"]
+  },
+  {
+    "concept": "FoodborneTransmission",
+    "type": "property_value",
+    "descriptions": ["foodborne transmission"]
+  },
+  {
+    "concept": "IndeterminateOrOtherOrUnknownTramissionMode",
+    "type": "property_value",
+    "descriptions": ["indeterminate or other or unknown tramission mode"]
+  },
+  {
+    "concept": "PersonToPersonTransmission",
+    "type": "property_value",
+    "descriptions": ["person to person transmission"]
+  },
+  {
+    "concept": "WaterborneTransmission",
+    "type": "property_value",
+    "descriptions": ["waterborne transmission"]
+  },
+  {
+    "concept": "Diabetic",
+    "type": "property_value",
+    "descriptions": ["diabetic"]
+  },
+  {
+    "concept": "DAD_Black",
+    "type": "property_value",
+    "descriptions": ["black"]
+  },
+  {
+    "concept": "DAD_NonBlack",
+    "type": "property_value",
+    "descriptions": ["non black"]
+  },
+  {
+    "concept": "MedicareA",
+    "type": "property_value",
+    "descriptions": ["medicare a"]
+  },
+  {
+    "concept": "MedicareB",
+    "type": "property_value",
+    "descriptions": ["medicare b"]
+  },
+  {
+    "concept": "MeningococcalMeningitis",
+    "type": "property_value",
+    "descriptions": ["meningococcal meningitis"]
+  },
+  {
+    "concept": "UnknownSerogroups",
+    "type": "property_value",
+    "descriptions": ["unknown serogroups"]
+  },
+  {
+    "concept": "Incarcerated",
+    "type": "property_value",
+    "descriptions": ["incarcerated"]
+  },
+  {
+    "concept": "Accidents(UnintentionalInjuries)",
+    "type": "property_value",
+    "descriptions": ["accidents", "unintentional injuries"]
+  },
+  {
+    "concept": "Assault(Homicide)",
+    "type": "property_value",
+    "descriptions": ["assault", "homicide"]
+  },
+  {
+    "concept": "DeathDueToAnotherPerson",
+    "type": "property_value",
+    "descriptions": ["death due to another person"]
+  },
+  {
+    "concept": "IllnessOrNaturalCause",
+    "type": "property_value",
+    "descriptions": ["illness or natural cause"]
+  },
+  {
+    "concept": "IntentionalSelf-Harm(Suicide)",
+    "type": "property_value",
+    "descriptions": ["intentional self harm", "suicide"]
+  },
+  {
+    "concept": "JudicialExecution",
+    "type": "property_value",
+    "descriptions": ["judicial execution"]
+  },
+  {
+    "concept": "NPSOtherCauseOfDeath",
+    "type": "property_value",
+    "descriptions": ["other cause of death"]
+  },
+  {
+    "concept": "YearsUpto1",
+    "type": "property_value",
+    "descriptions": ["younger than 1 year"]
+  },
+  {
+    "concept": "ICD10/P00-P96",
+    "type": "property_value",
+    "descriptions": ["conditions originating in the perinatal period"]
+  },
+  {
+    "concept": "CDC_BlackOrAfricanAmerican",
+    "type": "property_value",
+    "descriptions": ["black or african american"]
+  },
+  {
+    "concept": "CDC_White",
+    "type": "property_value",
+    "descriptions": ["white"]
+  },
+  {
+    "concept": "ICD10/Q00-Q99",
+    "type": "property_value",
+    "descriptions": [
+      "Congenital malformations, deformations and chromosomal abnormalities"
+    ]
+  },
+  {
+    "concept": "YearsUpto14",
+    "type": "property_value",
+    "descriptions": ["younger than 14 years old"]
+  },
+  {
+    "concept": "ICD10/A00-B99",
+    "type": "property_value",
+    "descriptions": ["Certain infectious and parasitic diseases"]
+  },
+  {
+    "concept": "CDC_AsianOrPacificIslander",
+    "type": "property_value",
+    "descriptions": ["asian or pacific islander"]
+  },
+  {
+    "concept": "CDC_AmericanIndianAndAlaskaNativeAlone",
+    "type": "property_value",
+    "descriptions": ["american indian and alaska native alone"]
+  },
+  {
+    "concept": "ICD10/C00-D48",
+    "type": "property_value",
+    "descriptions": ["Neoplasms"]
+  },
+  {
+    "concept": "ICD10/D50-D89",
+    "type": "property_value",
+    "descriptions": [
+      "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+    ]
+  },
+  {
+    "concept": "ICD10/E00-E88",
+    "type": "property_value",
+    "descriptions": ["Endocrine, nutritional and metabolic diseases"]
+  },
+  {
+    "concept": "ICD10/F01-F99",
+    "type": "property_value",
+    "descriptions": ["Mental and behavioural disorders"]
+  },
+  {
+    "concept": "ICD10/G00-G98",
+    "type": "property_value",
+    "descriptions": ["Diseases of the nervous system"]
+  },
+  {
+    "concept": "ICD10/I00-I99",
+    "type": "property_value",
+    "descriptions": ["Diseases of the circulatory system"]
+  },
+  {
+    "concept": "ICD10/J00-J98",
+    "type": "property_value",
+    "descriptions": ["Diseases of the respiratory system"]
+  },
+  {
+    "concept": "ICD10/K00-K92",
+    "type": "property_value",
+    "descriptions": ["Diseases of the digestive system"]
+  },
+  {
+    "concept": "ICD10/L00-L98",
+    "type": "property_value",
+    "descriptions": ["Diseases of the skin and subcutaneous tissue"]
+  },
+  {
+    "concept": "ICD10/M00-M99",
+    "type": "property_value",
+    "descriptions": [
+      "Diseases of the musculoskeletal system and connective tissue"
+    ]
+  },
+  {
+    "concept": "ICD10/N00-N98",
+    "type": "property_value",
+    "descriptions": ["Diseases of the genitourinary system"]
+  },
+  {
+    "concept": "ICD10/R00-R99",
+    "type": "property_value",
+    "descriptions": [
+      "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
+    ]
+  },
+  {
+    "concept": "ICD10/V01-Y89",
+    "type": "property_value",
+    "descriptions": ["External causes of morbidity and mortality"]
+  },
+  {
+    "concept": "Years85",
+    "type": "property_value",
+    "descriptions": ["85 years old"]
+  },
+  { "concept": "Mumps", "type": "property_value", "descriptions": ["mumps"] },
+  {
+    "concept": "WestNileVirusDisease__NeuroinvasiveDisease",
+    "type": "property_value",
+    "descriptions": ["west nile virus disease neuroinvasive disease"]
+  },
+  {
+    "concept": "Pertussis",
+    "type": "property_value",
+    "descriptions": ["pertussis"]
+  },
+  {
+    "concept": "SpottedFeverRickettsiosisIncludingRockyMountainSpottedFever",
+    "type": "property_value",
+    "descriptions": [
+      "spotted fever rickettsiosis including rocky mountain spotted fever"
+    ]
+  },
+  {
+    "concept": "SpottedFeverRickettsiosis",
+    "type": "property_value",
+    "descriptions": ["spotted fever rickettsiosis"]
+  },
+  {
+    "concept": "QFever",
+    "type": "property_value",
+    "descriptions": ["q fever"]
+  },
+  {
+    "concept": "QFever__AcuteCondition",
+    "type": "property_value",
+    "descriptions": ["q fever acute condition"]
+  },
+  {
+    "concept": "Rabiesinhuman",
+    "type": "property_value",
+    "descriptions": ["rabies in human"]
+  },
+  {
+    "concept": "SalmonellosisExceptTyphiAndParatyphi",
+    "type": "property_value",
+    "descriptions": ["salmonellosis except typhi and paratyphi"]
+  },
+  {
+    "concept": "ShigaToxinEColi",
+    "type": "property_value",
+    "descriptions": ["Shiga Toxin E coli"]
+  },
+  {
+    "concept": "Shigellosis",
+    "type": "property_value",
+    "descriptions": ["shigellosis"]
+  },
+  {
+    "concept": "UtilityScale",
+    "type": "property_value",
+    "descriptions": ["utility scale"]
+  },
+  {
+    "concept": "NonUtility",
+    "type": "property_value",
+    "descriptions": ["non utility"]
+  },
+  {
+    "concept": "Demographics",
+    "type": "property_value",
+    "descriptions": ["demographics"]
+  },
+  {
+    "concept": "Economy",
+    "type": "property_value",
+    "descriptions": ["economy"]
+  },
+  {
+    "concept": "HealthAndEducation",
+    "type": "property_value",
+    "descriptions": ["health and education"]
+  },
+  {
+    "concept": "AdultEducation",
+    "type": "property_value",
+    "descriptions": ["adult education"]
+  },
+  {
+    "concept": "PrivateSchool",
+    "type": "property_value",
+    "descriptions": ["private school"]
+  },
+  {
+    "concept": "PublicSchool",
+    "type": "property_value",
+    "descriptions": ["public school"]
+  },
+  {
+    "concept": "BRA_HighSchool",
+    "type": "property_value",
+    "descriptions": ["high school"]
+  },
+  {
+    "concept": "Brazil_PreVestibular",
+    "type": "property_value",
+    "descriptions": ["pre vestibular"]
+  },
+  {
+    "concept": "LiteracyCourse",
+    "type": "property_value",
+    "descriptions": ["literacy course"]
+  },
+  {
+    "concept": "MastersDegreeOrHigher",
+    "type": "property_value",
+    "descriptions": ["masters degree or higher"]
+  },
+  {
+    "concept": "Nursery",
+    "type": "property_value",
+    "descriptions": ["nursery"]
+  },
+  {
+    "concept": "PreKindergarten",
+    "type": "property_value",
+    "descriptions": ["pre kindergarten"]
+  },
+  {
+    "concept": "PrimaryEducation",
+    "type": "property_value",
+    "descriptions": ["primary education"]
+  },
+  {
+    "concept": "Syphilis",
+    "type": "property_value",
+    "descriptions": ["syphilis"]
+  },
+  {
+    "concept": "SyphilisPrimaryAndSecondary",
+    "type": "property_value",
+    "descriptions": ["syphilis primary and secondary"]
+  },
+  {
+    "concept": "Tetanus",
+    "type": "property_value",
+    "descriptions": ["tetanus"]
+  },
+  {
+    "concept": "Tuberculosis",
+    "type": "property_value",
+    "descriptions": ["tuberculosis"]
+  },
+  {
+    "concept": "Tularemia",
+    "type": "property_value",
+    "descriptions": ["tularemia"]
+  },
+  {
+    "concept": "TyphoidFever",
+    "type": "property_value",
+    "descriptions": ["typhoid fever"]
+  },
+  {
+    "concept": "StateUnemploymentInsuranceOrShortTimeCompensation",
+    "type": "property_value",
+    "descriptions": ["state unemployment insurance", "short time compensation"]
+  },
+  {
+    "concept": "ContinuedClaim",
+    "type": "property_value",
+    "descriptions": ["continued claim"]
+  },
+  {
+    "concept": "ShortTimeCompensation",
+    "type": "property_value",
+    "descriptions": ["short time compensation"]
+  },
+  {
+    "concept": "InitialClaim",
+    "type": "property_value",
+    "descriptions": ["initial claim"]
+  },
+  {
+    "concept": "StateUnemploymentInsurance",
+    "type": "property_value",
+    "descriptions": ["state unemployment insurance"]
+  },
+  {
+    "concept": "InitialClaimExcludingIntrastateTransitional",
+    "type": "property_value",
+    "descriptions": ["initial claim excluding intrastate transitional"]
+  },
+  {
+    "concept": "UCXOnly",
+    "type": "property_value",
+    "descriptions": ["ucx only program"]
+  },
+  {
+    "concept": "UCFENoStateUnemploymentInsurance",
+    "type": "property_value",
+    "descriptions": [
+      "Unemployment Compensation for Federal Employees, not in conjunction with any State Unemployment Insurance program"
+    ]
+  },
+  {
+    "concept": "WestNileVirusDisease__NonNeuroinvasiveDisease",
+    "type": "property_value",
+    "descriptions": ["west nile virus disease non neuroinvasive disease"]
+  },
+  {
+    "concept": "ZikaVirusDisease__NonCongenitalDisease",
+    "type": "property_value",
+    "descriptions": ["zika virus disease non congenital disease"]
+  },
+  {
+    "concept": "ZikaVirusInfection__NonCongenitalDisease",
+    "type": "property_value",
+    "descriptions": ["zika virus infection non congenital disease"]
+  },
+  {
+    "concept": "MeningococcalMeningitis__InvasiveDisease",
+    "type": "property_value",
+    "descriptions": ["meningococcal meningitis invasive disease"]
+  },
+  {
+    "concept": "GroceryStore&Pharmacy",
+    "type": "property_value",
+    "descriptions": ["grocery store and pharmacy"]
+  },
+  {
+    "concept": "LocalBusiness",
+    "type": "property_value",
+    "descriptions": ["local business"]
+  },
+  { "concept": "Park", "type": "property_value", "descriptions": ["park"] },
+  {
+    "concept": "Residence",
+    "type": "property_value",
+    "descriptions": ["residence"]
+  },
+  {
+    "concept": "TransportHub",
+    "type": "property_value",
+    "descriptions": ["transport hub"]
+  },
+  {
+    "concept": "Workplace",
+    "type": "property_value",
+    "descriptions": ["workplace"]
+  },
+  {
+    "concept": "UCR_CombinedCrime",
+    "type": "property_value",
+    "descriptions": ["all crime"]
+  },
+  {
+    "concept": "ConfirmedOrProbableCase",
+    "type": "property_value",
+    "descriptions": ["confirmed or probable case"]
+  },
+  {
+    "concept": "WithDirectPurchaseHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["with direct purchase health insurance"]
+  },
+  {
+    "concept": "BLS_InLaborForce",
+    "type": "property_value",
+    "descriptions": ["in labor force"]
+  },
+  {
+    "concept": "DivorcedInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["divorced in the past12 months"]
+  },
+  {
+    "concept": "Divorced",
+    "type": "property_value",
+    "descriptions": ["divorced"]
+  },
+  {
+    "concept": "PrimarySchool",
+    "type": "property_value",
+    "descriptions": ["primary school"]
+  },
+  {
+    "concept": "WithSocialSecurityIncomeInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["with social security income in the past 12 months"]
+  },
+  {
+    "concept": "WithSSIAndOrCashAssistanceInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["with ssi and or cash assistance in the past 12 months"]
+  },
+  {
+    "concept": "GovernmentPayment",
+    "type": "property_value",
+    "descriptions": ["government payment"]
+  },
+  {
+    "concept": "InventorySold",
+    "type": "property_value",
+    "descriptions": ["inventory sold"]
+  },
+  {
+    "concept": "HogsAndPigs",
+    "type": "property_value",
+    "descriptions": ["hogs and pigs"]
+  },
+  { "concept": "Layers", "type": "property_value", "descriptions": ["layers"] },
+  {
+    "concept": "MilkCows",
+    "type": "property_value",
+    "descriptions": ["milk cows"]
+  },
+  {
+    "concept": "Orchards",
+    "type": "property_value",
+    "descriptions": ["orchards"]
+  },
+  {
+    "concept": "SheepAndLambs",
+    "type": "property_value",
+    "descriptions": ["sheep and lambs"]
+  },
+  {
+    "concept": "CornForSilageOrGreenchop",
+    "type": "property_value",
+    "descriptions": ["corn for silage or greenchop"]
+  },
+  {
+    "concept": "Years0",
+    "type": "property_value",
+    "descriptions": ["0 year old"]
+  },
+  {
+    "concept": "MarriedInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["married in the past 12 months"]
+  },
+  {
+    "concept": "PovertyStatusDetermined",
+    "type": "property_value",
+    "descriptions": ["poverty status determined"]
+  },
+  {
+    "concept": "NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "native hawaiian and other pacific islander alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "Civilian",
+    "type": "property_value",
+    "descriptions": ["civilian"]
+  },
+  {
+    "concept": "USC_NonInstitutionalized",
+    "type": "property_value",
+    "descriptions": ["non institutionalized"]
+  },
+  {
+    "concept": "BLS_NotInLaborForce",
+    "type": "property_value",
+    "descriptions": ["not in labor force"]
+  },
+  {
+    "concept": "ICD10/X60-X84",
+    "type": "property_value",
+    "descriptions": ["Intentional self harm"]
+  },
+  {
+    "concept": "WhiteAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "white alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "ForcibleRape",
+    "type": "property_value",
+    "descriptions": ["forcible rape"]
+  },
+  {
+    "concept": "Years15Onwards",
+    "type": "property_value",
+    "descriptions": ["15 years older"]
+  },
+  {
+    "concept": "Smoking",
+    "type": "property_value",
+    "descriptions": ["smoking"]
+  },
+  {
+    "concept": "Years20To79",
+    "type": "property_value",
+    "descriptions": ["20 to 79 years old"]
+  },
+  {
+    "concept": "Diabetes",
+    "type": "property_value",
+    "descriptions": ["diabetes"]
+  },
+  {
+    "concept": "YearsUpto4",
+    "type": "property_value",
+    "descriptions": ["younger than 4 years old"]
+  },
+  {
+    "concept": "Overweight",
+    "type": "property_value",
+    "descriptions": ["overweight"]
+  },
+  {
+    "concept": "DoctorateDegree",
+    "type": "property_value",
+    "descriptions": ["doctorate degree"]
+  },
+  {
+    "concept": "TertiaryEducation",
+    "type": "property_value",
+    "descriptions": ["tertiary education"]
+  },
+  {
+    "concept": "Years7To14",
+    "type": "property_value",
+    "descriptions": ["7 to 14 years old"]
+  },
+  {
+    "concept": "Employed",
+    "type": "property_value",
+    "descriptions": ["employed"]
+  },
+  {
+    "concept": "ElectricityFromNuclearSources",
+    "type": "property_value",
+    "descriptions": ["electricity from nuclear sources"]
+  },
+  {
+    "concept": "ElectricityFromOilGasOrCoalSources",
+    "type": "property_value",
+    "descriptions": ["electricity from oil gas or coal sources"]
+  },
+  {
+    "concept": "RenewableEnergy",
+    "type": "property_value",
+    "descriptions": ["renewable energy"]
+  },
+  {
+    "concept": "Wasting",
+    "type": "property_value",
+    "descriptions": ["wasting"]
+  },
+  {
+    "concept": "ExpenditureActivity",
+    "type": "property_value",
+    "descriptions": ["expenditure activity"]
+  },
+  {
+    "concept": "TertiaryEducationExpenditure",
+    "type": "property_value",
+    "descriptions": ["tertiary education expenditure"]
+  },
+  {
+    "concept": "Government",
+    "type": "property_value",
+    "descriptions": ["government"]
+  },
+  {
+    "concept": "MilitaryExpenditure",
+    "type": "property_value",
+    "descriptions": ["military expenditure"]
+  },
+  {
+    "concept": "GrossNationalIncome",
+    "type": "property_value",
+    "descriptions": ["gross national income"]
+  },
+  {
+    "concept": "disabilityStatus",
+    "type": "property_value",
+    "descriptions": ["disability status"]
+  },
+  {
+    "concept": "ethnicity",
+    "type": "property_value",
+    "descriptions": ["ethnicity"]
+  },
+  { "concept": "gender", "type": "property_value", "descriptions": ["gender"] },
+  { "concept": "race", "type": "property_value", "descriptions": ["race"] },
+  {
+    "concept": "religion",
+    "type": "property_value",
+    "descriptions": ["religion"]
+  },
+  {
+    "concept": "sexualOrientation",
+    "type": "property_value",
+    "descriptions": ["sexual orientation"]
+  },
+  {
+    "concept": "HealthcareExpenditure",
+    "type": "property_value",
+    "descriptions": ["healthcare expenditure"]
+  },
+  {
+    "concept": "HighSchool",
+    "type": "property_value",
+    "descriptions": ["high school"]
+  },
+  {
+    "concept": "HispanicOrLatino__BlackOrAfricanAmericanAlone",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino or black or african american"]
+  },
+  {
+    "concept": "HispanicOrLatino__AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino american indian and alaska native alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__AmericanIndianOrAlaskaNativeAlone",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino american indian or alaska native alone"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__AsianAlone",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino asian alone"]
+  },
+  {
+    "concept": "HispanicOrLatino__AsianAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino asian alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__AsianOrPacificIslander",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino asian or pacific islander"]
+  },
+  {
+    "concept": "HispanicOrLatino__BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino black or african american alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__NativeHawaiianOrOtherPacificIslanderAlone",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino native hawaiian or other pacific islander alone"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino native hawaiian and other pacific islander alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__WhiteAlone",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino white alone"]
+  },
+  {
+    "concept": "HispanicOrLatino__WhiteAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "hispanic or latino white alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "HispanicOrLatino__TwoOrMoreRaces",
+    "type": "property_value",
+    "descriptions": ["hispanic or latino two or more races"]
+  },
+  {
+    "concept": "NoDisability",
+    "type": "property_value",
+    "descriptions": ["no disability"]
+  },
+  {
+    "concept": "WithChildrenUnder18",
+    "type": "property_value",
+    "descriptions": ["with children under 18 years old"]
+  },
+  {
+    "concept": "WithoutChildrenUnder18",
+    "type": "property_value",
+    "descriptions": ["without children under 18 years old"]
+  },
+  {
+    "concept": "NoHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["no health insurance"]
+  },
+  {
+    "concept": "InternetWithoutSubscription",
+    "type": "property_value",
+    "descriptions": ["internet without subscription"]
+  },
+  {
+    "concept": "RelativeHumidity",
+    "type": "property_value",
+    "descriptions": ["relative humidity"]
+  },
+  {
+    "concept": "SpecificHumidity",
+    "type": "property_value",
+    "descriptions": ["specific humidity"]
+  },
+  {
+    "concept": "InwardRemittance",
+    "type": "property_value",
+    "descriptions": ["inward remittance"]
+  },
+  {
+    "concept": "LarcenyTheft",
+    "type": "property_value",
+    "descriptions": ["larceny theft"]
+  },
+  { "concept": "Cancer", "type": "property_value", "descriptions": ["cancer"] },
+  {
+    "concept": "MachineryAndEquipment",
+    "type": "property_value",
+    "descriptions": ["machinery and equipment"]
+  },
+  { "concept": "Crops", "type": "property_value", "descriptions": ["crops"] },
+  {
+    "concept": "LivestockAndPoultry",
+    "type": "property_value",
+    "descriptions": ["livestock and poultry"]
+  },
+  {
+    "concept": "MarriedAndNotSeparated",
+    "type": "property_value",
+    "descriptions": ["married and not separated"]
+  },
+  { "concept": "Ozone", "type": "property_value", "descriptions": ["ozone"] },
+  {
+    "concept": "Downwelling",
+    "type": "property_value",
+    "descriptions": ["downwelling"]
+  },
+  {
+    "concept": "ShortwaveRadiation",
+    "type": "property_value",
+    "descriptions": ["shortwave radiation"]
+  },
+  {
+    "concept": "Meter10",
+    "type": "property_value",
+    "descriptions": ["10 meter"]
+  },
+  {
+    "concept": "UComponent",
+    "type": "property_value",
+    "descriptions": ["wind u component"]
+  },
+  {
+    "concept": "VComponent",
+    "type": "property_value",
+    "descriptions": ["wind v component"]
+  },
+  {
+    "concept": "DieselPM",
+    "type": "property_value",
+    "descriptions": ["diesel pm"]
+  },
+  {
+    "concept": "Years16Onwards",
+    "type": "property_value",
+    "descriptions": ["16 years older"]
+  },
+  {
+    "concept": "AgriculturalProducts",
+    "type": "property_value",
+    "descriptions": ["agricultural products"]
+  },
+  {
+    "concept": "Years16To64",
+    "type": "property_value",
+    "descriptions": ["16 to 64 years old"]
+  },
+  {
+    "concept": "WorkedInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["worked in the past12 months"]
+  },
+  {
+    "concept": "NotAUSCitizen",
+    "type": "property_value",
+    "descriptions": ["not a usa citizen"]
+  },
+  {
+    "concept": "USCitizenByNaturalization",
+    "type": "property_value",
+    "descriptions": ["usa citizen by naturalization"]
+  },
+  {
+    "concept": "Years1Onwards",
+    "type": "property_value",
+    "descriptions": ["older than 1 year old"]
+  },
+  {
+    "concept": "DifferentHouseAbroad",
+    "type": "property_value",
+    "descriptions": ["different house abroad"]
+  },
+  {
+    "concept": "DifferentHouseInDifferentCountyDifferentState",
+    "type": "property_value",
+    "descriptions": ["different house in different county different state"]
+  },
+  {
+    "concept": "DifferentHouseInDifferentCountySameState",
+    "type": "property_value",
+    "descriptions": ["different house in different county same state"]
+  },
+  {
+    "concept": "DifferentHouseInSameCounty",
+    "type": "property_value",
+    "descriptions": ["different house in same county"]
+  },
+  {
+    "concept": "Years25Onwards",
+    "type": "property_value",
+    "descriptions": ["25 years older"]
+  },
+  {
+    "concept": "BornInOtherStateInTheUnitedStates",
+    "type": "property_value",
+    "descriptions": ["born in other state in the united states"]
+  },
+  {
+    "concept": "BornInStateOfResidence",
+    "type": "property_value",
+    "descriptions": ["born in state of residence"]
+  },
+  {
+    "concept": "ForeignBorn",
+    "type": "property_value",
+    "descriptions": ["foreign born"]
+  },
+  {
+    "concept": "GraduateOrProfessionalDegree",
+    "type": "property_value",
+    "descriptions": ["graduate or professional degree"]
+  },
+  {
+    "concept": "NativeBornOutsideTheUnitedStates",
+    "type": "property_value",
+    "descriptions": ["native born outside the united states"]
+  },
+  {
+    "concept": "MiddleSchool",
+    "type": "property_value",
+    "descriptions": ["middle school"]
+  },
+  {
+    "concept": "MobileCellularSubscription",
+    "type": "property_value",
+    "descriptions": ["mobile cellular subscription"]
+  },
+  {
+    "concept": "OneRace",
+    "type": "property_value",
+    "descriptions": ["one race"]
+  },
+  {
+    "concept": "MotorVehicleTheft",
+    "type": "property_value",
+    "descriptions": ["motor vehicle theft"]
+  },
+  {
+    "concept": "MurderAndNonNegligentManslaughter",
+    "type": "property_value",
+    "descriptions": ["murder and non negligent manslaughter"]
+  },
+  {
+    "concept": "CommercialNonCogen",
+    "type": "property_value",
+    "descriptions": ["commercial non cogen"]
+  },
+  {
+    "concept": "ElectricUtilityNonCogen",
+    "type": "property_value",
+    "descriptions": ["electric utility non cogen"]
+  },
+  {
+    "concept": "IndustrialCogen",
+    "type": "property_value",
+    "descriptions": ["industrial cogen"]
+  },
+  {
+    "concept": "IndustrialNonCogen",
+    "type": "property_value",
+    "descriptions": ["industrial non cogen"]
+  },
+  {
+    "concept": "UtilityScaleSolar",
+    "type": "property_value",
+    "descriptions": ["utility scale solar"]
+  },
+  {
+    "concept": "OtherBiomass",
+    "type": "property_value",
+    "descriptions": ["other biomass"]
+  },
+  {
+    "concept": "SmallScaleSolarPhotovoltaic",
+    "type": "property_value",
+    "descriptions": ["small scale solar photovoltaic"]
+  },
+  {
+    "concept": "UtilityScalePhotovoltaic",
+    "type": "property_value",
+    "descriptions": ["utility scale photovoltaic"]
+  },
+  {
+    "concept": "NotHispanicOrLatino__BlackOrAfricanAmericanAlone",
+    "type": "property_value",
+    "descriptions": ["not hispanic or latino black or african american alone"]
+  },
+  {
+    "concept": "NotHispanicOrLatino__BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino black or african american alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino american indian and alaska native alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__AmericanIndianOrAlaskaNativeAlone",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino american indian or alaska native alone"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__AsianAlone",
+    "type": "property_value",
+    "descriptions": ["not hispanic or latino asian alone"]
+  },
+  {
+    "concept": "NotHispanicOrLatino__AsianAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino asian alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__AsianOrPacificIslander",
+    "type": "property_value",
+    "descriptions": ["not hispanic or latino asian or pacific islander"]
+  },
+  {
+    "concept": "NotHispanicOrLatino__TwoOrMoreRaces",
+    "type": "property_value",
+    "descriptions": ["not hispanic or latino two or more races"]
+  },
+  {
+    "concept": "NotHispanicOrLatino__NativeHawaiianOrOtherPacificIslanderAlone",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino native hawaiian or other pacific islander alone"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino native hawaiian and other pacific islander alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "NotHispanicOrLatino__WhiteAloneOrInCombinationWithOneOrMoreOtherRaces",
+    "type": "property_value",
+    "descriptions": [
+      "not hispanic or latino white alone or in combination with one or more other races"
+    ]
+  },
+  {
+    "concept": "NonWhite",
+    "type": "property_value",
+    "descriptions": ["non white"]
+  },
+  {
+    "concept": "WithDirectPurchaseHealthInsuranceOnly",
+    "type": "property_value",
+    "descriptions": ["with direct purchase health insurance only"]
+  },
+  {
+    "concept": "OutwardRemittance",
+    "type": "property_value",
+    "descriptions": ["outward remittance"]
+  },
+  {
+    "concept": "Years18Onwards",
+    "type": "property_value",
+    "descriptions": ["18 years older"]
+  },
+  {
+    "concept": "HighBloodPressure",
+    "type": "property_value",
+    "descriptions": ["high blood pressure"]
+  },
+  {
+    "concept": "TakingBloodPressureMedication",
+    "type": "property_value",
+    "descriptions": ["taking blood pressure medication"]
+  },
+  {
+    "concept": "BareSparseVegetation",
+    "type": "property_value",
+    "descriptions": ["bare sparse vegetation"]
+  },
+  {
+    "concept": "BuiltUp",
+    "type": "property_value",
+    "descriptions": ["built up"]
+  },
+  {
+    "concept": "YearsUpto18",
+    "type": "property_value",
+    "descriptions": ["younger than 18 years old"]
+  },
+  { "concept": "Asthma", "type": "property_value", "descriptions": ["asthma"] },
+  {
+    "concept": "SevereWasting",
+    "type": "property_value",
+    "descriptions": ["severe wasting"]
+  },
+  {
+    "concept": "Years15To64",
+    "type": "property_value",
+    "descriptions": ["15 to 64 years old"]
+  },
+  {
+    "concept": "HerbaceousVegetation",
+    "type": "property_value",
+    "descriptions": ["herbaceous vegetation"]
+  },
+  {
+    "concept": "EducationExpenditure",
+    "type": "property_value",
+    "descriptions": ["education expenditure"]
+  },
+  {
+    "concept": "PermanentWater",
+    "type": "property_value",
+    "descriptions": ["permanent water"]
+  },
+  {
+    "concept": "Years20Onwards",
+    "type": "property_value",
+    "descriptions": ["older than 20 years old"]
+  },
+  {
+    "concept": "LessThan5MetersAboveSeaLevel",
+    "type": "property_value",
+    "descriptions": ["less than 5 meters above sea level"]
+  },
+  {
+    "concept": "ChronicKidneyDisease",
+    "type": "property_value",
+    "descriptions": ["chronic kidney disease"]
+  },
+  {
+    "concept": "ChronicObstructivePulmonaryDisease",
+    "type": "property_value",
+    "descriptions": ["chronic obstructive pulmonary disease"]
+  },
+  {
+    "concept": "CancerExcludingSkinCancer",
+    "type": "property_value",
+    "descriptions": ["cancer excluding skin cancer"]
+  },
+  {
+    "concept": "HighCholesterol",
+    "type": "property_value",
+    "descriptions": ["high cholesterol"]
+  },
+  {
+    "concept": "SeasonalWater",
+    "type": "property_value",
+    "descriptions": ["seasonal water"]
+  },
+  {
+    "concept": "Shrubland",
+    "type": "property_value",
+    "descriptions": ["shrubland"]
+  },
+  {
+    "concept": "SnowIce",
+    "type": "property_value",
+    "descriptions": ["snow ice"]
+  },
+  {
+    "concept": "HighSeverity",
+    "type": "property_value",
+    "descriptions": ["high severity"]
+  },
+  { "concept": "Daily", "type": "property_value", "descriptions": ["daily"] },
+  {
+    "concept": "TobaccoSmoking",
+    "type": "property_value",
+    "descriptions": ["tobacco smoking"]
+  },
+  {
+    "concept": "Cigarettes",
+    "type": "property_value",
+    "descriptions": ["cigarettes"]
+  },
+  {
+    "concept": "Years18To64",
+    "type": "property_value",
+    "descriptions": ["18 to 64 years old"]
+  },
+  {
+    "concept": "Alcohol",
+    "type": "property_value",
+    "descriptions": ["alcohol"]
+  },
+  {
+    "concept": "AllTeethLoss",
+    "type": "property_value",
+    "descriptions": ["all teeth loss"]
+  },
+  { "concept": "Stroke", "type": "property_value", "descriptions": ["stroke"] },
+  {
+    "concept": "AnnualCheckup",
+    "type": "property_value",
+    "descriptions": ["annual checkup"]
+  },
+  {
+    "concept": "Obesity",
+    "type": "property_value",
+    "descriptions": ["obesity"]
+  },
+  {
+    "concept": "SleepLessThan7Hours",
+    "type": "property_value",
+    "descriptions": ["sleep less than 7 hours"]
+  },
+  {
+    "concept": "PhysicalInactivity",
+    "type": "property_value",
+    "descriptions": ["physical inactivity"]
+  },
+  {
+    "concept": "BingeDrinking",
+    "type": "property_value",
+    "descriptions": ["binge drinking"]
+  },
+  {
+    "concept": "Arthritis",
+    "type": "property_value",
+    "descriptions": ["arthritis"]
+  },
+  {
+    "concept": "CoronaryHeartDisease",
+    "type": "property_value",
+    "descriptions": ["coronary heart disease"]
+  },
+  {
+    "concept": "MentalHealthNotGood",
+    "type": "property_value",
+    "descriptions": ["mental health not good"]
+  },
+  {
+    "concept": "PhysicalHealthNotGood",
+    "type": "property_value",
+    "descriptions": ["physical health not good"]
+  },
+  {
+    "concept": "Years0To17",
+    "type": "property_value",
+    "descriptions": ["under 17 years old"]
+  },
+  {
+    "concept": "StateOperated&FederallyOperated&PrivatelyOperated",
+    "type": "property_value",
+    "descriptions": [
+      "state operated and federally operated and privately operated"
+    ]
+  },
+  {
+    "concept": "FederallyOperated",
+    "type": "property_value",
+    "descriptions": ["federally operated"]
+  },
+  {
+    "concept": "Unsentenced",
+    "type": "property_value",
+    "descriptions": ["unsentenced"]
+  },
+  {
+    "concept": "InState",
+    "type": "property_value",
+    "descriptions": ["in state"]
+  },
+  {
+    "concept": "PrivatelyOperated",
+    "type": "property_value",
+    "descriptions": ["privately operated"]
+  },
+  { "concept": "Local", "type": "property_value", "descriptions": ["local"] },
+  {
+    "concept": "LocallyOperated",
+    "type": "property_value",
+    "descriptions": ["locally operated"]
+  },
+  {
+    "concept": "OutOfState",
+    "type": "property_value",
+    "descriptions": ["out of state"]
+  },
+  {
+    "concept": "StateOperated",
+    "type": "property_value",
+    "descriptions": ["state operated"]
+  },
+  {
+    "concept": "EnrolledInSchool",
+    "type": "property_value",
+    "descriptions": ["enrolled in school"]
+  },
+  {
+    "concept": "NotEnrolledInSchool",
+    "type": "property_value",
+    "descriptions": ["not enrolled in school"]
+  },
+  {
+    "concept": "Separated",
+    "type": "property_value",
+    "descriptions": ["separated"]
+  },
+  {
+    "concept": "NoSchoolingCompleted",
+    "type": "property_value",
+    "descriptions": ["no schooling completed"]
+  },
+  {
+    "concept": "NeverMarried",
+    "type": "property_value",
+    "descriptions": ["never married"]
+  },
+  {
+    "concept": "AmbulatoryDifficulty",
+    "type": "property_value",
+    "descriptions": ["ambulatory difficulty"]
+  },
+  {
+    "concept": "CognitiveDifficulty",
+    "type": "property_value",
+    "descriptions": ["cognitive difficulty"]
+  },
+  {
+    "concept": "BLS_Employed",
+    "type": "property_value",
+    "descriptions": ["employed"]
+  },
+  {
+    "concept": "WithEmployerBasedHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["with employer based health insurance"]
+  },
+  {
+    "concept": "WithHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["with health insurance"]
+  },
+  {
+    "concept": "HearingDifficulty",
+    "type": "property_value",
+    "descriptions": ["hearing difficulty"]
+  },
+  {
+    "concept": "IndependentLivingDifficulty",
+    "type": "property_value",
+    "descriptions": ["independent living difficulty"]
+  },
+  {
+    "concept": "WithMedicaidOrMeansTestedPublicCoverage",
+    "type": "property_value",
+    "descriptions": ["with medicaid or means tested public coverage"]
+  },
+  {
+    "concept": "WithMedicareCoverage",
+    "type": "property_value",
+    "descriptions": ["with medicare coverage"]
+  },
+  {
+    "concept": "WithEmployerBasedHealthInsuranceOnly",
+    "type": "property_value",
+    "descriptions": ["with employer based health insurance only"]
+  },
+  {
+    "concept": "WithMedicaidOrMeansTestedPublicCoverageOnly",
+    "type": "property_value",
+    "descriptions": ["with medicaid or means tested public coverage only"]
+  },
+  {
+    "concept": "WithMedicareCoverageOnly",
+    "type": "property_value",
+    "descriptions": ["with medicare coverage only"]
+  },
+  {
+    "concept": "WithPrivateHealthInsuranceOnly",
+    "type": "property_value",
+    "descriptions": ["with private health insurance only"]
+  },
+  {
+    "concept": "WithPublicHealthInsuranceOnly",
+    "type": "property_value",
+    "descriptions": ["with public health insurance only"]
+  },
+  {
+    "concept": "WithTricareMilitaryHealthCoverageOnly",
+    "type": "property_value",
+    "descriptions": ["with tricare military health coverage only"]
+  },
+  {
+    "concept": "WithVAHealthCareOnly",
+    "type": "property_value",
+    "descriptions": ["with va health care only"]
+  },
+  {
+    "concept": "WithPrivateHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["with private health insurance"]
+  },
+  {
+    "concept": "WithPublicHealthInsurance",
+    "type": "property_value",
+    "descriptions": ["with public health insurance"]
+  },
+  {
+    "concept": "SelfCareDifficulty",
+    "type": "property_value",
+    "descriptions": ["self care difficulty"]
+  },
+  {
+    "concept": "WithTricareMilitaryHealthCoverage",
+    "type": "property_value",
+    "descriptions": ["with tricare military health coverage"]
+  },
+  {
+    "concept": "WithVAHealthCare",
+    "type": "property_value",
+    "descriptions": ["with va health care"]
+  },
+  {
+    "concept": "VisionDifficulty",
+    "type": "property_value",
+    "descriptions": ["vision difficulty"]
+  },
+  {
+    "concept": "RegularHighSchoolDiploma",
+    "type": "property_value",
+    "descriptions": ["regular high school diploma"]
+  },
+  {
+    "concept": "LessThanHighSchoolDiploma",
+    "type": "property_value",
+    "descriptions": ["less than high school diploma"]
+  },
+  {
+    "concept": "NAICS/481",
+    "type": "property_value",
+    "descriptions": ["Air transportation"]
+  },
+  {
+    "concept": "NAICS/315",
+    "type": "property_value",
+    "descriptions": ["Apparel manufacturing"]
+  },
+  {
+    "concept": "NAICS/312",
+    "type": "property_value",
+    "descriptions": ["Beverage and tobacco product manufacturing"]
+  },
+  {
+    "concept": "NAICS/1121",
+    "type": "property_value",
+    "descriptions": ["Cattle ranching and farming"]
+  },
+  {
+    "concept": "NAICS/325",
+    "type": "property_value",
+    "descriptions": ["Chemical manufacturing"]
+  },
+  {
+    "concept": "NAICS/492",
+    "type": "property_value",
+    "descriptions": ["Couriers and messengers"]
+  },
+  {
+    "concept": "NAICS/311",
+    "type": "property_value",
+    "descriptions": ["Food manufacturing"]
+  },
+  {
+    "concept": "NAICS/452",
+    "type": "property_value",
+    "descriptions": ["General merchandise stores"]
+  },
+  {
+    "concept": "NAICS/316",
+    "type": "property_value",
+    "descriptions": ["Leather and allied product manufacturing"]
+  },
+  {
+    "concept": "NAICS/5411",
+    "type": "property_value",
+    "descriptions": ["Legal services"]
+  },
+  {
+    "concept": "NAICS/453",
+    "type": "property_value",
+    "descriptions": ["Miscellaneous store retailers"]
+  },
+  {
+    "concept": "NAICS/327",
+    "type": "property_value",
+    "descriptions": ["Nonmetallic mineral product manufacturing"]
+  },
+  {
+    "concept": "NAICS/454",
+    "type": "property_value",
+    "descriptions": ["Nonstore retailers"]
+  },
+  {
+    "concept": "NAICS/322",
+    "type": "property_value",
+    "descriptions": ["Paper manufacturing"]
+  },
+  {
+    "concept": "NAICS/324",
+    "type": "property_value",
+    "descriptions": ["Petroleum and coal products manufacturing"]
+  },
+  {
+    "concept": "NAICS/486",
+    "type": "property_value",
+    "descriptions": ["Pipeline transportation"]
+  },
+  {
+    "concept": "NAICS/326",
+    "type": "property_value",
+    "descriptions": ["Plastics and rubber products manufacturing"]
+  },
+  {
+    "concept": "NAICS/491",
+    "type": "property_value",
+    "descriptions": ["Postal service"]
+  },
+  {
+    "concept": "NAICS/323",
+    "type": "property_value",
+    "descriptions": ["Printing and related support activities"]
+  },
+  {
+    "concept": "NAICS/482",
+    "type": "property_value",
+    "descriptions": ["Rail transportation"]
+  },
+  {
+    "concept": "NAICS/487",
+    "type": "property_value",
+    "descriptions": ["Scenic and sightseeing transportation"]
+  },
+  {
+    "concept": "NAICS/451",
+    "type": "property_value",
+    "descriptions": ["Sports, hobby, music instrument, book stores"]
+  },
+  {
+    "concept": "NAICS/488",
+    "type": "property_value",
+    "descriptions": ["Support activities for transportation"]
+  },
+  {
+    "concept": "NAICS/3133",
+    "type": "property_value",
+    "descriptions": ["Textile and fabric finishing mills"]
+  },
+  {
+    "concept": "NAICS/313",
+    "type": "property_value",
+    "descriptions": ["Textile mills"]
+  },
+  {
+    "concept": "NAICS/314",
+    "type": "property_value",
+    "descriptions": ["Textile product mills"]
+  },
+  {
+    "concept": "NAICS/485",
+    "type": "property_value",
+    "descriptions": ["Transit and ground passenger transportation"]
+  },
+  {
+    "concept": "NAICS/484",
+    "type": "property_value",
+    "descriptions": ["Truck transportation"]
+  },
+  {
+    "concept": "NAICS/493",
+    "type": "property_value",
+    "descriptions": ["Warehousing and storage"]
+  },
+  {
+    "concept": "NAICS/483",
+    "type": "property_value",
+    "descriptions": ["Water transportation"]
+  },
+  {
+    "concept": "NAICS/321",
+    "type": "property_value",
+    "descriptions": ["Wood product manufacturing"]
+  },
+  {
+    "concept": "NoIncome",
+    "type": "property_value",
+    "descriptions": ["no income"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.0To1.49",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line between 1.0 to 1.49"]
+  },
+  {
+    "concept": "RatioToPovertyLineUpto1.0",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line below 1.0"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.5Onwards",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line above 1.5"]
+  },
+  {
+    "concept": "DifferentHouseInDifferentCounty",
+    "type": "property_value",
+    "descriptions": ["different house in different county"]
+  },
+  {
+    "concept": "DifferentHouseInTheUS",
+    "type": "property_value",
+    "descriptions": ["different house in usa"]
+  },
+  {
+    "concept": "SameHouse1YearAgo",
+    "type": "property_value",
+    "descriptions": ["same house 1 year ago"]
+  },
+  {
+    "concept": "DifferentHouse1YearAgo",
+    "type": "property_value",
+    "descriptions": ["different house 1 year ago"]
+  },
+  {
+    "concept": "Years10To14",
+    "type": "property_value",
+    "descriptions": ["10 to 14 years old"]
+  },
+  {
+    "concept": "Literate",
+    "type": "property_value",
+    "descriptions": ["literate"]
+  },
+  {
+    "concept": "Years10Onwards",
+    "type": "property_value",
+    "descriptions": ["10 years older"]
+  },
+  {
+    "concept": "10ThGrade",
+    "type": "property_value",
+    "descriptions": ["10th grade"]
+  },
+  {
+    "concept": "11ThGrade",
+    "type": "property_value",
+    "descriptions": ["11th grade"]
+  },
+  {
+    "concept": "12ThGradeNoDiploma",
+    "type": "property_value",
+    "descriptions": ["12th grade no diploma"]
+  },
+  {
+    "concept": "Years15To19",
+    "type": "property_value",
+    "descriptions": ["15 to 19 years old"]
+  },
+  {
+    "concept": "BirthInThePast12Months",
+    "type": "property_value",
+    "descriptions": ["birth in the past12 months"]
+  },
+  {
+    "concept": "EnrolledInPrivateSchool",
+    "type": "property_value",
+    "descriptions": ["enrolled in private school"]
+  },
+  {
+    "concept": "EnrolledInPublicSchool",
+    "type": "property_value",
+    "descriptions": ["enrolled in public school"]
+  },
+  {
+    "concept": "Years15To24",
+    "type": "property_value",
+    "descriptions": ["15 to 24 years old"]
+  },
+  {
+    "concept": "Illiterate",
+    "type": "property_value",
+    "descriptions": ["illiterate"]
+  },
+  {
+    "concept": "Years15To50",
+    "type": "property_value",
+    "descriptions": ["15 to 50 years old"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.0To1.99",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line between 1.0 and 1.99"]
+  },
+  {
+    "concept": "RatioToPovertyLine2.0Onwards",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line above 2.0"]
+  },
+  {
+    "concept": "DivorcedOrSeparated",
+    "type": "property_value",
+    "descriptions": ["divorced or separated"]
+  },
+  {
+    "concept": "Widowed",
+    "type": "property_value",
+    "descriptions": ["widowed"]
+  },
+  {
+    "concept": "Years16To19",
+    "type": "property_value",
+    "descriptions": ["16 to 19 years old"]
+  },
+  {
+    "concept": "Years16To50",
+    "type": "property_value",
+    "descriptions": ["16 to 50 years old"]
+  },
+  {
+    "concept": "DidNotWork",
+    "type": "property_value",
+    "descriptions": ["did not work"]
+  },
+  {
+    "concept": "USC_EmployedAndWorking",
+    "type": "property_value",
+    "descriptions": ["employed and working"]
+  },
+  {
+    "concept": "InArmedForces",
+    "type": "property_value",
+    "descriptions": ["in armed forces"]
+  },
+  {
+    "concept": "1StGrade",
+    "type": "property_value",
+    "descriptions": ["1st grade"]
+  },
+  {
+    "concept": "Years20To34",
+    "type": "property_value",
+    "descriptions": ["20 to 34 years old"]
+  },
+  {
+    "concept": "Years25To59",
+    "type": "property_value",
+    "descriptions": ["25 to 59 years old"]
+  },
+  {
+    "concept": "Years25To64",
+    "type": "property_value",
+    "descriptions": ["25 to 64 years old"]
+  },
+  {
+    "concept": "EnrolledInEducationOrTraining",
+    "type": "property_value",
+    "descriptions": ["enrolled in education or training"]
+  },
+  {
+    "concept": "LessThanPrimaryEducation&PrimaryEducation&LowerSecondaryEducation",
+    "type": "property_value",
+    "descriptions": [
+      "less than primary education and primary education and lower secondary education"
+    ]
+  },
+  {
+    "concept": "UpperSecondaryEducation&PostSecondaryNonTertiaryEducation",
+    "type": "property_value",
+    "descriptions": [
+      "upper secondary education and post secondary non tertiary education"
+    ]
+  },
+  {
+    "concept": "UpperSecondaryEducationOrHigher",
+    "type": "property_value",
+    "descriptions": ["upper secondary education or higher"]
+  },
+  {
+    "concept": "LanguageOtherThanEnglish",
+    "type": "property_value",
+    "descriptions": ["language other than english"]
+  },
+  {
+    "concept": "OnlyEnglish",
+    "type": "property_value",
+    "descriptions": ["only english"]
+  },
+  {
+    "concept": "SpanishOrSpanishCreole",
+    "type": "property_value",
+    "descriptions": ["spanish or spanish creole"]
+  },
+  {
+    "concept": "HighSchoolGraduateOrHigher",
+    "type": "property_value",
+    "descriptions": ["high school graduate or higher"]
+  },
+  {
+    "concept": "2NdGrade",
+    "type": "property_value",
+    "descriptions": ["2nd grade"]
+  },
+  {
+    "concept": "Years3Onwards",
+    "type": "property_value",
+    "descriptions": ["more than 3 years old"]
+  },
+  {
+    "concept": "EnrolledInCollegeOrGraduateSchool",
+    "type": "property_value",
+    "descriptions": ["enrolled in college or graduate school"]
+  },
+  {
+    "concept": "Years35To50",
+    "type": "property_value",
+    "descriptions": ["35 to 50 years old"]
+  },
+  {
+    "concept": "3RdGrade",
+    "type": "property_value",
+    "descriptions": ["3rd grade"]
+  },
+  {
+    "concept": "4ThGrade",
+    "type": "property_value",
+    "descriptions": ["4th grade"]
+  },
+  {
+    "concept": "Years5Onwards",
+    "type": "property_value",
+    "descriptions": ["more than 5 years old"]
+  },
+  {
+    "concept": "5ThAnd6ThGrade",
+    "type": "property_value",
+    "descriptions": ["5th and 6th grade"]
+  },
+  {
+    "concept": "5ThGrade",
+    "type": "property_value",
+    "descriptions": ["5th grade"]
+  },
+  {
+    "concept": "YearsUpto6",
+    "type": "property_value",
+    "descriptions": ["less than 6 years old"]
+  },
+  {
+    "concept": "Buddhism",
+    "type": "property_value",
+    "descriptions": ["buddhism"]
+  },
+  {
+    "concept": "Christianity",
+    "type": "property_value",
+    "descriptions": ["christianity"]
+  },
+  {
+    "concept": "Hinduism",
+    "type": "property_value",
+    "descriptions": ["hinduism"]
+  },
+  {
+    "concept": "IndiaCensus_OtherReligionAndPersuasions",
+    "type": "property_value",
+    "descriptions": ["other religion and persuasions"]
+  },
+  { "concept": "Islam", "type": "property_value", "descriptions": ["islam"] },
+  {
+    "concept": "Jainism",
+    "type": "property_value",
+    "descriptions": ["jainism"]
+  },
+  {
+    "concept": "ReligionNotStated",
+    "type": "property_value",
+    "descriptions": ["religion not stated"]
+  },
+  {
+    "concept": "Sikhism",
+    "type": "property_value",
+    "descriptions": ["sikhism"]
+  },
+  {
+    "concept": "Years60Onwards",
+    "type": "property_value",
+    "descriptions": ["more than 60 years old"]
+  },
+  {
+    "concept": "6ThGrade",
+    "type": "property_value",
+    "descriptions": ["6th grade"]
+  },
+  {
+    "concept": "7ThAnd8ThGrade",
+    "type": "property_value",
+    "descriptions": ["7th and 8th grade"]
+  },
+  {
+    "concept": "7ThGrade",
+    "type": "property_value",
+    "descriptions": ["7th grade"]
+  },
+  {
+    "concept": "8ThGrade",
+    "type": "property_value",
+    "descriptions": ["8th grade"]
+  },
+  {
+    "concept": "9ThGrade",
+    "type": "property_value",
+    "descriptions": ["9th grade"]
+  },
+  {
+    "concept": "AfricanLanguages",
+    "type": "property_value",
+    "descriptions": ["african languages"]
+  },
+  {
+    "concept": "AgriculturalLabourers",
+    "type": "property_value",
+    "descriptions": ["agricultural labourers"]
+  },
+  {
+    "concept": "MainWorker",
+    "type": "property_value",
+    "descriptions": ["main worker"]
+  },
+  {
+    "concept": "MarginalWorker",
+    "type": "property_value",
+    "descriptions": ["marginal worker"]
+  },
+  {
+    "concept": "NACE/A",
+    "type": "property_value",
+    "descriptions": ["Agriculture, forestry and fishing"]
+  },
+  {
+    "concept": "AmharicSomaliOrOtherAfroAsiaticLanguages",
+    "type": "property_value",
+    "descriptions": ["amharic somali or other afro asiatic languages"]
+  },
+  { "concept": "Arabic", "type": "property_value", "descriptions": ["arabic"] },
+  {
+    "concept": "Armenian",
+    "type": "property_value",
+    "descriptions": ["armenian"]
+  },
+  {
+    "concept": "NACE/R-U",
+    "type": "property_value",
+    "descriptions": [
+      "Arts, entertainment, recreation, other service, household, and extra-territorial organizations and bodies activities"
+    ]
+  },
+  {
+    "concept": "Bengali",
+    "type": "property_value",
+    "descriptions": ["bengali"]
+  },
+  {
+    "concept": "NonWorker",
+    "type": "property_value",
+    "descriptions": ["non worker"]
+  },
+  { "concept": "Worker", "type": "property_value", "descriptions": ["worker"] },
+  {
+    "concept": "ChineseInclMandarinCantonese",
+    "type": "property_value",
+    "descriptions": ["chinese including mandarin cantonese"]
+  },
+  {
+    "concept": "RatioToPovertyLineUpto1.00",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line below 1.00"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.38To1.99",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line between 1.38 to 1.99"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.38To3.99",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line between 1.38 to 3.99"]
+  },
+  {
+    "concept": "RatioToPovertyLineUpto1.38",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line below 1.38"]
+  },
+  {
+    "concept": "RatioToPovertyLine1.38Onwards",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line above 1.38"]
+  },
+  {
+    "concept": "RatioToPovertyLine2.00To3.99",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line between 2.00 to 3.99"]
+  },
+  {
+    "concept": "RatioToPovertyLine2.00Onwards",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line above 2.00"]
+  },
+  {
+    "concept": "RatioToPovertyLine4.00Onwards",
+    "type": "property_value",
+    "descriptions": ["ratio to poverty line above 4.00"]
+  },
+  {
+    "concept": "Nonveteran",
+    "type": "property_value",
+    "descriptions": ["nonveteran"]
+  },
+  {
+    "concept": "NonfamilyHouseholdAndOtherLivingArrangements",
+    "type": "property_value",
+    "descriptions": ["nonfamily household and other living arrangements"]
+  },
+  {
+    "concept": "Veteran",
+    "type": "property_value",
+    "descriptions": ["veteran"]
+  },
+  {
+    "concept": "NACE/F",
+    "type": "property_value",
+    "descriptions": ["Construction"]
+  },
+  {
+    "concept": "Cultivators",
+    "type": "property_value",
+    "descriptions": ["cultivators"]
+  },
+  {
+    "concept": "EnrolledInCollegeUndergraduateYears",
+    "type": "property_value",
+    "descriptions": ["enrolled in college undergraduate years"]
+  },
+  {
+    "concept": "EnrolledInGrade1",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 1"]
+  },
+  {
+    "concept": "EnrolledInGrade10",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 10"]
+  },
+  {
+    "concept": "EnrolledInGrade11",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 11"]
+  },
+  {
+    "concept": "EnrolledInGrade12",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 12"]
+  },
+  {
+    "concept": "EnrolledInGrade2",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 2"]
+  },
+  {
+    "concept": "EnrolledInGrade3",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 3"]
+  },
+  {
+    "concept": "EnrolledInGrade4",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 4"]
+  },
+  {
+    "concept": "EnrolledInGrade5",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 5"]
+  },
+  {
+    "concept": "EnrolledInGrade6",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 6"]
+  },
+  {
+    "concept": "EnrolledInGrade7",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 7"]
+  },
+  {
+    "concept": "EnrolledInGrade8",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 8"]
+  },
+  {
+    "concept": "EnrolledInGrade9",
+    "type": "property_value",
+    "descriptions": ["enrolled in grade 9"]
+  },
+  {
+    "concept": "EnrolledInKindergarten",
+    "type": "property_value",
+    "descriptions": ["enrolled in kindergarten"]
+  },
+  {
+    "concept": "EnrolledInNurserySchoolPreschool",
+    "type": "property_value",
+    "descriptions": ["enrolled in nursery school preschool"]
+  },
+  {
+    "concept": "USC_NotWorkedFullTime",
+    "type": "property_value",
+    "descriptions": ["not work full time"]
+  },
+  {
+    "concept": "USC_WorkedFullTime",
+    "type": "property_value",
+    "descriptions": ["worked full time"]
+  },
+  {
+    "concept": "NACE/K",
+    "type": "property_value",
+    "descriptions": ["Financial and insurance activities"]
+  },
+  {
+    "concept": "NACE/K-N",
+    "type": "property_value",
+    "descriptions": [
+      "Financial, real estate, professional, scientific, technical, administrative, and support activities"
+    ]
+  },
+  {
+    "concept": "FrenchCreole",
+    "type": "property_value",
+    "descriptions": ["french creole"]
+  },
+  {
+    "concept": "FrenchInclCajun",
+    "type": "property_value",
+    "descriptions": ["french including cajun"]
+  },
+  {
+    "concept": "FrenchInclPatoisCajun",
+    "type": "property_value",
+    "descriptions": ["french including patois cajun"]
+  },
+  {
+    "concept": "GedOrAlternativeCredential",
+    "type": "property_value",
+    "descriptions": ["ged or alternative credential"]
+  },
+  { "concept": "German", "type": "property_value", "descriptions": ["german"] },
+  {
+    "concept": "GraduateOrProfessionalSchool",
+    "type": "property_value",
+    "descriptions": ["graduate or professional school"]
+  },
+  { "concept": "Greek", "type": "property_value", "descriptions": ["greek"] },
+  {
+    "concept": "Gujarati",
+    "type": "property_value",
+    "descriptions": ["gujarati"]
+  },
+  {
+    "concept": "Haitian",
+    "type": "property_value",
+    "descriptions": ["haitian"]
+  },
+  { "concept": "Hebrew", "type": "property_value", "descriptions": ["hebrew"] },
+  { "concept": "Hindi", "type": "property_value", "descriptions": ["hindi"] },
+  { "concept": "Hmong", "type": "property_value", "descriptions": ["hmong"] },
+  {
+    "concept": "HouseholdIndustries",
+    "type": "property_value",
+    "descriptions": ["household industries"]
+  },
+  {
+    "concept": "Hungarian",
+    "type": "property_value",
+    "descriptions": ["hungarian"]
+  },
+  {
+    "concept": "IlocanoSamoanHawaiianOrOtherAustronesianLanguages",
+    "type": "property_value",
+    "descriptions": ["ilocano samoan hawaiian or other austronesian languages"]
+  },
+  {
+    "concept": "NACE/B-E",
+    "type": "property_value",
+    "descriptions": ["Industry except construction"]
+  },
+  {
+    "concept": "NACE/J",
+    "type": "property_value",
+    "descriptions": ["Information and communication"]
+  },
+  {
+    "concept": "Italian",
+    "type": "property_value",
+    "descriptions": ["italian"]
+  },
+  { "concept": "Khmer", "type": "property_value", "descriptions": ["khmer"] },
+  {
+    "concept": "Kindergarten",
+    "type": "property_value",
+    "descriptions": ["kindergarten"]
+  },
+  {
+    "concept": "Laotian",
+    "type": "property_value",
+    "descriptions": ["laotian"]
+  },
+  {
+    "concept": "MalayalamKannadaOrOtherDravidianLanguages",
+    "type": "property_value",
+    "descriptions": ["malayalam kannada or other dravidian languages"]
+  },
+  {
+    "concept": "NACE/C",
+    "type": "property_value",
+    "descriptions": ["Manufacturing"]
+  },
+  {
+    "concept": "MonKhmerCambodian",
+    "type": "property_value",
+    "descriptions": ["mon khmer cambodian"]
+  },
+  { "concept": "Navajo", "type": "property_value", "descriptions": ["navajo"] },
+  {
+    "concept": "NepaliMarathiOrOtherIndicLanguages",
+    "type": "property_value",
+    "descriptions": ["nepali marathi or other indic languages"]
+  },
+  {
+    "concept": "NurserySchool",
+    "type": "property_value",
+    "descriptions": ["nursery school"]
+  },
+  {
+    "concept": "NurseryTo4ThGrade",
+    "type": "property_value",
+    "descriptions": ["nursery to 4th grade"]
+  },
+  {
+    "concept": "OtherAndUnspecifiedLanguages",
+    "type": "property_value",
+    "descriptions": ["other and unspecified languages"]
+  },
+  {
+    "concept": "OtherAsianLanguages",
+    "type": "property_value",
+    "descriptions": ["other asian languages"]
+  },
+  {
+    "concept": "OtherIndicLanguages",
+    "type": "property_value",
+    "descriptions": ["other indic languages"]
+  },
+  {
+    "concept": "OtherLanguagesOfAsia",
+    "type": "property_value",
+    "descriptions": ["other languages of asia"]
+  },
+  {
+    "concept": "OtherNativeLanguagesOfNorthAmerica",
+    "type": "property_value",
+    "descriptions": ["other native languages of north america"]
+  },
+  {
+    "concept": "OtherNativeNorthAmericanLanguages",
+    "type": "property_value",
+    "descriptions": ["other native north american languages"]
+  },
+  {
+    "concept": "OtherPacificIslandLanguages",
+    "type": "property_value",
+    "descriptions": ["other pacific island languages"]
+  },
+  {
+    "concept": "OtherSlavicLanguages",
+    "type": "property_value",
+    "descriptions": ["other slavic languages"]
+  },
+  {
+    "concept": "OtherWestGermanicLanguages",
+    "type": "property_value",
+    "descriptions": ["other west germanic languages"]
+  },
+  {
+    "concept": "OtherWorkers",
+    "type": "property_value",
+    "descriptions": ["other workers"]
+  },
+  {
+    "concept": "Persian",
+    "type": "property_value",
+    "descriptions": ["persian"]
+  },
+  {
+    "concept": "PersianInclFarsiDari",
+    "type": "property_value",
+    "descriptions": ["persian incl farsi dari"]
+  },
+  { "concept": "Polish", "type": "property_value", "descriptions": ["polish"] },
+  {
+    "concept": "Portuguese",
+    "type": "property_value",
+    "descriptions": ["portuguese"]
+  },
+  {
+    "concept": "PortugueseOrPortugueseCreole",
+    "type": "property_value",
+    "descriptions": ["portuguese or portuguese creole"]
+  },
+  {
+    "concept": "PreKindergartenAndKindergarten",
+    "type": "property_value",
+    "descriptions": ["pre kindergarten and kindergarten"]
+  },
+  {
+    "concept": "ProfessionalSchoolDegree",
+    "type": "property_value",
+    "descriptions": ["professional school degree"]
+  },
+  {
+    "concept": "NACE/M-N",
+    "type": "property_value",
+    "descriptions": [
+      "Professional, scientific and technical activities, administrative and support service activities"
+    ]
+  },
+  {
+    "concept": "NACE/O-U",
+    "type": "property_value",
+    "descriptions": [
+      "Public administration and defence, compulsory social security, education, human health and social work activities, arts, entertainment and recreation"
+    ]
+  },
+  {
+    "concept": "NACE/O-Q",
+    "type": "property_value",
+    "descriptions": [
+      "Public administration, defence, education, human health and social work activities"
+    ]
+  },
+  {
+    "concept": "Punjabi",
+    "type": "property_value",
+    "descriptions": ["punjabi"]
+  },
+  {
+    "concept": "NACE/L",
+    "type": "property_value",
+    "descriptions": ["Real estate activities"]
+  },
+  {
+    "concept": "Russian",
+    "type": "property_value",
+    "descriptions": ["russian"]
+  },
+  {
+    "concept": "ScandinavianLanguages",
+    "type": "property_value",
+    "descriptions": ["scandinavian languages"]
+  },
+  {
+    "concept": "SerboCroatian",
+    "type": "property_value",
+    "descriptions": ["serbo croatian"]
+  },
+  {
+    "concept": "SomeCollege1OrMoreYearsNoDegree",
+    "type": "property_value",
+    "descriptions": ["some college1 or more years no degree"]
+  },
+  {
+    "concept": "SomeCollegeLessThan1Year",
+    "type": "property_value",
+    "descriptions": ["some college less than1 year"]
+  },
+  {
+    "concept": "SpeakEnglishLessThanVeryWell",
+    "type": "property_value",
+    "descriptions": ["speak english less than very well"]
+  },
+  {
+    "concept": "SwahiliOrOtherLanguagesOfCentralEasternAndSouthernAfrica",
+    "type": "property_value",
+    "descriptions": [
+      "swahili or other languages of central eastern and southern africa"
+    ]
+  },
+  {
+    "concept": "Tagalog",
+    "type": "property_value",
+    "descriptions": ["tagalog"]
+  },
+  {
+    "concept": "TagalogInclFilipino",
+    "type": "property_value",
+    "descriptions": ["tagalog incl filipino"]
+  },
+  { "concept": "Tamil", "type": "property_value", "descriptions": ["tamil"] },
+  { "concept": "Telugu", "type": "property_value", "descriptions": ["telugu"] },
+  { "concept": "Thai", "type": "property_value", "descriptions": ["thai"] },
+  {
+    "concept": "ThaiLaoOrOtherTaiKadaiLanguages",
+    "type": "property_value",
+    "descriptions": ["thai lao or other tai kadai languages"]
+  },
+  {
+    "concept": "UkrainianOrOtherSlavicLanguages",
+    "type": "property_value",
+    "descriptions": ["ukrainian or other slavic languages"]
+  },
+  { "concept": "Urdu", "type": "property_value", "descriptions": ["urdu"] },
+  {
+    "concept": "Yiddish",
+    "type": "property_value",
+    "descriptions": ["yiddish"]
+  },
+  {
+    "concept": "YiddishPennsylvaniaDutchOrOtherWestGermanicLanguages",
+    "type": "property_value",
+    "descriptions": [
+      "yiddish pennsylvania dutch or other west germanic languages"
+    ]
+  },
+  {
+    "concept": "YorubaTwiIgboOrOtherLanguagesOfWesternAfrica",
+    "type": "property_value",
+    "descriptions": ["yoruba twi igbo or other languages of western africa"]
+  },
+  {
+    "concept": "SpeakEnglishNotAtAll",
+    "type": "property_value",
+    "descriptions": ["not speak english at all"]
+  },
+  {
+    "concept": "SpeakEnglishNotWell",
+    "type": "property_value",
+    "descriptions": ["speak english not well"]
+  },
+  {
+    "concept": "SpeakEnglishVeryWell",
+    "type": "property_value",
+    "descriptions": ["speak english very well"]
+  },
+  {
+    "concept": "SpeakEnglishWell",
+    "type": "property_value",
+    "descriptions": ["speak english well"]
+  },
+  {
+    "concept": "USCitizenBornInPuertoRicoOrUSIslandAreas",
+    "type": "property_value",
+    "descriptions": ["usa citizen born in puerto rico or usa island areas"]
+  },
+  {
+    "concept": "BLS_Unemployed",
+    "type": "property_value",
+    "descriptions": ["unemployed"]
+  },
+  {
+    "concept": "NACE/G-I",
+    "type": "property_value",
+    "descriptions": [
+      "Wholesale and retail trade, transport, accommodation and food service"
+    ]
+  },
+  {
+    "concept": "NACE/G-J",
+    "type": "property_value",
+    "descriptions": [
+      "Wholesale and retail trade, transport, accommodation and food service activities, information and communication"
+    ]
+  },
+  {
+    "concept": "WithOwnChildrenUnder18",
+    "type": "property_value",
+    "descriptions": ["with own children under18"]
+  },
+  {
+    "concept": "Years21To65",
+    "type": "property_value",
+    "descriptions": ["21 to 65 years"]
+  },
+  {
+    "concept": "CervicalCancerScreening",
+    "type": "property_value",
+    "descriptions": ["cervical cancer screening"]
+  },
+  {
+    "concept": "TobaccoUse",
+    "type": "property_value",
+    "descriptions": ["tobacco use"]
+  },
+  {
+    "concept": "Years50To74",
+    "type": "property_value",
+    "descriptions": ["50 to 74 years"]
+  },
+  {
+    "concept": "Mammography",
+    "type": "property_value",
+    "descriptions": ["mammography"]
+  },
+  {
+    "concept": "Years50To75",
+    "type": "property_value",
+    "descriptions": ["50 to 75 years"]
+  },
+  {
+    "concept": "ColorectalCancerScreening",
+    "type": "property_value",
+    "descriptions": ["colorectal cancer screening"]
+  },
+  {
+    "concept": "CorePreventiveServices",
+    "type": "property_value",
+    "descriptions": ["core preventive services"]
+  },
+  {
+    "concept": "CholesterolScreening",
+    "type": "property_value",
+    "descriptions": ["cholesterol screening"]
+  },
+  {
+    "concept": "DentalVisit",
+    "type": "property_value",
+    "descriptions": ["dental visit"]
+  },
+  {
+    "concept": "PropertyCrime",
+    "type": "property_value",
+    "descriptions": ["property crime"]
+  },
+  {
+    "concept": "BituminousCoal",
+    "type": "property_value",
+    "descriptions": ["bituminous coal"]
+  },
+  {
+    "concept": "SubbituminousCoal",
+    "type": "property_value",
+    "descriptions": ["subbituminous coal"]
+  },
+  {
+    "concept": "LongwaveRadiation",
+    "type": "property_value",
+    "descriptions": ["longwave radiation"]
+  },
+  {
+    "concept": "WithPayroll",
+    "type": "property_value",
+    "descriptions": ["with payroll"]
+  },
+  {
+    "concept": "drug/dea/9737",
+    "type": "property_value",
+    "descriptions": ["alfentanil"]
+  },
+  {
+    "concept": "drug/dea/2125",
+    "type": "property_value",
+    "descriptions": ["amobarbital"]
+  },
+  {
+    "concept": "drug/dea/4000",
+    "type": "property_value",
+    "descriptions": ["anabolic steroids"]
+  },
+  {
+    "concept": "drug/dea/2100",
+    "type": "property_value",
+    "descriptions": ["barbituric acid derivative or salt"]
+  },
+  {
+    "concept": "drug/dea/9064",
+    "type": "property_value",
+    "descriptions": ["buprenorphine"]
+  },
+  {
+    "concept": "drug/dea/2165",
+    "type": "property_value",
+    "descriptions": ["butalbital"]
+  },
+  {
+    "concept": "drug/dea/9041L",
+    "type": "property_value",
+    "descriptions": ["cocaine"]
+  },
+  {
+    "concept": "drug/dea/1105D",
+    "type": "property_value",
+    "descriptions": ["d methamphetamine"]
+  },
+  {
+    "concept": "drug/dea/9120",
+    "type": "property_value",
+    "descriptions": ["dihydrocodeine"]
+  },
+  {
+    "concept": "drug/dea/1105B",
+    "type": "property_value",
+    "descriptions": ["dl methamphetamine"]
+  },
+  {
+    "concept": "drug/dea/7365",
+    "type": "property_value",
+    "descriptions": ["marketable oral dronabinol"]
+  },
+  {
+    "concept": "drug/dea/9180L",
+    "type": "property_value",
+    "descriptions": ["ecgonine"]
+  },
+  {
+    "concept": "drug/dea/9801",
+    "type": "property_value",
+    "descriptions": ["fentanyl"]
+  },
+  {
+    "concept": "drug/dea/2010",
+    "type": "property_value",
+    "descriptions": ["gamma hydroxybutyric acid"]
+  },
+  {
+    "concept": "drug/dea/2012",
+    "type": "property_value",
+    "descriptions": ["fda approved gamma hydroxybutyric acid preparations"]
+  },
+  {
+    "concept": "drug/dea/9150",
+    "type": "property_value",
+    "descriptions": ["hydromorphone"]
+  },
+  {
+    "concept": "drug/dea/9220L",
+    "type": "property_value",
+    "descriptions": ["levorphanol"]
+  },
+  {
+    "concept": "drug/dea/1205",
+    "type": "property_value",
+    "descriptions": ["lisdexamfetamine"]
+  },
+  {
+    "concept": "drug/dea/2885",
+    "type": "property_value",
+    "descriptions": ["lorazepam"]
+  },
+  {
+    "concept": "drug/dea/9250B",
+    "type": "property_value",
+    "descriptions": ["methadone"]
+  },
+  {
+    "concept": "drug/dea/1724",
+    "type": "property_value",
+    "descriptions": ["methylphenidate"]
+  },
+  {
+    "concept": "drug/dea/7379",
+    "type": "property_value",
+    "descriptions": ["nabilone"]
+  },
+  {
+    "concept": "drug/dea/9411",
+    "type": "property_value",
+    "descriptions": ["naloxone"]
+  },
+  {
+    "concept": "drug/dea/9668",
+    "type": "property_value",
+    "descriptions": ["noroxymorphone"]
+  },
+  {
+    "concept": "drug/dea/9809",
+    "type": "property_value",
+    "descriptions": ["Opium combination product"]
+  },
+  {
+    "concept": "drug/dea/9630",
+    "type": "property_value",
+    "descriptions": ["tincured opium"]
+  },
+  {
+    "concept": "drug/dea/9639",
+    "type": "property_value",
+    "descriptions": ["powdered opium"]
+  },
+  {
+    "concept": "drug/dea/9652",
+    "type": "property_value",
+    "descriptions": ["oxymorphone"]
+  },
+  {
+    "concept": "drug/dea/9655",
+    "type": "property_value",
+    "descriptions": ["paregoric"]
+  },
+  {
+    "concept": "drug/dea/2270",
+    "type": "property_value",
+    "descriptions": ["pentobarbital"]
+  },
+  {
+    "concept": "drug/dea/9230",
+    "type": "property_value",
+    "descriptions": ["pethidine"]
+  },
+  {
+    "concept": "drug/dea/7471",
+    "type": "property_value",
+    "descriptions": ["phencyclidine"]
+  },
+  {
+    "concept": "drug/dea/1615",
+    "type": "property_value",
+    "descriptions": ["phendimetrazine"]
+  },
+  {
+    "concept": "drug/dea/2285",
+    "type": "property_value",
+    "descriptions": ["phenobarbital"]
+  },
+  {
+    "concept": "drug/dea/9670",
+    "type": "property_value",
+    "descriptions": ["poppy straw concentrate"]
+  },
+  {
+    "concept": "drug/dea/9739",
+    "type": "property_value",
+    "descriptions": ["remifentanil"]
+  },
+  {
+    "concept": "drug/dea/2315",
+    "type": "property_value",
+    "descriptions": ["secobarbital"]
+  },
+  {
+    "concept": "drug/dea/9740",
+    "type": "property_value",
+    "descriptions": ["sufentanil"]
+  },
+  {
+    "concept": "drug/dea/9780",
+    "type": "property_value",
+    "descriptions": ["tapentadol"]
+  },
+  {
+    "concept": "drug/dea/4187",
+    "type": "property_value",
+    "descriptions": ["testosterone"]
+  },
+  {
+    "concept": "drug/dea/2783",
+    "type": "property_value",
+    "descriptions": ["zolpidem"]
+  },
+  {
+    "concept": "Robbery",
+    "type": "property_value",
+    "descriptions": ["robbery"]
+  },
+  {
+    "concept": "ManufacturerSalesBranchesAndOffices",
+    "type": "property_value",
+    "descriptions": ["manufacturer sales branches and offices"]
+  },
+  {
+    "concept": "BuildingContents",
+    "type": "property_value",
+    "descriptions": ["building contents"]
+  },
+  {
+    "concept": "BuildingStructure",
+    "type": "property_value",
+    "descriptions": ["building structure"]
+  },
+  {
+    "concept": "Month1",
+    "type": "property_value",
+    "descriptions": ["1 month"]
+  },
+  {
+    "concept": "Month3",
+    "type": "property_value",
+    "descriptions": ["3 month"]
+  },
+  {
+    "concept": "Month36",
+    "type": "property_value",
+    "descriptions": ["36 month"]
+  },
+  {
+    "concept": "Month6",
+    "type": "property_value",
+    "descriptions": ["6 month"]
+  },
+  {
+    "concept": "Month72",
+    "type": "property_value",
+    "descriptions": ["72 month"]
+  },
+  {
+    "concept": "Month9",
+    "type": "property_value",
+    "descriptions": ["9 month"]
+  },
+  {
+    "concept": "ElectricityGenerationAndThermalOutput",
+    "type": "property_value",
+    "descriptions": ["electricity generation and thermal output"]
+  },
+  {
+    "concept": "USCitizenBornAbroadOfAmericanParents",
+    "type": "property_value",
+    "descriptions": ["usa citizen born abroad of american parents"]
+  },
+  {
+    "concept": "USCitizenBornInTheUnitedStates",
+    "type": "property_value",
+    "descriptions": ["usa citizen born in the united states"]
+  },
+  {
+    "concept": "VacantHousingUnit",
+    "type": "property_value",
+    "descriptions": ["vacant housing unit"]
+  },
+  {
+    "concept": "ViolentCrime",
+    "type": "property_value",
+    "descriptions": ["violent crime"]
+  },
+  {
+    "concept": "Aquaculture",
+    "type": "property_value",
+    "descriptions": ["aquaculture"]
+  },
+  {
+    "concept": "FreshWater",
+    "type": "property_value",
+    "descriptions": ["fresh water"]
+  },
+  {
+    "concept": "GroundWater",
+    "type": "property_value",
+    "descriptions": ["ground water"]
+  },
+  {
+    "concept": "SalineWater",
+    "type": "property_value",
+    "descriptions": ["saline water"]
+  },
+  {
+    "concept": "SurfaceWater",
+    "type": "property_value",
+    "descriptions": ["surface water"]
+  },
+  {
+    "concept": "Domestic",
+    "type": "property_value",
+    "descriptions": ["domestic"]
+  },
+  {
+    "concept": "Irrigation",
+    "type": "property_value",
+    "descriptions": ["irrigation"]
+  },
+  {
+    "concept": "Livestock",
+    "type": "property_value",
+    "descriptions": ["livestock"]
+  },
+  { "concept": "Mining", "type": "property_value", "descriptions": ["mining"] },
+  {
+    "concept": "PublicSupply",
+    "type": "property_value",
+    "descriptions": ["public supply"]
+  },
+  {
+    "concept": "Thermoelectric",
+    "type": "property_value",
+    "descriptions": ["thermoelectric"]
+  }
+]

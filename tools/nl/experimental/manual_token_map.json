@@ -1,0 +1,10 @@
+{
+  "hasComputer": [
+    "Count_Household_HasComputer",
+    "Count_Household_HasComputer_NoInternetAccess",
+    "Count_Household_HasComputer_WithInternetSubscription_BroadbandInternetSuchAsCableFiberOpticOrDsl",
+    "Count_Household_HasComputer_WithInternetSubscription_DialUpInternetOnly",
+    "Count_Person_IsInternetUser_PerCapita"
+  ],
+  "noComputer": ["Count_Household_NoComputer"]
+}

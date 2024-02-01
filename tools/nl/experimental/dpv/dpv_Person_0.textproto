@@ -1,0 +1,107 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all Person + 0 cprop sepc##
+
+## The specs are ordered by the mprop.
+
+spec {
+  pop_type: "Person"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "employment"
+    val: "USC_EmployedAndWorking"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_InLaborForce"
+  }
+  dpv {
+    prop: "placeOfWork"
+    val: "OutsideOfHome"
+  }
+  obs_props {
+    mprop: "commuteTime"
+  }
+  vertical: "Commute"
+}
+
+spec: {
+  pop_type: "Person"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "incomeStatus"
+    val: "WithEarnings"
+  }
+  obs_props {
+    mprop: "earnings"
+  }
+}
+
+## WDI
+spec: {
+  pop_type: "Person"
+  dpv: {
+    prop: "gender"
+    val: "Female"
+  }
+  obs_props: {
+    mprop: "fertilityRate"
+  }
+  vertical: "Health"
+}
+
+## Person Income ##
+spec: {
+  pop_type: "Person"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props {
+    mprop: "genderIncomeInequality"
+  }
+  obs_props: {
+    mprop: "income"
+  }
+  vertical: "Demographics"
+}
+spec: {
+  pop_type: "Person"
+  dpv: {
+    prop: "residenceType"
+    val: "Household"
+  }
+  obs_props: {
+    mprop: "householdType"
+  }
+  vertical: "Demographics"
+}
+spec: {
+  pop_type: "Person"
+  dpv: {
+    prop: "unemploymentInsuranceStatus"
+    val: "WithCoveredEmployment"
+  }
+  obs_props {
+    mprop: "insuredUnemploymentRate"
+  }
+  vertical: "Employment"
+}

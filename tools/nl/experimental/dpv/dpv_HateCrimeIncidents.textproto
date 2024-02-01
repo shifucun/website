@@ -1,0 +1,103 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all HateCrimeIncidents spec ##
+
+### BiasMotivation: X DPV for targetedX cprop ###
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "offenderAge"
+  dpv {
+    prop: "offenderType"
+    val: "KnownOffenderAge"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "offenderEthnicity"
+  dpv {
+    prop: "offenderType"
+    val: "KnownOffenderEthnicity"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "offenderRace"
+  dpv {
+    prop: "offenderType"
+    val: "KnownOffenderRace"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedDisabilityStatus"
+  dpv {
+    prop: "biasMotivation"
+    val: "disabilityStatus"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedEthnicity"
+  dpv {
+    prop: "biasMotivation"
+    val: "ethnicity"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedGender"
+  dpv {
+    prop: "biasMotivation"
+    val: "gender"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedRace"
+  dpv {
+    prop: "biasMotivation"
+    val: "race"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedReligion"
+  dpv {
+    prop: "biasMotivation"
+    val: "religion"
+  }
+  vertical: "Crime"
+}
+
+spec: {
+  pop_type: "HateCrimeIncidents"
+  cprop: "targetedSexualOrientation"
+  dpv {
+    prop: "biasMotivation"
+    val: "sexualOrientation"
+  }
+  vertical: "Crime"
+}

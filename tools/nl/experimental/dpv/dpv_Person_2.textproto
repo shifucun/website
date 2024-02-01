@@ -1,0 +1,963 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all Person + 2 cprop spec ##
+
+## In each spec, the cprops are ordered alphabetically.
+## Then, the specs are ordered by the first cprop then second cprop.
+
+spec {
+  pop_type: "Person"
+  cprop: "abilityToSpeakEnglish"
+  cprop: "languageSpokenAtHome"
+  dpv: {
+    prop: "age"
+    val: "Years5Onwards"
+  }
+  obs_props { mprop: "count" }
+  vertical: "Language"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "abilityToSpeakEnglish"
+  cprop: "residenceType"
+  dpv {
+    prop: "age"
+    val: "Years5Onwards"
+  }
+  dpv {
+    prop: "languageSpokenAtHome"
+    val: "LanguageOtherThanEnglish"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "age"
+  cprop: "bachelorsDegreeMajor"
+  dpv: {
+    prop: "educationalAttainment"
+    val: "BachelorsDegreeOrHigher"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+# https://data.census.gov/cedsci/table?q=B27010&tid=ACSDT1Y2019.B27010
+spec {
+  pop_type: "Person"
+  cprop: "age"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "armedForcesStatus"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+## Table B21001
+## Universe: Civilian Population 18 years and older
+# Veteran/NonVet Civilian Population 18 years and older # exists above
+# Fe/Male Civilian Population 18 years and older # promoted armedForcesStatus
+spec: {
+  pop_type: "Person"
+  cprop: "armedForcesStatus"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years18Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "armedForcesStatus"
+  cprop: "veteranStatus"
+  dpv: {
+    prop: "age"
+    val: "Years18Onwards"
+  }
+  obs_props { mprop: "count" }
+  vertical: "MilitaryService"
+}
+
+#### Note: armedForcesStatus as dp since veteranStatus is only meaningful to Civilians
+spec: {
+  pop_type: "Person"
+  cprop: "armedForcesStatus"
+  cprop: "veteranStatus"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "income"
+  }
+  vertical: "MilitaryService"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "bachelorsDegreeMajor"
+  cprop: "gender"
+  dpv: {
+    prop: "educationalAttainment"
+    val: "BachelorsDegreeOrHigher"
+  }
+  dpv: {
+    prop: "age"
+    val: "Years25Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "commuteMode"
+  cprop: "hasOccupation"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "employment"
+    val: "USC_EmployedAndWorking"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_InLaborForce"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  vertical: "Commute"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "detailedLevelOfSchool"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years25Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+## Table B14007[A-I] School Enrollment by Detailed Level of School [Race]
+## Universe: [Race] Population 3 Years and Over
+# Not/Enrolled in School [Race] 3 Years and Over # exists above in Person 2 cprop
+# Detailed Level of School for Enrolled in School [Race] 3 Years and Over
+spec: {
+  pop_type: "Person"
+  cprop: "detailedLevelOfSchool"
+  cprop: "race"
+  dpv: {
+    prop: "schoolEnrollment"
+    val: "EnrolledInSchool"
+  }
+  dpv: {
+    prop: "age"
+    val: "Years3Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "disabilityStatus"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "economicSector"
+  cprop: "employmentStatus"
+  dpv {
+    prop: "age"
+    val: "Years14Onwards"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  vertical: "Economy"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "educationalAttainment"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years25Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "educationalAttainment"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years25Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "income"
+  }
+  vertical: "Education"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "educationalAttainment"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "employment"
+  cprop: "gender"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_Employed"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "employment"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "employmentStatus"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "establishmentOwnership"
+  cprop: "workerClassification"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_Employed"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "establishmentOwnership"
+  cprop: "workerClassification"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_Employed"
+  }
+  dpv {
+    prop: "incomeStatus"
+    val: "WithEarnings"
+  }
+  obs_props: {
+    mprop: "earnings"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "hasOccupation"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_Employed"
+  }
+  dpv {
+    prop: "incomeStatus"
+    val: "WithEarnings"
+  }
+  obs_props {
+    mprop: "income"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "healthBehavior"
+  dpv: {
+    prop: "age"
+    val: "Years20Onwards"
+  }
+  obs_props: {
+    mprop: "percent"
+  }
+  vertical: "Health"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "healthInsurance"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "healthOutcome"
+  dpv: {
+    prop: "age"
+    val: "Years20Onwards"
+  }
+  obs_props: {
+    mprop: "percent"
+  }
+  vertical: "Health"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "income"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+}
+
+## Table B14002: Sex by School Enrollment by Level of School by Type of School for the Population 3 Years and Over
+## Universe: Population 3 Years and Over
+# Fe/Male 3+YO # Exists above in Person 1 cprop and Person 2 cprop
+# Fe/Male Not/Enrolled 3+YO # Exists above in Person 2 cprop
+# LevelOfSchool Fe/Male Enrolled 3+YO
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "levelOfSchool"
+  dpv: {
+    prop: "schoolEnrollment"
+    val: "EnrolledInSchool"
+  }
+  dpv: {
+    prop: "age"
+    val: "Years3Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "maritalStatus"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "naics"
+  dpv {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "employmentStatus"
+    val: "BLS_Employed"
+  }
+  dpv {
+    prop: "incomeStatus"
+    val: "WithEarnings"
+  }
+  obs_props {
+    mprop: "income"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "placeOfBirth"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "income"
+  }
+  vertical: "Demographics"
+  vertical: "ImmigrationAndCitizenship"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "schoolEnrollment"
+  dpv: {
+    prop: "age"
+    val: "Years3Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "workExperience"
+  dpv: {
+    prop: "age"
+    val: "Years16Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+  vertical: "Employment"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "workExperience"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  dpv: {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props: {
+    mprop: "income"
+  }
+  vertical: "Demographics"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "gender"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+# https://data.census.gov/cedsci/table?tid=ACSDT1Y2019.B27015
+spec: {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "householdIncome"
+  dpv: {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  dpv: {
+    prop: "residenceType"
+    val: "Household"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "householdType"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "nativity"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "povertyStatus"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "race"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "healthInsurance"
+  cprop: "workStatus"
+  dpv {
+    prop: "armedForcesStatus"
+    val: "Civilian"
+  }
+  dpv {
+    prop: "institutionalization"
+    val: "USC_NonInstitutionalized"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "income"
+  cprop: "placeOfBirth"
+  dpv {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  dpv {
+    prop: "incomeStatus"
+    val: "WithIncome"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "incomeStatus"
+  cprop: "placeOfBirth"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+  vertical: "ImmigrationAndCitizenship"
+}
+
+## Table B16005: Nativity by Language Spoken at Home by Ability to Speak English
+## Universe: Population 5 Years and Over
+# Non/Native 5 Years and Over
+# languageSpokenAtHome x Non/Native 5 Years and Over
+spec: {
+  pop_type: "Person"
+  cprop: "languageSpokenAtHome"
+  cprop: "nativity"
+  dpv: {
+    prop: "age"
+    val: "Years5Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Language"
+  vertical: "ImmigrationAndCitizenship"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "languageSpokenAtHome"
+  cprop: "residenceType"
+  dpv {
+    prop: "age"
+    val: "Years5Onwards"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  vertical: "Language"
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "maritalStatus"
+  cprop: "placeOfBirth"
+  dpv: {
+    prop: "age"
+    val: "Years15Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Demographics"
+  vertical: "ImmigrationAndCitizenship"
+}
+
+## Table B16005[A-I]: Nativity by Language Spoken at Home by Ability to Speak English by Race
+## Universe: Population 5 Years and Over
+# Non/Native x Race 5 Years and Over
+spec: {
+  pop_type: "Person"
+  cprop: "nativity"
+  cprop: "race"
+  dpv: {
+    prop: "age"
+    val: "Years5Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "ImmigrationAndCitizenship"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "placeOfResidenceClassification"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "placeOfResidenceClassification"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec: {
+  pop_type: "Person"
+  cprop: "race"
+  cprop: "schoolEnrollment"
+  dpv: {
+    prop: "age"
+    val: "Years3Onwards"
+  }
+  obs_props: {
+    mprop: "count"
+  }
+  vertical: "Education"
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "socialCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "socialCategory"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "workPeriod"
+  cprop: "usualHoursWorked"
+  dpv {
+    prop: "age"
+    val: "16To64Years"
+  }
+  dpv {
+    prop: "workStatus"
+    val: "WorkedInThePast12Months"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "workCategory"
+  cprop: "workPeriod"
+  dpv {
+    prop: "workerClassification"
+    val: "MarginalWorker"
+  }
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
+
+spec {
+  pop_type: "Person"
+  cprop: "workCategory"
+  cprop: "workerClassification"
+  dpv {
+    prop: "workerStatus"
+    val: "Worker"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}

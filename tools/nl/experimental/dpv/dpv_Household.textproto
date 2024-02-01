@@ -1,0 +1,35 @@
+# proto-file: datacommons/config/stat_config.proto
+# proto-message: PopObsSpecList
+#
+# IMPORTANT NOTE: The config in this file is consumed to produce the StatVar
+# hierarchy.
+#
+# It defines Dependent PV mappings given {populationType,
+# constraintProperties, measuredProperty}.  Note that we should define
+# all co-occuring cprops.
+
+## This file contains all Household spec ##
+
+spec {
+  pop_type: "Household"
+  cprop: "familySize"
+  dpv {
+    prop: "householdType"
+    val: "FamilyHousehold"
+  }
+  obs_props {
+    mprop: "count"
+  }
+  vertical: "Household"
+}
+spec {
+  pop_type: "Household"
+  cprop: "internetSubscriptionType"
+  dpv {
+    prop: "internetAccessStatus"
+    val: "WithInternetSubscription"
+  }
+  obs_props {
+    mprop: "count"
+  }
+}
