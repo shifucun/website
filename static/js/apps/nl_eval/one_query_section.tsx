@@ -24,6 +24,7 @@ export interface OneQuerySectionProps {
   modelNames: string[];
   goldenStatVars: string[];
   customDescription: Record<string, EmbeddingObject[]>;
+  setScore: (modelName: string, sentence: string, score: number) => void;
 }
 
 export function OneQuerySection(props: OneQuerySectionProps): JSX.Element {
@@ -65,6 +66,7 @@ export function OneQuerySection(props: OneQuerySectionProps): JSX.Element {
               isExpanded={isExpanded}
               goldenStatVars={props.goldenStatVars}
               overrideStatVars={props.customDescription[modelName]}
+              setScore={props.setScore}
             />
           );
         })}
