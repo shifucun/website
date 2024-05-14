@@ -47,27 +47,6 @@
       },
       "chartUrl": "",
       "dcUrl": "https://datacommons.org/explore#q=counties%20in%20california%20with%20highest%20obesity"
-    },
-    {
-      "data_csv": "rank,place,\"Prevalence: Female, Obesity\"\r\n1,San Bernardino County,39\r\n2,Fresno County,37\r\n3,Stanislaus County,34.8\r\n4,San Joaquin County,34.8\r\n5,Riverside County,33.9\r\n6,Madera County,33.8\r\n7,Kern County,33.6\r\n8,Tulare County,33.2\r\n9,Imperial County,33\r\n10,Sacramento County,31.5",
-      "placeType": "County",
-      "places": [
-        "geoId/06"
-      ],
-      "srcs": [
-        {
-          "name": "gis.cdc.gov",
-          "url": "https://gis.cdc.gov/grasp/diabetes/DiabetesAtlas.html"
-        }
-      ],
-      "title": "Prevalence: Female, Obesity in Counties of California (2021)",
-      "type": "TABLE",
-      "unit": "",
-      "vars": [
-        "dc/4lvmzr1h1ylk1"
-      ],
-      "dcUrl": "https://datacommons.org/explore#q=counties%20in%20california%20with%20highest%20obesity",
-      "chartUrl": ""
     }
   ]
 }
