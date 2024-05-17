@@ -15,7 +15,6 @@
 # Interface for variable detection
 #
 
-import time
 from typing import Dict, List
 
 import server.lib.nl.common.counters as ctr
@@ -50,7 +49,7 @@ def detect_vars(orig_query: str,
                 index_type: str,
                 counters: ctr.Counters,
                 debug_logs: Dict,
-                threshold_bump: float = 0,
+                threshold_override: float = 0,
                 reranker: str = '',
                 skip_topics: bool = False) -> vars.VarDetectionResult:
   #
@@ -90,12 +89,11 @@ def detect_vars(orig_query: str,
   #
   # If caller had an overriden threshold bump, apply that.
   multi_var_threshold = dutils.compute_final_threshold(model_threshold,
-                                                       threshold_bump)
+                                                       threshold_override)
   result_monovar = query2results[query_monovar]
   result_multivar = _prepare_multivar_candidates(multi_querysets, query2results,
                                                  multi_var_threshold)
 
-  debug_logs["sv_detection_query_index_type"] = index_type
   debug_logs["sv_detection_query_input"] = orig_query
   debug_logs["sv_detection_query_stop_words_removal"] = query_monovar
   return vars.VarDetectionResult(single_var=result_monovar,
